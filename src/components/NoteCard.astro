@@ -1,0 +1,18 @@
+---
+interface Props {
+	heading: string;
+	content: string;
+}
+
+const {heading, content} = Astro.props;
+---
+  <div class="relative bg-white px-6 pt-10 pb-8 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
+    <div class="mx-auto max-w-md">
+      <h1 class = "text-4xl text-center">{heading}<h1>
+      <div class="divide-y divide-gray-300/50">
+        <div class="space-y-6 py-8 text-center text-base leading-7 text-gray-600">
+          {content}
+        </div>
+      </div>
+    </div>
+  </div>
