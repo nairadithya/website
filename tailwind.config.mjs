@@ -4,7 +4,7 @@ export default {
 	theme: {
 			extend: {
 				fontFamily: {
-		sans: ['Manrope'],
+		manrope: ['Manrope Variable'],
 			},
 		},
 	},
