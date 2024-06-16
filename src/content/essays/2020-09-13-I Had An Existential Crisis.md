@@ -1,12 +1,12 @@
 ---
-title: "I Had An Existential Crisis."
-description: "My first big essay, one I wrote after waking up from a nightmare and feeling small against the scope of the universe."
-image: "../assets/palebluedot.png"
+title: 'I Had An Existential Crisis.'
+description: 'My first big essay, one I wrote after waking up from a nightmare and feeling small against the scope of the universe.'
+image: '../images/palebluedot.jpg'
 date: 2020-09-13
 ---
 We, as humans, are naturally egoistic. I don't say that as if it's a problem but rather as an observation. The problems we face on a day to day basis casts a veil on our eyes so that we don't even stop to consider that maybe these problems don't matter. Take a look at this photo:
 
-![The Earth as a pale blue dot](../assets/palebluedot.png)
+![The Earth as a pale blue dot](../../images/palebluedot.jpg)
 
 This photo has one dot. It was taken from a probe and that dot is us. That dot is Earth.
 
@@ -14,7 +14,7 @@ And this photo makes me think. Seeing Earth, an gigantic object which I cannot e
 
 How much of what matters to us really matters?
 
-How do we live in a way that is able to cope with this massive scale?
+How do we live in a way that is able to cope with this mapngssive scale?
 
 Life is short, comparing a hundred years to the entirety of the Earth is an even bigger reality check but...this photo really scares me, more than any big number can or a graph can.
 

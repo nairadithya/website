@@ -4,14 +4,8 @@ import Layout from '../layouts/BaseLayout.astro';
 const essayEntries = await getCollection('essays');
 ---
 <Layout title='Archive'>
-<ul>
+<ul class="mx-auto w-full">
   {essayEntries.map(essayEntry => (
-    <li class="list-disc">
-      <a href={`/my-blog-url/${essayEntry.slug}`}>{essayEntry.data.title}</a>
-      <time datetime={essayEntry.data.date.toISOString()}>
-        {essayEntry.data.date.toDateString()}
-      </time>
-    </li>
-  ))}
-</ul>
-</Layout>
+  <div class="flex-cols-4 gap-4"> 
+	    <a class="col-span-3" href={`${essayEntry.slug}`}>{essayEntry.data.title}</a> 
+	    <time class="col-span-1" datetime={essayEntry.data.date.toISOString()}> {essayEntry.data.date.toDateString()} </time> </div>))} </ul> </Layout>

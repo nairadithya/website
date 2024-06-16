@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "essays/I Had An Existential Crisis.md",
+                "file": "essays/2023-01-02-The Weight Photography Holds.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "c97c2c20e1dd00d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "essays/2023-07-10-The Overanalysis Of Art.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "essays/I Had An Existential Crisis.md",
+                "file": "essays/2023-07-10-The Overanalysis Of Art.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "essays/I Had An Existential Crisis.md",
+                "file": "essays/2023-07-10-The Overanalysis Of Art.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "essays/I Had An Existential Crisis.md"
+                "file": "essays/2023-07-10-The Overanalysis Of Art.md"
               }
             }
           }
@@ -146,9 +159,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c80d6c8c5a06ef89",
+  "active": "c97c2c20e1dd00d3",
   "lastOpenFiles": [
-    "config.ts~",
-    "essays/I Had An Existential Crisis.md"
+    "essays/2023-01-02-The Weight Photography Holds.md",
+    "essays/2023-06-22-One In 400,000,000,000..md",
+    "essays/2020-09-13-I Had An Existential Crisis.md",
+    "essays/2023-07-10-The Overanalysis Of Art.md",
+    "essays/I Had An Existential Crisis.md~",
+    "config.ts~"
   ]
 }
