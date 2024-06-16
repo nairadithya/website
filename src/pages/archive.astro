@@ -1,0 +1,17 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/BaseLayout.astro';
+const essayEntries = await getCollection('essays');
+---
+<Layout title='Archive'>
+<ul>
+  {essayEntries.map(essayEntry => (
+    <li class="list-disc">
+      <a href={`/my-blog-url/${essayEntry.slug}`}>{essayEntry.data.title}</a>
+      <time datetime={essayEntry.data.date.toISOString()}>
+        {essayEntry.data.date.toDateString()}
+      </time>
+    </li>
+  ))}
+</ul>
+</Layout>
