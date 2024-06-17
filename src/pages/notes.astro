@@ -1,10 +1,11 @@
 ---
-import NoteCard from "../components/NoteCard.astro"
-import NavBar from "../components/NavBar.astro"
+import NoteCard from '../components/NoteCard.astro'
+import NavBar from '../components/NavBar.astro'
 ---
-<NavBar/>
-<div class="container mx-auto grid grid-cols-1 w-full py-3">
-	<NoteCard heading = "Test Card"	content = "Thoughtful thought"/>
-	<NoteCard heading = "Test Card 3" content = "Thoughtful thought 1"/>
-	<NoteCard heading = "Test Card 2" content = "Thoughtful Thought 2"/>
+
+<NavBar />
+<div class="container mx-auto grid w-full grid-cols-1 py-3">
+    <NoteCard heading="Test Card" content="Thoughtful thought" />
+    <NoteCard heading="Test Card 3" content="Thoughtful thought 1" />
+    <NoteCard heading="Test Card 2" content="Thoughtful Thought 2" />
 </div>

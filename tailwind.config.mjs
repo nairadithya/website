@@ -6,10 +6,9 @@ export default {
         extend: {
             fontFamily: {
                 manrope: ['Manrope Variable'],
+                lato: ['Lato'],
             },
         },
     },
-    plugins: [
-	    require('@tailwindcss/typography'),
-    ],
+    plugins: [require('@tailwindcss/typography')],
 }

@@ -1,27 +1,28 @@
 ---
-import NavBar from '../components/NavBar.astro';
+import NavBar from '../components/NavBar.astro'
 
 interface Props {
-	title: string;
+    title: string
 }
 
-const { title } = Astro.props;
+const { title } = Astro.props
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<main class="flex flex-row gap-4 md:pl-24 px-2 md:pr-0 pt-20 md:pt-0">
-	<NavBar/>
-	<div class="flex flex-col w-full gap-12 md:gap-2 overflow-hidden"> 
-		<slot />
-	</div>
-	</main>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Astro description" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+    </head>
+    <main class="flex flex-row gap-4 px-2 pt-20 md:pl-24 md:pr-0 md:pt-0">
+        <NavBar />
+        <div class="flex w-full flex-col gap-12 overflow-hidden md:gap-2">
+            <slot />
+        </div>
+    </main>
+
 </html>

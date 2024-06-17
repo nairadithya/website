@@ -4,6 +4,7 @@ description: "Photography is an excellent, timeless and fascinating subject to t
 image:
 date: 2023-01-02
 ---
+
 I think that a camera is something that everyone should have. These high quality devices to capture the memories we hold dear the most.
 
 Yet… at the same time, photography has become simplified, I guess. I have been thinking about just how many photos we see in a day now. Shared to us online, taken by ourselves and shown to us through our social media feeds. That seems to devalue just how valuable a single picture can be.

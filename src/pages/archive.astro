@@ -1,11 +1,26 @@
 ---
-import { getCollection } from 'astro:content';
-import Layout from '../layouts/BaseLayout.astro';
-const essayEntries = await getCollection('essays');
+import { getCollection } from 'astro:content'
+import Layout from '../layouts/BaseLayout.astro'
+import { Image } from 'astro:assets'
+const essayEntries = await getCollection('essays')
 ---
-<Layout title='Archive'>
-<ul class="mx-auto w-full">
-  {essayEntries.map(essayEntry => (
-  <div class="flex-cols-4 gap-4"> 
-	    <a class="col-span-3" href={`${essayEntry.slug}`}>{essayEntry.data.title}</a> 
-	    <time class="col-span-1" datetime={essayEntry.data.date.toISOString()}> {essayEntry.data.date.toDateString()} </time> </div>))} </ul> </Layout>
+
+<Layout title="Archive">
+    <div class="mx-auto pt-10">
+        <div class="text-center text-3xl">Archive</div>
+        <ul class="leading-loose">
+            {
+                essayEntries.map((essayEntry) => (
+                    <li>
+                        <a
+                            class="text-blue-100 hover:text-blue-400"
+                            href={`${essayEntry.slug}`}
+                        >
+                            {essayEntry.data.title}
+                        </a>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+</Layout>

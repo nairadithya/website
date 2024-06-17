@@ -1,18 +1,26 @@
 ---
 interface Props {
-	heading: string;
-	content: string;
+    heading: string
+    content: string
 }
 
-const {heading, content} = Astro.props;
+const { heading, content } = Astro.props
 ---
-<div class="bg-white box-border mx-auto w-96 border-dotted border-2 border-orange-100 border-rounded">
+
+<div
+    class="border-rounded mx-auto box-border w-96 border-2 border-dotted border-orange-100 bg-white"
+>
     <div class="mx-auto max-w-md">
-      <h1 class = "py-2 text-3xl text-center">{heading}<h1>
-      <div>
-        <div class="space-y-6 py-3 text-center text-base leading-7 text-gray-600">
-          {content}
-        </div>
-      </div>
+        <h1 class="py-2 text-center text-3xl">
+            {heading}<h1>
+                <div>
+                    <div
+                        class="space-y-6 py-3 text-center text-base leading-7 text-gray-600"
+                    >
+                        {content}
+                    </div>
+                </div>
+            </h1>
+        </h1>
     </div>
-  </div>
+</div>

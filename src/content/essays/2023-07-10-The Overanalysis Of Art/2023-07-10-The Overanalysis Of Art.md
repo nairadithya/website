@@ -4,11 +4,12 @@ description: or 'How to sound like you know what you're talking about.'
 image: ../../images/inaromanosteria.jpg
 date: 2023-07-10
 ---
-**Disclaimer: I use the word art a lot in the latter part of this post, by art I do not mean paintings. I mean any form of creative expression** **such as movies, books, poetry, heck even doodles on the wall that a 5-year-old kid made.**
+
+Disclaimer: I use the word art a lot in the latter part of this post, by art I do not mean paintings. I mean any form of creative expression **such as movies, books, poetry, heck even doodles on the wall that a 5-year-old kid made.**
 
 There’s this painting by Carl Bloch, called “In A Roman Osteria.” It’s a fairly simple and mundane painting, but it captured my imagination the first time I saw it.
 
-![The painting](../../images/inaromanosteria.jpg)
+![The painting](./inaromanosteria.jpg)
 
 I can’t remember where I saw this painting, but it captured me. I can’t fully explain why I’m drawn to this painting, but I am. I don’t know enough about ‘art’ to go over what makes this painting powerful, but I know that it is.
 
