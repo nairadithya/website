@@ -1,26 +1,32 @@
 ---
 import { getCollection } from 'astro:content'
 import Layout from '../layouts/BaseLayout.astro'
+import FormattedDate from '../components/FormattedDate.astro'
 import { Image } from 'astro:assets'
-const essayEntries = await getCollection('essays')
+const essayEntries = (await getCollection('essays')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 
 <Layout title="Archive">
     <div class="mx-auto pt-10">
         <div class="text-center text-3xl">Archive</div>
-        <ul class="leading-loose">
-            {
-                essayEntries.map((essayEntry) => (
-                    <li>
-                        <a
-                            class="text-blue-100 hover:text-blue-400"
-                            href={`${essayEntry.slug}`}
-                        >
-                            {essayEntry.data.title}
-                        </a>
-                    </li>
-                ))
-            }
-        </ul>
+        <p class="pb-5 text-center font-bold">
+            Check out all my older posts here<p>
+                <ul class="grid grid-cols-3 gap-1">
+                    {
+                        essayEntries.map((essayEntry) => (
+                            <>
+                                <a
+                                    class="text-1xl col-span-2 text-black-300 shrink"
+				    href=`${Astro.url.origin}/${essayEntry.slug}`
+                                >
+                                    {essayEntry.data.title}
+                                </a>
+                                <FormattedDate date={essayEntry.data.date} />
+                            </>
+                        ))
+                    }
+                </ul>
+            </p>
+        </p>
     </div>
 </Layout>

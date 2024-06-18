@@ -8,7 +8,7 @@ date: 2020-09-13
 
 We, as humans, are naturally egoistic. I don't say that as if it's a problem but rather as an observation. The problems we face on a day to day basis casts a veil on our eyes so that we don't even stop to consider that maybe these problems don't matter. Take a look at this photo:
 
-![The Earth as a pale blue dot](./palebluedot.jpg)
+![The Earth as a pale blue dot](palebluedot.jpg)
 
 This photo has one dot. It was taken from a probe and that dot is us. That dot is Earth.
 1

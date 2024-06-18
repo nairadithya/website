@@ -1,176 +1,187 @@
 {
-    "main": {
-        "id": "300bba54c3a41889",
-        "type": "split",
+  "main": {
+    "id": "300bba54c3a41889",
+    "type": "split",
+    "children": [
+      {
+        "id": "08db1a308dbc9b85",
+        "type": "tabs",
         "children": [
-            {
-                "id": "08db1a308dbc9b85",
-                "type": "tabs",
-                "children": [
-                    {
-                        "id": "e5ae63f8411e6d98",
-                        "type": "leaf",
-                        "state": {
-                            "type": "markdown",
-                            "state": {
-                                "file": "essays/2023-07-10-The Overanalysis Of Art/2023-07-10-The Overanalysis Of Art.md",
-                                "mode": "source",
-                                "source": false
-                            }
-                        }
-                    }
-                ]
+          {
+            "id": "e5ae63f8411e6d98",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/test note.md",
+                "mode": "source",
+                "source": false
+              }
             }
-        ],
-        "direction": "vertical"
-    },
-    "left": {
-        "id": "1b18287016c3596e",
-        "type": "split",
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1b18287016c3596e",
+    "type": "split",
+    "children": [
+      {
+        "id": "7b4a312788b8a8ba",
+        "type": "tabs",
         "children": [
-            {
-                "id": "7b4a312788b8a8ba",
-                "type": "tabs",
-                "children": [
-                    {
-                        "id": "a87af032ec53d58a",
-                        "type": "leaf",
-                        "state": {
-                            "type": "file-explorer",
-                            "state": {
-                                "sortOrder": "alphabetical"
-                            }
-                        }
-                    },
-                    {
-                        "id": "fd0c31dc4b1218cc",
-                        "type": "leaf",
-                        "state": {
-                            "type": "search",
-                            "state": {
-                                "query": "",
-                                "matchingCase": false,
-                                "explainSearch": false,
-                                "collapseAll": false,
-                                "extraContext": false,
-                                "sortOrder": "alphabetical"
-                            }
-                        }
-                    },
-                    {
-                        "id": "18903ede52eea5d9",
-                        "type": "leaf",
-                        "state": {
-                            "type": "bookmarks",
-                            "state": {}
-                        }
-                    }
-                ]
+          {
+            "id": "a87af032ec53d58a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
-        ],
-        "direction": "horizontal",
-        "width": 300
-    },
-    "right": {
-        "id": "8059f0416e3500a6",
-        "type": "split",
+          },
+          {
+            "id": "fd0c31dc4b1218cc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "18903ede52eea5d9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8059f0416e3500a6",
+    "type": "split",
+    "children": [
+      {
+        "id": "b9f56a67acc40bf9",
+        "type": "tabs",
         "children": [
-            {
-                "id": "b9f56a67acc40bf9",
-                "type": "tabs",
-                "children": [
-                    {
-                        "id": "a0be69420257c670",
-                        "type": "leaf",
-                        "state": {
-                            "type": "backlink",
-                            "state": {
-                                "file": "essays/2023-07-10-The Overanalysis Of Art/2023-07-10-The Overanalysis Of Art.md",
-                                "collapseAll": false,
-                                "extraContext": false,
-                                "sortOrder": "alphabetical",
-                                "showSearch": false,
-                                "searchQuery": "",
-                                "backlinkCollapsed": false,
-                                "unlinkedCollapsed": true
-                            }
-                        }
-                    },
-                    {
-                        "id": "e1703b30d6a4e908",
-                        "type": "leaf",
-                        "state": {
-                            "type": "outgoing-link",
-                            "state": {
-                                "file": "essays/2023-07-10-The Overanalysis Of Art/2023-07-10-The Overanalysis Of Art.md",
-                                "linksCollapsed": false,
-                                "unlinkedCollapsed": true
-                            }
-                        }
-                    },
-                    {
-                        "id": "6cc2179ba9e60cc4",
-                        "type": "leaf",
-                        "state": {
-                            "type": "tag",
-                            "state": {
-                                "sortOrder": "frequency",
-                                "useHierarchy": true
-                            }
-                        }
-                    },
-                    {
-                        "id": "345a660daf297510",
-                        "type": "leaf",
-                        "state": {
-                            "type": "outline",
-                            "state": {
-                                "file": "essays/2023-07-10-The Overanalysis Of Art/2023-07-10-The Overanalysis Of Art.md"
-                            }
-                        }
-                    }
-                ]
+          {
+            "id": "a0be69420257c670",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "notes/test note.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
             }
-        ],
-        "direction": "horizontal",
-        "width": 300,
-        "collapsed": true
-    },
-    "left-ribbon": {
-        "hiddenItems": {
-            "switcher:Open quick switcher": false,
-            "graph:Open graph view": false,
-            "canvas:Create new canvas": false,
-            "daily-notes:Open today's daily note": false,
-            "templates:Insert template": false,
-            "command-palette:Open command palette": false
-        }
-    },
-    "active": "e5ae63f8411e6d98",
-    "lastOpenFiles": [
-        "essays/README.md",
-        "essays/2023-07-10-The Overanalysis Of Art/2023-07-10-The Overanalysis Of Art.md",
-        "essays/2020-09-13-I Had An Existential Crisis/2020-09-13-I Had An Existential Crisis.md",
-        "templates/essay template.md",
-        "config.ts~",
-        "essays/2020-09-13-I Had An Existential Crisis/palebluedot.jpg",
-        "templates",
-        "essays/2023-06-22-One In 400,000,000,000./2023-06-22-One In 400,000,000,000..md",
-        "essays/2023-07-07-Children's Media/2023-07-07-Children's Media.md",
-        "essays/2023-07-10-The Overanalysis Of Art/inaromanosteria.jpg",
-        "essays/palebluedot.jpg",
-        "essays/inaromanosteria.jpg",
-        "essays/2023-07-10-The Overanalysis Of Art/palebluedot.jpg",
-        "essays/2023-07-10-The Overanalysis Of Art.md",
-        "essays/2023-07-10-The Overanalysis Of Art",
-        "essays/2023-06-22-One In 400,000,000,000.",
-        "essays/2023-01-02-The Weight Photography Holds/2023-01-02-The Weight Photography Holds.md",
-        "essays/2023-01-02-The Weight Photography Holds",
-        "essays/2020-09-13-I Had An Existential Crisis.md",
-        "essays/2020-09-13-I Had An Existential Crisis",
-        "essays/2023-07-07-Children's Media",
-        "essays/2023-06-22-One In 400,000,000,000..md",
-        "essays/2023-01-02-The Weight Photography Holds.md",
-        "essays/I Had An Existential Crisis.md~"
-    ]
+          },
+          {
+            "id": "e1703b30d6a4e908",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "notes/test note.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6cc2179ba9e60cc4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "345a660daf297510",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "notes/test note.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "e5ae63f8411e6d98",
+  "lastOpenFiles": [
+    "templates/note template.md",
+    "notes/test note.md",
+    "essays/2024-05-29/The Survivor's Kit To Navigating The Digital Jungle.md",
+    "essays/2024-02-25/The Responsibility Of Fuelling The Next Fire.md",
+    "essays/2024-05-29",
+    "templates/essay template.md",
+    "essays/2023-07-01/The Danger Of Being Saturated By 'Bests'.md",
+    "essays/2024-02-25",
+    "essays/2023-07-17/'One Way Out', A piece on Andor.md",
+    "essays/2023-07-01",
+    "essays/2023-02-27/Nostalgia And Grief.md",
+    "essays/2023-01-23/The Stories We Can Touch..md",
+    "essays/2023-02-27",
+    "essays/2020-09-13/I Had An Existential Crisis.md",
+    "essays/2023-01-23",
+    "essays/2023-01-02/The Weight Photography Holds.md",
+    "essays/2023-06-22/One In 400,000,000,000..md",
+    "essays/2023-07-07/Children's Media.md",
+    "essays/2023-07-10/The Overanalysis Of Art.md",
+    "essays/2023-10-10/The Pursuit Of Perfection.md",
+    "essays/2023-07-17",
+    "essays/2023-10-10",
+    "essays/README.md",
+    "config.ts~",
+    "essays/2020-09-13/palebluedot.jpg",
+    "templates",
+    "essays/2023-07-10/inaromanosteria.jpg",
+    "essays/palebluedot.jpg",
+    "essays/inaromanosteria.jpg",
+    "essays/2023-07-10-The Overanalysis Of Art/palebluedot.jpg",
+    "essays/2023-07-10-The Overanalysis Of Art.md",
+    "essays/2023-07-10",
+    "essays/2020-09-13-I Had An Existential Crisis.md",
+    "essays/2023-06-22-One In 400,000,000,000..md",
+    "essays/2023-01-02-The Weight Photography Holds.md"
+  ]
 }
