@@ -1,7 +1,7 @@
 ---
 title: The Responsibility Of Fuelling The Next Fire
 description: A large post collecting a somewhat comprehensive look into Artificial Intelligence as it stands in culture and technology on the day this post was published.
-image:
+image: ./theresponsibility.jpg
 imageAlt:
 date: 2024-02-25
 ---
@@ -123,7 +123,7 @@ _Side note_ - This doesn’t just affect AI. Deaf and mute people, non-native sp
 
 ### Transformers Aren't The Answer.
 
-GPT4 has trillions of "parameters", or data being used to train it.As mentioned earlier, intelligence is being able to extrapolate things without needing to be told to do so.
+GPT-4 has trillions of "parameters", or data being used to train it. As mentioned earlier, intelligence is being able to extrapolate things without needing to be told to do so.
 
 Children start out with a small mental model.
 
@@ -215,11 +215,7 @@ There was this part in [Tom Scott's video about ChatGPT](https://www.youtube.co
 
 There's this graph that somewhat helps in understanding technological progress, and it is known as the sigmoid curve.
 
-[
-
 ![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb2b396aa-f737-4e5f-88a6-212ae43fb852_1200x898.png)
-
-](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb2b396aa-f737-4e5f-88a6-212ae43fb852_1200x898.png)
 
 This curve is a good way to think about AI.
 
