@@ -1,10 +1,11 @@
 ---
 title: Nostalgia And Grief
 description: A bittersweet feeling that is both powerful and intoxicating.
-image: 
-imageAlt: 
+image:
+imageAlt:
 date: 2023-02-27
 ---
+
 Is there a certain level of irony that an 18-year-old is talking about nostalgia? Absolutely. I’m not old enough to feel the true impact of nostalgia. I’m just past my childhood. But it already is such a powerful feeling that I can’t help but write about it.
 
 In essence, what is it? It’s memories of a younger you, of experiences that you won’t be able to have again, of people who have changed with you and people who have moved on without you. Memories laced with happiness and loss.

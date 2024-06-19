@@ -1,7 +1,7 @@
 ---
-title: {{title}}
+title: { { title } }
 description:
 image:
 imageAlt:
-date: {{date}}
+date: { { date } }
 ---

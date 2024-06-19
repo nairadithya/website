@@ -14,15 +14,13 @@ const essayEntries = (await getCollection('essays')).sort((a, b) => b.data.date.
                 <ul class="grid grid-cols-3 gap-1">
                     {
                         essayEntries.map((essayEntry) => (
-                            <>
                                 <a
                                     class="text-1xl col-span-2 text-black-300 shrink"
-				    href=`${Astro.url.origin}/${essayEntry.slug}`
+				    href=`/${essayEntry.slug}/`
                                 >
                                     {essayEntry.data.title}
                                 </a>
                                 <FormattedDate date={essayEntry.data.date} />
-                            </>
                         ))
                     }
                 </ul>

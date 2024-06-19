@@ -1,10 +1,11 @@
 ---
 title: The Survivor's Kit To Navigating The Digital Jungle
 description: How to stop relying on algorithms so much to find the stuff you like.
-image: 
-imageAlt: 
+image:
+imageAlt:
 date: 2024-05-29
 ---
+
 (Scroll to the end if you just want the recommendations. If you need convincing, read on.)
 
 This is a natural extension of the concerns I threw out last week. I found myself worrying a lot about the way things were going for me, and how terrifying it felt every time I looked up from my phone after a doom-scrolling spiral and watch as hours slipped away from me.
@@ -90,24 +91,16 @@ This is the more specific part of this post. Some suggestions, for things that w
 Here’s what you remove:
 
 1. Short form content. It’s not enough information to be useful, and too much at once to remember, and too addictive to keep around.
-    
 2. Recommendation algorithms. I pitch this, recommendations should be your choice, and your feeds should be your default. Switch to recommendations when you want to explore. It’s like listening to music, you listen to your artists most of the time, then you explore and look around when you want something fresh.
-    
 3. Social media apps. I think there’s a place for social media, but I don’t think it’s something you carry around with you. It should be relegated to the desktop, when you can control the sessions you peruse things more easily(many social media apps lack several features on their web version unfortunately, but that’s a good compromise to make.
-    
 
 Here’s what you look for instead:
 
 1. Long-form articles are a gold mine for information that comprehensively covers a topic that leaves you feeling like you learned something new and giving you enough new things to explore.
-    
 2. RSS Feeds are your friend. If you’re unfamiliar with what RSS feeds are, it’s a way to keep up with websites and people that are outside the social media sphere. It’s also a way to isolate good websites. What I’ve found is that the websites that really matter tend to have RSS Feeds as well. Use Twine for mobile and Fluent Reader for desktop, and adding RSS feeds is as simple as just putting in the URL.
-    
 3. YouTube on mobile is a bit different. I do not use the official mobile app. But I find value in the videos I do see on there. Instead of giving that up, I have switched to using NewPipe, which you can setup to only view your subscriptions, and the best part is it treats shorts like a normal YouTube video. (Note: Download NewPipe from GitHub, the Play Store version is an ad-riddled copy.)
-    
 4. A “Read-it-Later” app is important to help keep track of those long-form articles and videos that you find interesting. I use Omnivore, which I migrated to from Raindrop. Raindrop is free and it works great for more than just articles, but Omnivore has a simplicity that Raindrop lacks. Raindrop is a great option nonetheless. Another great app is Instapaper, which I used for a while before Omnivore. These apps make it incredibly easy to focus on articles you found intriguing and then share them almost instantly. You can also **save your progress** which is essential for long form articles. Do you see how powerful it can be to have a place that is filled with things you **want** to read?
-    
 5. Newsletters like this one. The amount of beautiful essays I’ve discovered by simply using newsletters are amazing. Especially the ones that are curational. Subscribe to newsletters about things you are interested in, and then start building a chain by subscribing to the newsletters and RSS feeds that these newsletters link to.
-    
 
 If you follow these steps, you’ll generate a constant stream of high quality input in no time.
 

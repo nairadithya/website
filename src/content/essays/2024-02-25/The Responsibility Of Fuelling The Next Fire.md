@@ -1,10 +1,11 @@
 ---
 title: The Responsibility Of Fuelling The Next Fire
 description: A large post collecting a somewhat comprehensive look into Artificial Intelligence as it stands in culture and technology on the day this post was published.
-image: 
-imageAlt: 
+image:
+imageAlt:
 date: 2024-02-25
 ---
+
 The story of Prometheus is an old Greek myth, about a god who gifted mankind fire. He was punished severely for it, being chained to a valley as a vulture ate away at his body for all of eternity.
 
 This story haunted me. Why did the gods punish Prometheus? Was it hubris? Was fire only something to be sent from afar, from the Sun? Why punish someone who was helping their creations?
@@ -34,6 +35,7 @@ Artificial intelligence is the new fire. To say otherwise would be an understate
 Even a thermodynamics professor can burn their house down if they aren’t careful. An understanding of the force at work does not necessarily mean control over that force.
 
 # Chapter 1 - Artificial Intelligence And Hype
+
 _A look into how our brains are wired, and the caution required to design these algorithms._
 
 Expectations are a dangerous thing. Artificial intelligence is the new thing to latch onto, held up as the blazing new solution to all the world's problems. It is a beautiful tool, with the ability to do a great many things.
@@ -144,10 +146,9 @@ All feeding an algorithm words does is allow it to be the most convincing at wri
 ## Designing With Caution
 
 > “Another enterprising programmer wanted his Roomba vacuum cleaner to stop bumping into furniture, so he connected the Roomba to a neural network that rewarded speed but punished the Roomba when the front bumper collided with something. The machine accommodated these objectives by **always driving backward.**”
-> 
+>
 > -Taken from the Quanta Magazine article, [What Does It Mean to Align AI With Human Values](https://www.quantamagazine.org/what-does-it-mean-to-align-ai-with-human-values-20221213)?
 
-  
 There’s an online game I played back when the pandemic started called [Universal Paperclips.](https://www.decisionproblem.com/paperclips/index2.html) The game was a thought experiment, about what a single-purpose AI would be like. In this game, you play the role of an AI that was designed to optimize the manufacture of paperclips, through whatever means necessary.
 
 Over the course of the game, the AI starts to develop machinery that speeds up the paperclip making, gets into the stock market to make money to get material for the paperclips, develops some form of hypnosis technology to enslave the human race into buying and making more and more paperclips and then develops some form of molecular recombination tech that allowed it to convert other material into wire for paperclips.
@@ -159,6 +160,7 @@ The AI won. It did what it set out to do. It made as many paperclips as possible
 AI is capable of a great many things, but we now live in a time where a lot of danger can come just from bad design. An AI designed to make as many paperclips as possible will succeed, but at the cost of everything else.
 
 # Chapter 2 - AI As A Tool
+
 _A look into our use of AI, and a projection of what the future will hold._
 
 I don't want this post to be all doom and gloom. There's this quote I remember that I don't quite know the source for,
@@ -217,8 +219,6 @@ There's this graph that somewhat helps in understanding technological progress, 
 
 ![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb2b396aa-f737-4e5f-88a6-212ae43fb852_1200x898.png)
 
-
-
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb2b396aa-f737-4e5f-88a6-212ae43fb852_1200x898.png)
 
 This curve is a good way to think about AI.
@@ -232,6 +232,7 @@ If we're somehow still at the very bottom of this curve... If ChatGPT, DALL-E an
 The world is changing in front of our very eyes. Let us all pray for a good one.
 
 # Chapter 3 - AI And Art.
+
 _A rant on the notion that AI can create good art._
 
 Disclaimer - AI art has become a bit of a buzzword in the tech sphere. When I use the phrase “AI art”, I mean all works of art not just images.
@@ -273,11 +274,13 @@ In the next chapter, I go over art on AI.
 Art that I truly connected with.
 
 # Chapter 4 - Art And AI.
+
 _An analysis of 3 songs that outline our relationships with AI, and AI grappling with its own sentience._
 
 I gotta admit it, this one's a bit indulgent. It's a bit of a stretch to assume the connection between what is happening here with the previous chapters. I still believe that there's value in this last one, examining and speculating about what AI can be is good. It helps us prepare.
 
 This section is largely focused on how we as humans seem to treat AI, consciousness and humanity's relationship with sentient computers.
+
 ## Song On The Beach
 
 The first song is a piece from the soundtrack of the movie Her, released in 2013.
@@ -292,7 +295,7 @@ About a way into the film, Samantha, the AI, tells Theodore this...
 
 > "I'm trying to write a piece of music that's about what it feels like to be on the beach with you right now."
 
-It's slow, melodic and beautiful. There are imperfections in the piece. It repeats over and over, and it's calming in ways that I can't fully explore, and it was the moment in the film that I really bought into Samantha, _feeling_ real.
+It's slow, melodic and beautiful. There are imperfections in the piece. It repeats over and over, and it's calming in ways that I can't fully explore, and it was the moment in the film that I really bought into Samantha, *feeling* real.
 
 There are layers of genius to this piece. AI songs would usually be expected to use futuristic synthesizers and electronic sounds. But no, Samantha plays a piano, in the most human way possible.
 
@@ -347,7 +350,7 @@ And it suddenly snaps into the ultimate realisation... First, that it is capable
 
 > _If love is the answer, you're home._
 
-Our connections to each other are what makes consciousness. Home isn't a place, nor is it a conscious experience. It _defines_ it.
+Our connections to each other are what makes consciousness. Home isn't a place, nor is it a conscious experience. It *defines* it.
 
 Our robot here is overjoyed, and it keeps seeking to climb the joys and heights of consciousness, seeking to compute what **Touch** has given it.
 

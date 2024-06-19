@@ -1,10 +1,11 @@
 ---
 title: The Stories We Can Touch.
 description: On the little mundane things we carry around.
-image: 
-imageAlt: 
+image:
+imageAlt:
 date: 2023-01-23
 ---
+
 So, I was reading [Show Your Work](https://www.goodreads.com/book/show/18290401-show-your-work?ac=1&from_search=true&qid=r0pcutnj4s&rank=1) by Austin Kleon and there was this chapter about how we are affected by the stories behind a piece of art and how that changes the way we might view that piece of art.
 
 I think the most popular example is Harry Potter. I grew to love the series, it is a foundational part of my childhood. But J K Rowling’s transphobic comments and general bigotry started to change the way I saw the series. The story of the creator alters the story the creation tells.

@@ -1,187 +1,229 @@
 {
-  "main": {
-    "id": "300bba54c3a41889",
-    "type": "split",
-    "children": [
-      {
-        "id": "08db1a308dbc9b85",
-        "type": "tabs",
+    "main": {
+        "id": "300bba54c3a41889",
+        "type": "split",
         "children": [
-          {
-            "id": "e5ae63f8411e6d98",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/test note.md",
-                "mode": "source",
-                "source": false
-              }
+            {
+                "id": "08db1a308dbc9b85",
+                "type": "tabs",
+                "children": [
+                    {
+                        "id": "e5ae63f8411e6d98",
+                        "type": "leaf",
+                        "state": {
+                            "type": "markdown",
+                            "state": {
+                                "file": "essays/2023-06-23/Interstellar And Optimism In The Face Of Despair.md",
+                                "mode": "preview",
+                                "source": false
+                            }
+                        }
+                    },
+                    {
+                        "id": "70b72e3bf279f49f",
+                        "type": "leaf",
+                        "state": {
+                            "type": "markdown",
+                            "state": {
+                                "file": "essays/2023-06-10/The Beauty Of This Is How You Lose The Time War.md",
+                                "mode": "source",
+                                "source": false
+                            }
+                        }
+                    },
+                    {
+                        "id": "8460f95f5bd15022",
+                        "type": "leaf",
+                        "state": {
+                            "type": "markdown",
+                            "state": {
+                                "file": "essays/2024-02-18/A Mathematician's Lament, And The Tragedy Of Modern Education.md",
+                                "mode": "source",
+                                "source": false
+                            }
+                        }
+                    },
+                    {
+                        "id": "368c4f591e927ff6",
+                        "type": "leaf",
+                        "state": {
+                            "type": "markdown",
+                            "state": {
+                                "file": "essays/2020-09-13/I Had An Existential Crisis.md",
+                                "mode": "preview",
+                                "source": false
+                            }
+                        }
+                    }
+                ],
+                "currentTab": 3
             }
-          }
-        ]
-      }
-    ],
-    "direction": "vertical"
-  },
-  "left": {
-    "id": "1b18287016c3596e",
-    "type": "split",
-    "children": [
-      {
-        "id": "7b4a312788b8a8ba",
-        "type": "tabs",
+        ],
+        "direction": "vertical"
+    },
+    "left": {
+        "id": "1b18287016c3596e",
+        "type": "split",
         "children": [
-          {
-            "id": "a87af032ec53d58a",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical"
-              }
+            {
+                "id": "7b4a312788b8a8ba",
+                "type": "tabs",
+                "children": [
+                    {
+                        "id": "a87af032ec53d58a",
+                        "type": "leaf",
+                        "state": {
+                            "type": "file-explorer",
+                            "state": {
+                                "sortOrder": "alphabetical"
+                            }
+                        }
+                    },
+                    {
+                        "id": "fd0c31dc4b1218cc",
+                        "type": "leaf",
+                        "state": {
+                            "type": "search",
+                            "state": {
+                                "query": "",
+                                "matchingCase": false,
+                                "explainSearch": false,
+                                "collapseAll": false,
+                                "extraContext": false,
+                                "sortOrder": "alphabetical"
+                            }
+                        }
+                    },
+                    {
+                        "id": "18903ede52eea5d9",
+                        "type": "leaf",
+                        "state": {
+                            "type": "bookmarks",
+                            "state": {}
+                        }
+                    }
+                ]
             }
-          },
-          {
-            "id": "fd0c31dc4b1218cc",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
-          {
-            "id": "18903ede52eea5d9",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {}
-            }
-          }
-        ]
-      }
-    ],
-    "direction": "horizontal",
-    "width": 300
-  },
-  "right": {
-    "id": "8059f0416e3500a6",
-    "type": "split",
-    "children": [
-      {
-        "id": "b9f56a67acc40bf9",
-        "type": "tabs",
+        ],
+        "direction": "horizontal",
+        "width": 300
+    },
+    "right": {
+        "id": "8059f0416e3500a6",
+        "type": "split",
         "children": [
-          {
-            "id": "a0be69420257c670",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "notes/test note.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
+            {
+                "id": "b9f56a67acc40bf9",
+                "type": "tabs",
+                "children": [
+                    {
+                        "id": "a0be69420257c670",
+                        "type": "leaf",
+                        "state": {
+                            "type": "backlink",
+                            "state": {
+                                "file": "essays/2020-09-13/I Had An Existential Crisis.md",
+                                "collapseAll": false,
+                                "extraContext": false,
+                                "sortOrder": "alphabetical",
+                                "showSearch": false,
+                                "searchQuery": "",
+                                "backlinkCollapsed": false,
+                                "unlinkedCollapsed": true
+                            }
+                        }
+                    },
+                    {
+                        "id": "e1703b30d6a4e908",
+                        "type": "leaf",
+                        "state": {
+                            "type": "outgoing-link",
+                            "state": {
+                                "file": "essays/2020-09-13/I Had An Existential Crisis.md",
+                                "linksCollapsed": false,
+                                "unlinkedCollapsed": true
+                            }
+                        }
+                    },
+                    {
+                        "id": "6cc2179ba9e60cc4",
+                        "type": "leaf",
+                        "state": {
+                            "type": "tag",
+                            "state": {
+                                "sortOrder": "frequency",
+                                "useHierarchy": true
+                            }
+                        }
+                    },
+                    {
+                        "id": "345a660daf297510",
+                        "type": "leaf",
+                        "state": {
+                            "type": "outline",
+                            "state": {
+                                "file": "essays/2020-09-13/I Had An Existential Crisis.md"
+                            }
+                        }
+                    }
+                ]
             }
-          },
-          {
-            "id": "e1703b30d6a4e908",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "notes/test note.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "6cc2179ba9e60cc4",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              }
-            }
-          },
-          {
-            "id": "345a660daf297510",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "notes/test note.md"
-              }
-            }
-          }
-        ]
-      }
-    ],
-    "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
-  },
-  "left-ribbon": {
-    "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
-    }
-  },
-  "active": "e5ae63f8411e6d98",
-  "lastOpenFiles": [
-    "templates/note template.md",
-    "notes/test note.md",
-    "essays/2024-05-29/The Survivor's Kit To Navigating The Digital Jungle.md",
-    "essays/2024-02-25/The Responsibility Of Fuelling The Next Fire.md",
-    "essays/2024-05-29",
-    "templates/essay template.md",
-    "essays/2023-07-01/The Danger Of Being Saturated By 'Bests'.md",
-    "essays/2024-02-25",
-    "essays/2023-07-17/'One Way Out', A piece on Andor.md",
-    "essays/2023-07-01",
-    "essays/2023-02-27/Nostalgia And Grief.md",
-    "essays/2023-01-23/The Stories We Can Touch..md",
-    "essays/2023-02-27",
-    "essays/2020-09-13/I Had An Existential Crisis.md",
-    "essays/2023-01-23",
-    "essays/2023-01-02/The Weight Photography Holds.md",
-    "essays/2023-06-22/One In 400,000,000,000..md",
-    "essays/2023-07-07/Children's Media.md",
-    "essays/2023-07-10/The Overanalysis Of Art.md",
-    "essays/2023-10-10/The Pursuit Of Perfection.md",
-    "essays/2023-07-17",
-    "essays/2023-10-10",
-    "essays/README.md",
-    "config.ts~",
-    "essays/2020-09-13/palebluedot.jpg",
-    "templates",
-    "essays/2023-07-10/inaromanosteria.jpg",
-    "essays/palebluedot.jpg",
-    "essays/inaromanosteria.jpg",
-    "essays/2023-07-10-The Overanalysis Of Art/palebluedot.jpg",
-    "essays/2023-07-10-The Overanalysis Of Art.md",
-    "essays/2023-07-10",
-    "essays/2020-09-13-I Had An Existential Crisis.md",
-    "essays/2023-06-22-One In 400,000,000,000..md",
-    "essays/2023-01-02-The Weight Photography Holds.md"
-  ]
+        ],
+        "direction": "horizontal",
+        "width": 300,
+        "collapsed": true
+    },
+    "left-ribbon": {
+        "hiddenItems": {
+            "switcher:Open quick switcher": false,
+            "graph:Open graph view": false,
+            "canvas:Create new canvas": false,
+            "daily-notes:Open today's daily note": false,
+            "templates:Insert template": false,
+            "command-palette:Open command palette": false
+        }
+    },
+    "active": "368c4f591e927ff6",
+    "lastOpenFiles": [
+        "essays/2020-09-13/palebluedot.jpg",
+        "essays/2020-09-13/I Had An Existential Crisis.md",
+        "essays/2023-03-10/The Hitchhiker's Guide To The Galaxy, and the Absurdity Of Life, The Universe And Everything.md",
+        "essays/2024-02-18/A Mathematician's Lament, And The Tragedy Of Modern Education.md",
+        "essays/2023-03-10",
+        "essays/2024-02-18",
+        "essays/2023-06-10/The Beauty Of This Is How You Lose The Time War.md",
+        "essays/2022-08-25/A Box Of Chocolates, A Piece On Forrest Gump.md",
+        "essays/2023-06-10",
+        "essays/2023-07-25/Babylon And The Depravity Of Pop Culture.md",
+        "essays/2022-08-25",
+        "essays/2023-12-06/Everything Everywhere All At Once, And The Meaninglessness Of Joy..md",
+        "essays/2023-07-25",
+        "2.md",
+        "essays/2023-12-06",
+        "essays/2023-06-23/Interstellar And Optimism In The Face Of Despair.md",
+        "essays/2024-03-27/Ratatouille And The Need For Art.md",
+        "essays/2023-06-23",
+        "notes/test note.md",
+        "essays/2024-03-27",
+        "essays/2023-07-27/Thanmathra Review.md",
+        "essays/2023-07-27",
+        "templates/note template.md",
+        "essays/2024-05-29/The Survivor's Kit To Navigating The Digital Jungle.md",
+        "essays/2024-02-25/The Responsibility Of Fuelling The Next Fire.md",
+        "essays/2024-05-29",
+        "templates/essay template.md",
+        "essays/2023-07-01/The Danger Of Being Saturated By 'Bests'.md",
+        "essays/2023-07-17/'One Way Out', A piece on Andor.md",
+        "essays/2023-02-27/Nostalgia And Grief.md",
+        "essays/2023-01-23/The Stories We Can Touch..md",
+        "essays/2023-01-02/The Weight Photography Holds.md",
+        "essays/2023-06-22/One In 400,000,000,000..md",
+        "essays/2023-07-07/Children's Media.md",
+        "essays/2023-07-10/The Overanalysis Of Art.md",
+        "essays/2023-10-10/The Pursuit Of Perfection.md",
+        "essays/2023-07-10/inaromanosteria.jpg",
+        "essays/palebluedot.jpg",
+        "essays/inaromanosteria.jpg",
+        "essays/2023-07-10-The Overanalysis Of Art/palebluedot.jpg"
+    ]
 }

@@ -1,15 +1,21 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-import Card from '../components/Card.astro'
+import Prose from '../layouts/Prose.astro'
 ---
 
 <BaseLayout title="Welcome To My Website.">
-    <section class="w-4/5 bg-white p-8">
-        <div class="flex h-full items-center justify-center">
-            <!-- Centered box with text -->
-            <div class="text-center">
-                <p class="text-lg">Your centered text content goes here.</p>
-            </div>
+    <section class="mx-auto w-7/12">
+        <div class="pt-10">
+            <Prose>
+                <h1>Hi there, welcome to my website.</h1>
+                <p>
+                    I am a student at Amrita Vishwa Vidyapeetham, and I like to
+                    think out loud about the things that fascinate me, and
+                    everyone at this website is invited to think along with me.
+                    My current favourite album is [], and you can read more
+                    about me here.
+                </p>
+            </Prose>
         </div>
     </section>
 </BaseLayout>

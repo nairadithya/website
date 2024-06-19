@@ -17,9 +17,24 @@ const { Content } = await entry.render()
 ---
 
 <BaseLayout title={entry.data.title}>
-    <h1 class="mx-auto w-full pt-10 text-center text-4xl leading-tight">
-        {entry.data.title}
-    </h1>
+    <div class="text-1xl mx-auto w-full pt-16 text-center leading-tight">
+        <div class="py-4">
+            Written by Adithya Nair -<time
+                datetime={entry.data.date.toISOString()}
+            >
+                {
+                    entry.data.date.toLocaleDateString('en-uk', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                    })
+                }
+            </time>
+        </div>
+        <div class="mx-auto w-7/12 text-4xl">
+            {entry.data.title}
+        </div>
+    </div>
     <div class="mx-auto">
         <Prose>
             <div class="py-2 text-center font-semibold italic leading-tight">
@@ -27,8 +42,5 @@ const { Content } = await entry.render()
             </div>
             <Content />
         </Prose>
-        <div class="mx-auto pt-10 text-center text-2xl font-thin italic">
-            This is an essay written by Adithya Nair
-        </div>
     </div>
 </BaseLayout>

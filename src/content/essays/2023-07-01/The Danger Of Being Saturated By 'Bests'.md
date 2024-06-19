@@ -1,10 +1,11 @@
 ---
 title: The Danger Of Being Saturated By 'Bests'
 description: The negative impact of having too much of a good thing.
-image: 
-imageAlt: 
+image:
+imageAlt:
 date: 2023-07-01
 ---
+
 I am obsessed with art. More, I can say, than most people tend to be. I dig deep into how I feel about every book, film, song and poem I might come across. I write them down in some capacity, I constantly update how I feel about things as time goes by. I discuss them with my friends if I can or online.
 
 I use Letterboxd in a very diligent way. I use Goodreads updates a bit more than anyone in their right mind should(I hate many parts of that site, but there’s literally nothing better right now.). I have a last.fm account that tracks my music listening habit.
