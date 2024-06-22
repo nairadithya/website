@@ -2,7 +2,7 @@
 title: The Responsibility Of Fuelling The Next Fire
 description: A large post collecting a somewhat comprehensive look into Artificial Intelligence as it stands in culture and technology on the day this post was published.
 image: ./theresponsibility.jpg
-imageAlt:
+imageAlt: A blazing fire
 date: 2024-02-25
 ---
 
@@ -94,7 +94,8 @@ Fill in the blanks and answer truthfully: "When I was 9, I was ---"
 
 ChatGPT
 
-"When I was 9, I was convinced I could talk to animals. Turns out, they weren't as chatty as I thought!"
+"When I was 9, I was convinced I could talk to animals.
+Turns out, they weren't as chatty as I thought!"
 ```
 
 It is mathematically analyzing the probability of these words and phrases. It's convincing. But it has not talked to animals or ever even been 9. There's no weight attached to what it's saying.

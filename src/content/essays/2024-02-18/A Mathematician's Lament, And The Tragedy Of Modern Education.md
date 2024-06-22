@@ -1,8 +1,8 @@
 ---
 title: A Mathematician's Lament, And The Tragedy Of Modern Education
 description: A piece on the Mathematician's Lament, a book on how modern education has failed the teaching of mathematics.
-image:
-imageAlt:
+image: ./lament.jpg
+imageAlt: A whiteboard filled with mathematic symbols.
 date: 2024-02-18
 ---
 
@@ -34,4 +34,4 @@ When I came to college, Mathematics was treated with respect. People floundered 
 
 The point of highlighting my relationship with mathematics as time progressed is to help highlight just how true this document is.
 
-Mathematics is beautiful. Solving problems is an art form, and we're losing so much talent and power by refusing to teach it the way it should be taught. |
+Mathematics is beautiful. Solving problems is an art form, and we're losing so much talent and power by refusing to teach it the way it should be taught.

@@ -1,24 +1,17 @@
-import { z, defineCollection } from 'astro:content'
+import { z, defineCollection } from 'astro:content';
 
-const blogCollection = defineCollection({
-    type: 'content', // v2.5.0 and later
-    schema: z.object({
+const essayCollection = defineCollection({
+    schema: ({ image }) => z.object({
         title: z.string(),
-        image: z.string().optional(),
-        tags: z.array(z.string()),
-        date: z.date(),
+        description: z.string(),
+        image: image().refine((img) => img.width >= 480, {
+      message: "Cover image must be at least 1080 pixels wide!",
     }),
-})
-
-const notesCollection = defineCollection({
-    type: 'content',
-    schema: z.object({
-        title: z.string(),
-        date: z.date(),
-    }),
+    imageAlt: z.string(),
+  date: z.date(),
+  }),       
 })
 
 export const collections = {
-    blog: blogCollection,
-    notes: notesCollection,
+    essays: essayCollection,
 }
