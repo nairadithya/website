@@ -1,13 +1,11 @@
 ---
 import { getCollection } from 'astro:content'
-import BaseLayout from '../../layouts/BaseLayout.astro'
-import Prose from '../../layouts/Prose.astro'
-import { Image } from 'astro:assets'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Prose from '../layouts/Prose.astro'
 export async function getStaticPaths() {
     const essayEntries = await getCollection('essays')
     return essayEntries.map((entry) => ({
-        params: { slug: entry.slug },
-        props: { entry },
+        params: { slug: entry.slug },props: { entry },
     }))
 }
 const { entry } = Astro.props
@@ -15,7 +13,6 @@ const { Content } = await entry.render()
 ---
 
 <BaseLayout title={entry.data.title}>
-<img src={entry.data.image} alt={entry.data.imageAlt}/>
     <div class="mx-auto pt-5">
         Written by Adithya Nair -<time datetime={entry.data.date.toISOString()}>
             {

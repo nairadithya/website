@@ -7,8 +7,7 @@ import { Image } from 'astro:assets'
 export async function getStaticPaths() {
     const essayEntries = await getCollection('essays')
     return essayEntries.map((entry) => ({
-        params: { slug: entry.slug },
-        props: { entry },
+        params: { slug: entry.slug },props: { entry },
     }))
 }
 // 2. For your template, you can get the entry directly from the prop

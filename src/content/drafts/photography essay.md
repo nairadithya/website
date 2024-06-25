@@ -1,5 +1,6 @@
 ---
 
+
 ---
 So I recently got into photography, our family went on our first international trip and we spent our vacation in Bali, and I wanted to capture the cultural differences and nuances in this new place as much as I could.
 
