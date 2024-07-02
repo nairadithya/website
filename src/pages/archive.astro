@@ -2,10 +2,8 @@
 import { getCollection } from 'astro:content'
 import Layout from '../layouts/BaseLayout.astro'
 import FormattedDate from '../components/FormattedDate.astro'
-import { Image } from 'astro:assets'
 const essayEntries = (await getCollection('essays')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
-
 <Layout title="Archive">
     <div class="mx-auto pt-10">
         <div class="text-center text-3xl">Archive</div>
@@ -16,7 +14,7 @@ const essayEntries = (await getCollection('essays')).sort((a, b) => b.data.date.
                         essayEntries.map((essayEntry) => (
                                 <a
                                     class="text-1xl col-span-2 text-black-300 shrink"
-				    href=`/${essayEntry.slug}/`
+				    href=`${essayEntry.slug}`
                                 >
                                     {essayEntry.data.title}
                                 </a>
