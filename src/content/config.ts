@@ -4,7 +4,7 @@ const essayCollection = defineCollection({
         title: z.string(),
         description: z.string(),
         image: z.string(),
-    imageAlt: z.string(),
+        imageAlt: z.string(),
         date: z.date(),
     }),
 })

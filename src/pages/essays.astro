@@ -1,0 +1,24 @@
+---
+import { getCollection } from 'astro:content'
+import Layout from '../layouts/BaseLayout.astro'
+import FormattedDate from '../components/FormattedDate.astro'
+const essayEntries = (await getCollection('essays')).sort(
+    (a, b) => b.data.date.getTime() - a.data.date.getTime()
+)
+
+const latestEntry = essayEntries.at(0)
+---
+
+<Layout title="Essays">
+<h1 class="text-4xl text-center w-full py-10"> Essays </h1>
+    <div class="grid h-full w-full grid-cols-2 justify-items-center">
+	    <div>{latestEntry}</div>
+	<div class="flex flex-col">
+		<div>Test 2</div>
+		<div>Test 3</div>
+		<div>Test 4</div>
+		<div>Test 5</div>
+	</div>
+    </div>
+
+</Layout>
