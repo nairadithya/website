@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets'
 import { getCollection } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import Prose from '../../layouts/Prose.astro'
@@ -10,13 +11,19 @@ export async function getStaticPaths() {
         props: { entry },
     }))
 }
-// 2. For your template, you can get the entry directly from the prop
 const { entry } = Astro.props
 const { Content } = await entry.render()
 ---
 
 <BaseLayout title={entry.data.title}>
-    <div class="mx-auto pt-5">
+    <div class="mx-auto pt-5 text-center">
+        <div class="mx-auto rounded-xl pt-5 text-center">
+            <Image
+                class="rounded-xl py-5"
+                src={entry.data.image}
+                alt={entry.data.imageAlt}
+            />
+        </div>
         Written by Adithya Nair -<time datetime={entry.data.date.toISOString()}>
             {
                 entry.data.date.toLocaleDateString('en-uk', {

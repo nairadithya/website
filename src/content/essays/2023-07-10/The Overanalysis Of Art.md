@@ -1,7 +1,7 @@
 ---
 title: The Overanalysis Of Art
 description: or 'How to sound like you know what you're talking about.'
-image: ./inaromanosteria.jpg
+image: inaromanosteria.jpg
 imageAlt: The Painting of the Roman Osteria
 date: 2023-07-10
 ---

@@ -1,7 +1,7 @@
 ---
 title: The Responsibility Of Fuelling The Next Fire
 description: A large post collecting a somewhat comprehensive look into Artificial Intelligence as it stands in culture and technology on the day this post was published.
-image: ./theresponsibility.jpg
+image: theresponsibility.jpg
 imageAlt: A blazing fire
 date: 2024-02-25
 ---

@@ -1,7 +1,7 @@
 ---
 title: A Mathematician's Lament, And The Tragedy Of Modern Education
 description: A piece on the Mathematician's Lament, a book on how modern education has failed the teaching of mathematics.
-image: ./lament.jpg
+image: lament.jpg
 imageAlt: A whiteboard filled with mathematic symbols.
 date: 2024-02-18
 ---
