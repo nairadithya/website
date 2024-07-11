@@ -16,10 +16,9 @@ const { Content } = await entry.render()
 ---
 
 <BaseLayout title={entry.data.title}>
-    <div class="mx-auto pt-5 text-center">
-        <div class="mx-auto rounded-xl pt-5 text-center">
+    <div class="mx-auto text-center">
+        <div class="mx-auto max-w-2xl rounded- py-5 text-center">
             <Image
-                class="rounded-xl py-5"
                 src={entry.data.image}
                 alt={entry.data.imageAlt}
             />
@@ -34,7 +33,6 @@ const { Content } = await entry.render()
             }
         </time>
     </div>
-
     <div class="mx-auto w-1/2 text-center text-4xl">
         {entry.data.title}
         <div class="mx-auto w-fit">

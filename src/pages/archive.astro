@@ -14,7 +14,7 @@ const essayEntries = (await getCollection('essays')).sort((a, b) => b.data.date.
                         essayEntries.map((essayEntry) => (
                                 <a
                                     class="text-1xl col-span-2 text-black-300 shrink"
-				    href=`${essayEntry.slug}`
+				    href=`/essays/${essayEntry.slug}`
                                 >
                                     {essayEntry.data.title}
                                 </a>
