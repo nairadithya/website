@@ -1,0 +1,15 @@
+---
+import Image from 'astro/components/Image.astro'
+interface Props {
+	title: string
+	img: HTMLImageElement 
+	imgAlt: string
+	date: Date
+	description: string
+}
+
+const { title, img, imgAlt, date, description } = Astro.props
+---
+
+<div class="rounded-lg"
+	<Image class="w-12 h-20"
