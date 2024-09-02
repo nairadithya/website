@@ -10,7 +10,7 @@ I forgot what it was like to experience a story so inspiring and moving that ins
 
 ## Chapter 1: The Mechanics Of Oppression
 
-> The Empire is a disease that thrives in darkness, it is never more alive than when we sleep. It’s easy for the dead to tell you to fight, and maybe it’s true, maybe fighting is useless. Perhaps it’s too late. But I’ll tell you this… If I could do it again, I’d wake up early and be fighting these b\*stards from the start. Fight the Empire! _– Maarva Andor_
+> The Empire is a disease that thrives in darkness, it is never more alive than when we sleep. It’s easy for the dead to tell you to fight, and maybe it’s true, maybe fighting is useless. Perhaps it’s too late. But I’ll tell you this… If I could do it again, I’d wake up early and be fighting these bastards from the start. Fight the Empire! _– Maarva Andor_
 
 The Empire, in Star Wars media, is usually seen as an incompetent force. An obstacle to overcome, a villain to the cause.
 
