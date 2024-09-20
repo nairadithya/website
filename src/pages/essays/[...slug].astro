@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets'
 import { getCollection } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import Prose from '../../layouts/Prose.astro'
@@ -16,34 +15,30 @@ const { Content } = await entry.render()
 ---
 
 <BaseLayout title={entry.data.title}>
-    <div class="mx-auto text-center">
-        <div class="mx-auto max-w-2xl rounded-lg py-5 text-center">
-            <Image class="rounded-xl"
-                src={entry.data.image}
-                alt={entry.data.imageAlt}
-            />
-        </div>
-        Written by Adithya Nair -<time datetime={entry.data.date.toISOString()}>
-            {
-                entry.data.date.toLocaleDateString('en-uk', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric',
-                })
-            }
-        </time>
-    </div>
-    <div class="mx-auto w-1/2 text-center text-4xl">
+    <div class="mx-auto w-1/2 bg-rose-600 pt-10 text-center text-4xl">
         {entry.data.title}
-        <div class="mx-auto w-fit">
-            <Prose>
-                <div
-                    class="pt-5 text-center font-semibold italic leading-tight"
-                >
-                    {entry.data.description}
-                </div>
-                <Content />
-            </Prose>
+        <div class="mx-auto pt-5 text-center text-xl">
+            Written by Adithya Nair -<time
+                datetime={entry.data.date.toISOString()}
+            >
+                {
+                    entry.data.date.toLocaleDateString('en-uk', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                    })
+                }
+            </time>
+            <div class="mx-auto w-fit">
+                <Prose>
+                    <div
+                        class="pt-5 text-center font-semibold italic leading-tight"
+                    >
+                        {entry.data.description}
+                    </div>
+                    <Content />
+                </Prose>
+            </div>
         </div>
     </div>
 </BaseLayout>

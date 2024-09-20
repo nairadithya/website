@@ -1,33 +1,21 @@
 ---
 import { getCollection } from 'astro:content'
 import Layout from '../layouts/BaseLayout.astro'
+import BlogCard from '../components/BlogCard.astro'
 import FormattedDate from '../components/FormattedDate.astro'
 const essayEntries = (await getCollection('essays')).sort(
     (a, b) => b.data.date.getTime() - a.data.date.getTime()
 )
-import Image from 'astro/components/Image.astro'
 ---
 
-<Layout title="Essays">
-    <h1 class="w-full py-10 text-center text-4xl">Essays</h1>
-    <ul class=" grid grid-cols-2 first:bg-red-50">
-        {
-            essayEntries.map((essayEntry) => (
-                <>
-                    <li class="py-12">
-			    <div class="px-5 flex flex-row items-center gap-4">
-			    <Image class="self-center rounded-lg w-52" src={essayEntry.data.image} alt="" />
-				    <div class="flex flex-col">
-			    <div class="font-bold text-center">
-				    {essayEntry.data.title}
-			    </div>
-				<div class="font-light italic">
-				    {essayEntry.data.description}
-			    </div>
-				    </div>
-                    </li>
-                </>
-            ))
-        }
-    </ul>
-</Layout>
+<Layout title="Essays" />
+
+<h1 class="mx-auto w-fit py-10 text-center text-5xl">
+    Essays
+    <div class="mx-auto text-center">
+        <BlogCard
+            title="This is a test heading"
+            description="a long and lengthy post about the necessity to do things this way."
+        />
+    </div>
+</h1>
