@@ -2,7 +2,6 @@
 import { getCollection } from 'astro:content'
 import Layout from '../layouts/BaseLayout.astro'
 import BlogCard from '../components/BlogCard.astro'
-import FormattedDate from '../components/FormattedDate.astro'
 const essayEntries = (await getCollection('essays')).sort(
     (a, b) => b.data.date.getTime() - a.data.date.getTime()
 )
@@ -10,12 +9,15 @@ const essayEntries = (await getCollection('essays')).sort(
 
 <Layout title="Essays" />
 
-<h1 class="mx-auto w-fit py-10 text-center text-5xl">
-    Essays
-    <div class="mx-auto text-center">
-        <BlogCard
-            title="This is a test heading"
-            description="a long and lengthy post about the necessity to do things this way."
-        />
-    </div>
-</h1>
+<h1 class="mx-auto w-fit py-10 text-center text-5xl">Essays</h1>
+<div class="mx-auto">
+                    {
+                        essayEntries.map((essayEntry) => (
+                                <a
+				    href=`/essays/${essayEntry.slug}`
+                                >
+<BlogCard title=`${essayEntry.data.title}` date=`${essayEntry.data.date}` description=`${essayEntry.data.description}`/>
+                                </a>
+                        ))
+                    }
+</div>

@@ -1,7 +1,6 @@
 ---
 title: Children's Media
-description: ### Reflections on the stories that raised me as much as the people around me did.
-image:
+description: Reflections on the stories that raised me as much as the people around me did.
 date: 2023-07-07
 ---
 

@@ -15,12 +15,10 @@ const { Content } = await entry.render()
 ---
 
 <BaseLayout title={entry.data.title}>
-    <div class="mx-auto w-1/2 bg-rose-600 pt-10 text-center text-4xl">
+    <div class="mx-auto w-1/2 pt-10 text-center text-4xl">
         {entry.data.title}
-        <div class="mx-auto pt-5 text-center text-xl">
-            Written by Adithya Nair -<time
-                datetime={entry.data.date.toISOString()}
-            >
+        <div class="mx-auto pt-5 text-xl">
+            <div class="mb-3 block text-gray-600">
                 {
                     entry.data.date.toLocaleDateString('en-uk', {
                         year: 'numeric',
@@ -28,11 +26,11 @@ const { Content } = await entry.render()
                         day: 'numeric',
                     })
                 }
-            </time>
+            </div>
             <div class="mx-auto w-fit">
                 <Prose>
                     <div
-                        class="pt-5 text-center font-semibold italic leading-tight"
+                        class="mt-2 text-center font-semibold italic leading-tight"
                     >
                         {entry.data.description}
                     </div>
