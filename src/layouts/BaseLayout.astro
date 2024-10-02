@@ -1,26 +1,30 @@
 ---
 import NavBar from '../components/NavBar.astro'
-import { ViewTransitions } from 'astro:transitions'
 interface Props {
-  title: string
+    title: string
 }
 
 const { title } = Astro.props
 ---
 
 <!doctype html>
-<html transition:animate="slide" lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Interesting description" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-    <ViewTransitions />
-  </head>
-  <NavBar transition:none transition:persist />
-  <main class="flex flex-row gap-4 px-2 pt-20 md:pl-24 md:pr-0 md:pt-0">
-    <slot />
-  </main>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Interesting description" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+    </head>
+    <NavBar />
+    <div class="mocha">
+        <main
+            class="bg-base flex flex-row gap-4 px-2 pt-20 md:pl-24 md:pr-0 md:pt-0"
+        >
+            <slot />
+        </main>
+    </div>
+
+
 </html>

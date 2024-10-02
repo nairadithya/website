@@ -11,11 +11,12 @@ import ThemeIcon from './ThemeIcon.astro'
             <ThemeIcon />
             <a
                 href="/essays"
-                class="text-red text-xl font-medium hover:underline">Essays</a
+                class="text-rosewater text-xl font-medium hover:underline"
+                >Essays</a
             >
             <a
                 href="/notes"
-                class="text-teal text-xl font-medium hover:underline">Notes</a
+                class="text-green text-xl font-medium hover:underline">Notes</a
             >
             <a
                 href="/projects"
@@ -24,7 +25,7 @@ import ThemeIcon from './ThemeIcon.astro'
             >
             <a
                 href="/highlights"
-                class="text-sapphire text-xl font-medium hover:underline"
+                class="text-rosewater text-xl font-medium hover:underline"
                 >Highlights</a
             >
         </div>

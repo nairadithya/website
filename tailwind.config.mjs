@@ -1,14 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-    darkMode: 'selector',
-    theme: {
-        extend: {
-            fontFamily: {
-                manrope: ['Manrope Variable'],
-                lato: ['Lato'],
-            },
-        },
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  darkMode: 'selector',
+  theme: {
+    extend: {
+      fontFamily: {
+        manrope: ['Manrope Variable'],
+        lato: ['Lato'],
+      },
     },
-    plugins: [require('@tailwindcss/typography')],
+  },
+  plugins: [require('@tailwindcss/typography')],
+  plugins: [require("@catppuccin/tailwindcss")],
 }
