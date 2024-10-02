@@ -1,7 +1,4 @@
----
----
 
-So I recently got into photography, our family went on our first international trip and we spent our vacation in Bali, and I wanted to capture the cultural differences and nuances in this new place as much as I could.
 
 I don't consider myself a great photographer by any means. I picked up a camera and started shooting, with the knowledge of half-remembered videos on composition and shutter speed that I watched years ago.
 
