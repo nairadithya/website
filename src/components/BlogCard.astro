@@ -4,17 +4,13 @@ const { title, date, description } = Astro.props
 ---
 
 <div class="mx-auto max-w-2xl pb-5">
-    <!-- Title -->
-    <h2 class="mb-2 text-3xl font-bold text-gray-900">
+    <h2 class="mb-2 text-3xl font-bold text-text">
         {title}
     </h2>
-    <!-- Date -->
-    <p class="mb-1 text-sm text-gray-500">
+    <p class="mb-1 text-sm text-green">
         <FormattedDate date={date} />
     </p>
-    <!-- Description -->
-    <p class="mb-5 text-base text-gray-700">
+    <p class="mb-5 text-base text-subtext0">
         {description}
     </p>
-    <hr class="" />
 </div>

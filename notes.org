@@ -28,7 +28,8 @@
    * 3 x n grid view of all my sporadic thoughts in markdown
  * Essays
    * Laid out like [Substack main view](https://adithyanair.substack.com)
- * Reading list
+ * Reading list 
+ * What if I had an 'aside' with my face on it. Like a footnote comment but it's like a conversation bubble.
    * Card view of all the things I find interesting
    * Another tab showing off a blogroll.
 * Inspirations

@@ -8,7 +8,7 @@ const { title } = Astro.props
 ---
 
 <!doctype html>
-<html lang="en">
+<html class="h-full" lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="description" content="Interesting description" />
@@ -17,14 +17,16 @@ const { title } = Astro.props
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
     </head>
-    <NavBar />
-    <div class="mocha">
-        <main
-            class="bg-base flex flex-row gap-4 px-2 pt-20 md:pl-24 md:pr-0 md:pt-0"
-        >
-            <slot />
-        </main>
-    </div>
+    <style>
+        background-color: #11111b;
+        opacity: 0.8;
+        background-image: radial-gradient(#181825 0.5px, #11111b 0.5px);
+        background-size: 10px 10px;
+    </style>
+    <main class="mocha h-full w-full bg-base">
+        <NavBar />
+        <slot />
+    </main>
 
 
 </html>

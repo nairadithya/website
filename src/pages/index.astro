@@ -3,17 +3,21 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 import Prose from '../layouts/Prose.astro'
 ---
 
-<BaseLayout title="Welcome To My Website.">
-    <section class="mx-auto w-7/12">
-        <div class="pt-10">
-            <Prose>
-                <h1>Hi there, welcome to my website.</h1>
-                <p>
-                    I am a student at Amrita Vishwa Vidyapeetham, and I like to
-                    think out loud about the things that fascinate me, and about
-                    me here. <a href="/about"> Read More </a>
+<BaseLayout title="Adithya Nair.">
+    <div class="h-screen w-screen">
+        <div class="mx-10 flex flex-col gap-10 py-14">
+            <div class="text-center text-7xl text-text">
+                <div class="inline italic">Hi!</div> I'm <p
+                    class="semibold inline text-mauve"
+                >
+                    Adithya.
                 </p>
-            </Prose>
+            </div>
+            <div class="text-wrap text-center text-3xl text-subtext1">
+                I'm a student, writer and programmer.
+                <div class="pt-4">I'm an audiophile, scholar and critic.</div>
+                <div class="pt-4">Welcome to my home on the internet.</div>
+            </div>
         </div>
-    </section>
+    </div>
 </BaseLayout>

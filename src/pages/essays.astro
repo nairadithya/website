@@ -7,10 +7,10 @@ const essayEntries = (await getCollection('essays')).sort(
 )
 ---
 
-<Layout title="Essays" />
+<Layout title="Essays" >
 
-<h1 class="mx-auto w-fit py-10 text-center text-5xl">Essays</h1>
-<div class="mx-auto">
+<h1 class="text-mauve mx-auto w-full py-6 text-center text-5xl">Essays</h1>
+<div class="mx-auto h-full">
                     {
                         essayEntries.map((essayEntry) => (
                                 <a
@@ -21,3 +21,4 @@ const essayEntries = (await getCollection('essays')).sort(
                         ))
                     }
 </div>
+</Layout>

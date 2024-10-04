@@ -1,0 +1,13 @@
+---
+import { getCollection } from 'astro:content'
+import NoteCard from '../components/NoteCard.astro'
+import NavBar from '../components/NavBar.astro'
+import BaseLayout from '../layouts/BaseLayout.astro'
+const journalEntries = (await getCollection('journal')).sort(
+    (a, b) => b.data.date.getTime() - a.data.date.getTime()
+)
+---
+
+<BaseLayout title="Journal.">
+    <div class="h-full w-full bg-base"></div>
+</BaseLayout>

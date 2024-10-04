@@ -15,28 +15,26 @@ const { Content } = await entry.render()
 ---
 
 <BaseLayout title={entry.data.title}>
-    <div class="mx-auto w-1/2 pt-10 text-center text-4xl">
+    <div class="text-text mx-auto w-1/2 pt-10 text-center text-4xl">
         {entry.data.title}
-        <div class="mx-auto pt-5 text-xl">
-            <div class="mb-3 block text-gray-600">
-                {
-                    entry.data.date.toLocaleDateString('en-uk', {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric',
-                    })
-                }
+    </div>
+    <div class="text-text mx-auto w-1/2 pt-5 text-xl">
+        <div class="text-green mb-3 block text-center">
+            {
+                entry.data.date.toLocaleDateString('en-uk', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                })
+            }
+        </div>
+        <div class="mx-auto w-fit">
+            <div class="mt-2 pb-5 font-semibold leading-tight">
+                {entry.data.description}
             </div>
-            <div class="mx-auto w-fit">
-                <Prose>
-                    <div
-                        class="mt-2 text-center font-semibold italic leading-tight"
-                    >
-                        {entry.data.description}
-                    </div>
-                    <Content />
-                </Prose>
-            </div>
+            <Prose>
+                <Content />
+            </Prose>
         </div>
     </div>
 </BaseLayout>
