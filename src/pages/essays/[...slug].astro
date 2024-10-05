@@ -15,11 +15,11 @@ const { Content } = await entry.render()
 ---
 
 <BaseLayout title={entry.data.title}>
-    <div class="text-text mx-auto w-1/2 pt-10 text-center text-4xl">
+    <div class="mx-auto w-1/2 pt-10 text-center text-4xl text-text">
         {entry.data.title}
     </div>
-    <div class="text-text mx-auto w-1/2 pt-5 text-xl">
-        <div class="text-green mb-3 block text-center">
+    <div class="mx-auto w-1/2 pt-5 text-xl text-text">
+        <div class="mb-3 block text-center text-green">
             {
                 entry.data.date.toLocaleDateString('en-uk', {
                     year: 'numeric',

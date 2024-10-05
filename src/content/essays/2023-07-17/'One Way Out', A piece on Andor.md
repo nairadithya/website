@@ -8,7 +8,7 @@ date: 2023-07-17
 
 I forgot what it was like to experience a story so inspiring and moving that inspires new ideas in you. It's an intoxicating feeling that's far too rare nowadays. I found it in the last place I expected to find it, in a Disney Star Wars show.
 
-## Chapter 1: The Mechanics Of Oppression
+# Chapter 1: The Mechanics Of Oppression
 
 > The Empire is a disease that thrives in darkness, it is never more alive than when we sleep. It’s easy for the dead to tell you to fight, and maybe it’s true, maybe fighting is useless. Perhaps it’s too late. But I’ll tell you this… If I could do it again, I’d wake up early and be fighting these bastards from the start. Fight the Empire! _– Maarva Andor_
 
@@ -26,7 +26,7 @@ This fact makes it much more terrifying to me. The idea that anyone can be influ
 
 Nemik talks about how The Empire works hard to make you forget the concepts of freedom, rebellion and justice, because they're not profitable to their ideologies and prime directive. This harkens back to George Orwell' 1984, where Newspeak slowly deleted words that would even inspire or encourage thoughts that could spark rebellion or resistance.
 
-## Chapter 2: The Cost Of Rebellion
+# Chapter 2: The Cost Of Rebellion
 
 > "I burn my life for a sunset someone else will see."
 >
@@ -36,7 +36,7 @@ The Rebels in the show aren't heroes. They're sometimes just as evil as the Empi
 
 It's all shades of gray. The reason this is such an exciting and interesting addition to the Star Wars canon is because it changes absolutely nothing about the original trilogy or the prequels, but what it does do, is make you see those movies in completely new ways. The celebrations at the end of Return Of The Jedi, have a sense of loss to them too now, every scene of the Death Star will remind you of the fact that Cassian Andor helped build the tool that would kill him, against his will.
 
-### Chapter 3: One Way Out
+# Chapter 3: One Way Out
 
 > “I would rather die trying to take them down than giving them what they want.” - _Kino Loy_
 
@@ -48,7 +48,7 @@ In many ways, this prison is a metaphor for The Empire as a whole. The feeling t
 
 There is only One Way Out. Freeing everyone, devoid of selectivity. The only way out is to fight back.
 
-## Chapter 4: Perspective
+# Chapter 4: Perspective
 
 > People don't look down to where they should. They don't look down, they don't look past the rust. Not us though, eh? Eyes open, possibilities everywhere. - _Clem Andor_
 
@@ -58,14 +58,12 @@ This show explores in painstaking detail, why normal people, not the Jedi or the
 
 There's this one scene in Episode 6 where Cinta sees a Star Destroyer for the first time. We as the audience know what Star Destroyers are, and they're simply obstacles to us, but in the show, they're terrifying gargantuan behemoths that truly impress upon you, that the Empire is beyond our imaginations of scale.
 
-[
-
 ![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4b143278-e295-4dec-ac61-a8fd48a53e90_800x373.png)
 The crazy part is the pieces are all there since the first film back in 1977. The scale was all there, we subconsciously knew and understood just how big the Empire was. This is the first show to take that concept and do something magnificent with it.
 
 ![](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc9c6adfe-2c4b-4aa4-a860-4d2563c89d82_800x450.png)
 
-## Chapter 5: Oppression Is The Mask Of Fear
+# Chapter 5: Oppression Is The Mask Of Fear
 
 > The Imperial need for control is so desperate because it is so unnatural. Tyranny requires constant effort. It breaks, it leaks. Authority is brittle. Oppression is the mask of fear. - _Nemik's Manifesto_
 
