@@ -11,7 +11,7 @@ const parsedDate = typeof date === 'string' ? new Date(date) : date
     {
         parsedDate.toLocaleDateString('en-uk', {
             year: 'numeric',
-            month: 'numeric',
+            month: 'long',
             day: 'numeric',
         })
     }
