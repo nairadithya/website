@@ -7,7 +7,7 @@ export async function GET(context) {
     title: 'Adithya Nair\'s Website',
     description: 'The digital home of one Adithya Nair.',
     site: context.site,
-    items: blog.map((post) => ({
+    items: essays.map((post) => ({
       title: post.data.title,
       pubDate: post.data.pubDate,
       description: post.data.description,
