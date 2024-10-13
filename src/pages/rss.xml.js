@@ -2,7 +2,9 @@ import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 
 export async function GET(context) {
-  const essays = await getCollection('essays');
+  const essays = await getCollection('essays').sort(
+    (a, b) => b.data.date.getTime() - a.data.date.getTime()
+  );
   return rss({
     title: 'Adithya Nair\'s Website',
     description: 'The digital home of one Adithya Nair.',
