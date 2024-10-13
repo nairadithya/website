@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import Prose from '../../layouts/Prose.astro'
+
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
     const blogEntries = await getCollection('essays')
@@ -10,28 +11,39 @@ export async function getStaticPaths() {
         props: { entry },
     }))
 }
+
 const { entry } = Astro.props
 const { Content } = await entry.render()
 ---
 
 <BaseLayout title={entry.data.title}>
-    <div class="mx-auto w-1/2 pt-10 text-center text-4xl text-text">
-        {entry.data.title}
-    </div>
-    <div class="mx-auto w-1/2 pt-5 text-xl text-text">
-        <div class="mb-3 block text-center text-green">
-            {
-                entry.data.date.toLocaleDateString('en-uk', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric',
-                })
-            }
+    <div
+        class="flex min-h-screen flex-col items-center justify-center px-4 pt-10"
+    >
+        <div class="w-full max-w-2xl">
+            <h1 class="text-center selection:bg-mauve selection:text-text text-4xl font-bold text-text">
+                {entry.data.title}
+            </h1>
+            <p class="mt-2 text-center text-lg text-green">
+                {
+                    entry.data.date.toLocaleDateString('en-uk', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                    })
+                }
+            </p>
         </div>
-        <div class="mx-auto w-fit">
-            <div class="mt-2 pb-5 font-semibold leading-tight">
+
+        <!-- Description Section -->
+        <div class="mx-auto mt-6 w-full max-w-2xl text-center">
+            <p class="pb-6 text-lg font-medium leading-relaxed text-subtext0">
                 {entry.data.description}
-            </div>
+            </p>
+        </div>
+
+        <!-- Content Section -->
+        <div class="w-full max-w-3xl">
             <Prose>
                 <Content />
             </Prose>

@@ -1,13 +1,14 @@
 ---
 import HomeLayout from '../layouts/HomeLayout.astro'
 import Prose from '../layouts/Prose.astro'
+import GitHubIcon from '../assets/github-mark.svg'
 ---
 
 <HomeLayout title="Adithya Nair.">
-    <div class="h-screen w-screen">
+    <div class="flex h-screen w-screen items-center justify-center">
         <div class="mx-10 flex flex-col gap-10 py-14">
             <div class="text-center text-7xl text-text">
-                <div class="inline">Hi!</div> I'm <p
+                <div class="inline">Hi,</div> I'm <p
                     class="semibold inline text-mauve"
                 >
                     Adithya.
@@ -18,14 +19,24 @@ import Prose from '../layouts/Prose.astro'
                 <div class="pt-4">Welcome to my home on the internet.</div>
             </div>
             <div
-                class="mx-auto flex w-fit flex-row items-center gap-4 text-3xl text-mauve"
+                class="mx-auto flex w-fit flex-col items-center gap-4 text-3xl text-mauve md:flex-row"
             >
-                <div>Journal</div>
-                <div>Bookmarks</div>
-                <div>Essays</div>
-                <div>About</div>
-                <div>Highlights</div>
+                <a href="essays/"><div>Essays</div></a>
+                <a href="journal/"> <div>Journal</div></a>
+                <a href="bookmarks/"><div>Bookmarks</div></a>
+                <a href="about/"><div>About</div></a>
             </div>
+        </div>
+        <div
+            class="absolute bottom-4 mx-auto flex items-center gap-8 text-center text-xl text-mauve md:text-xs"
+        >
+            <picture>
+                <source srcset={GitHubIcon.src} />
+            </picture>
+            <a href="https://amrita.town"> amrita.town </a>
+            <a href="https://amrita.town/prev" class="">&#8592;</a>
+            <a href="https://amrita.town/random" class="">&#9860;</a>
+            <a href="https://amrita.town/next" class="">&#8594;</a>
         </div>
     </div>
 </HomeLayout>

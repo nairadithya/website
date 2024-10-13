@@ -1,13 +1,42 @@
 ---
 import { getCollection } from 'astro:content'
-import NoteCard from '../components/NoteCard.astro'
-import NavBar from '../components/NavBar.astro'
-import BaseLayout from '../layouts/BaseLayout.astro'
+import Layout from '../layouts/BaseLayout.astro'
+import FormattedDate from '../components/FormattedDate.astro'
 const journalEntries = (await getCollection('journal')).sort(
     (a, b) => b.data.date.getTime() - a.data.date.getTime()
 )
 ---
 
-<BaseLayout title="Journal.">
-    <div class="h-full w-full bg-base"></div>
-</BaseLayout>
+<Layout title="Journal">
+    <div class="min-h-screen overflow-hidden">
+        <h1 class="mx-auto w-full pt-6 text-center text-5xl text-mauve">
+            Journal
+        </h1>
+        <div class="mx-auto max-w-4xl p-4 sm:p-6 md:p-10">
+            <div class="flex flex-col space-y-5">
+                {
+                    journalEntries.map((journalEntry) => (
+                        <div class="mx-auto w-full max-w-2xl rounded-lg bg-base p-5">
+                            <a
+                                href={`/journal/${journalEntry.slug}`}
+                                class="block"
+                            >
+                                <h2 class="mb-2 text-3xl font-bold text-text">
+                                    {journalEntry.data.title}
+                                </h2>
+                                <p class="mb-1 text-sm text-green">
+                                    <FormattedDate
+                                        date={journalEntry.data.date}
+                                    />
+                                </p>
+                                <p class="mb-5 text-base text-subtext0">
+                                    {journalEntry.data.description}
+                                </p>
+                            </a>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    </div>
+</Layout>
