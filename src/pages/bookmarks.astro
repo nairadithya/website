@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 import bookmarksOrig from '../bookmarks.json'
 import FormattedDate from '../components/FormattedDate.astro'
-let bookmarks = bookmarksOrig.toReversed()
+let bookmarks = bookmarksOrig.slice().reverse()
 ---
 
 <BaseLayout title="Bookmarks">
