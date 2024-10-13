@@ -20,4 +20,4 @@ And the verdict? It was **great**. I felt truly present, squinting my eyes at ev
 
 I took some pictures.
 
-The aftermath of all this is I now randomly pull out the [Merlin](https://www.allaboutbirds.org/guide/merlin/id) app every time I hear a bird chirp.A
+The aftermath of all this is I now randomly pull out the [Merlin](https://www.allaboutbirds.org/guide/merlin/id) app every time I hear a bird chirp.

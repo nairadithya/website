@@ -1,5 +1,8 @@
 ---
 import HomeLayout from '../layouts/HomeLayout.astro'
+import githubIcon from '../assets/github.svg'
+import letterboxd from '../assets/letterboxd.svg'
+import linkedin from '../assets/linkedin.svg'
 ---
 
 <HomeLayout title="Adithya Nair.">
@@ -33,7 +36,7 @@ import HomeLayout from '../layouts/HomeLayout.astro'
                     <picture>
                         <img
                             class="w-5 md:w-9"
-                            src="src/assets/github-mark.svg"
+                            src={githubIcon.src}
                             alt="GitHub"
                         />
                     </picture>
@@ -42,7 +45,7 @@ import HomeLayout from '../layouts/HomeLayout.astro'
                     <picture>
                         <img
                             class="w-5 md:w-9"
-                            src="src/assets/letterboxd.svg"
+                            src={letterboxd.src}
                             alt="Letterboxd"
                         />
                     </picture>
@@ -51,7 +54,7 @@ import HomeLayout from '../layouts/HomeLayout.astro'
                     <picture>
                         <img
                             class="w-5 md:w-9"
-                            src="src/assets/linkedin.svg"
+                            src={linkedin.src}
                             alt="Linkedin"
                         />
                     </picture>
