@@ -1,29 +1,29 @@
 {
-    "name": "",
-    "type": "module",
-    "version": "0.0.1",
-    "scripts": {
-        "dev": "astro dev",
-        "start": "astro dev",
-        "build": "astro check && astro build",
-        "preview": "astro preview",
-        "astro": "astro"
-    },
-    "dependencies": {
-        "@astrojs/check": "^0.7.0",
-        "@astrojs/mdx": "^3.1.8",
-        "@astrojs/rss": "^4.0.8",
-        "@astrojs/tailwind": "^5.1.0",
-        "@fontsource-variable/manrope": "^5.0.20",
-        "@fontsource/lato": "^5.0.21",
-        "astro": "^4.11.3",
-        "typescript": "^5.4.5"
-    },
-    "devDependencies": {
-        "@catppuccin/tailwindcss": "^0.1.6",
-        "@tailwindcss/typography": "^0.5.15",
-        "prettier-plugin-astro": "^0.14.0",
-        "prettier-plugin-tailwindcss": "^0.6.4",
-        "tailwindcss": "^3.4.4"
-    }
+  "name": "adithya-nair-website",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/mdx": "^3.1.8",
+    "@astrojs/rss": "^4.0.8",
+    "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/manrope": "^5.0.20",
+    "@fontsource/lato": "^5.0.21",
+    "astro": "^4.11.3",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@catppuccin/tailwindcss": "^0.1.6",
+    "@tailwindcss/typography": "^0.5.15",
+    "prettier-plugin-astro": "^0.14.0",
+    "prettier-plugin-tailwindcss": "^0.6.4",
+    "tailwindcss": "^3.4.4"
+  }
 }
