@@ -13,16 +13,21 @@ const essayEntries = (await getCollection('essays')).sort(
             Essays
         </h1>
         <div class="mx-auto max-w-4xl p-4 sm:p-6 md:p-10">
-            <div class="flex flex-col space-y-5"> <!-- Add space between elements -->
+            <div class="flex flex-col space-y-2">
                 {
                     essayEntries.map((essayEntry) => (
-                        <div class="w-full max-w-2xl rounded-lg bg-base p-5 mx-auto"> <!-- Ensure full width -->
-                            <a href={`/essays/${essayEntry.slug}`} class="block">
+                        <div class="mx-auto w-full max-w-2xl rounded-lg bg-base p-5">
+                            <a
+                                href={`/essays/${essayEntry.slug}`}
+                                class="block"
+                            >
                                 <h2 class="mb-2 text-3xl font-bold text-text">
                                     {essayEntry.data.title}
                                 </h2>
                                 <p class="mb-1 text-sm text-green">
-                                    <FormattedDate date={essayEntry.data.date} />
+                                    <FormattedDate
+                                        date={essayEntry.data.date}
+                                    />
                                 </p>
                                 <p class="mb-5 text-base text-subtext0">
                                     {essayEntry.data.description}

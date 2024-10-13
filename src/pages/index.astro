@@ -26,12 +26,42 @@ import HomeLayout from '../layouts/HomeLayout.astro'
             </div>
         </div>
         <div
-            class="absolute bottom-4 mx-auto flex items-center gap-8 text-center text-xl text-mauve md:text-xs"
+            class="absolute bottom-3 mx-auto flex flex-col items-center gap-8 text-center text-xl text-mauve md:bottom-4 md:text-xs"
         >
-            <a href="https://amrita.town"> amrita.town </a>
-            <a href="https://amrita.town/prev" class="">&#8592;</a>
-            <a href="https://amrita.town/random" class="">&#9860;</a>
-            <a href="https://amrita.town/next" class="">&#8594;</a>
+            <div class="flex items-center">
+                <a href="https://github.com/nairadithya" class="mx-4">
+                    <picture>
+                        <img
+                            class="w-5 md:w-9"
+                            src=`assets/github-mark.svg`
+                            alt="GitHub"
+                        />
+                    </picture>
+                </a>
+                <a href="https://letterboxd.com/AdithyaNair/" class="mx-4">
+                    <picture>
+                        <img
+                            class="w-5 md:w-9"
+                            src=`assets/letterboxd.svg`
+                            alt="letterboxd"
+                        />
+                    </picture>
+                </a>
+                <a href="" class="mx-4">
+                    <picture>
+                        class="w-5 md:w-9"
+                        <img src=`assets/linkedin.svg` alt="linkedin" />
+                    </picture>
+                </a>
+            </div>
+            <div
+                class="flex items-center gap-4 text-center text-xl text-mauve md:text-lg"
+            >
+                <a href="https://amrita.town"> amrita.town </a>
+                <a href="https://amrita.town/prev" class="">&#8592;</a>
+                <a href="https://amrita.town/random" class="">&#9860;</a>
+                <a href="https://amrita.town/next" class="">&#8594;</a>
+            </div>
         </div>
     </div>
 </HomeLayout>
