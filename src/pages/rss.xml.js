@@ -2,7 +2,7 @@ import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 
 export async function GET(context) {
-  const essays = await getCollection('essays').sort(
+  const essays = (await getCollection('essays')).sort(
     (a, b) => b.data.date.getTime() - a.data.date.getTime()
   );
   return rss({
@@ -11,7 +11,7 @@ export async function GET(context) {
     site: context.site,
     items: essays.map((post) => ({
       title: post.data.title,
-      pubDate: post.data.pubDate,
+      pubDate: post.data.date,
       description: post.data.description,
       link: `/essays/${post.slug}/`,
     })),
