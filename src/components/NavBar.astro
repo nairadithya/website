@@ -51,6 +51,20 @@
         id="mobile-menu"
         class="fixed inset-0 z-50 flex hidden flex-col items-center justify-center space-y-6 bg-base bg-opacity-50 text-center backdrop-blur-md md:hidden"
     >
+        <div id="close">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="4"
+                class="size-6 fill-mauve stroke-mauve"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18 18 6M6 6l12 12"></path>
+            </svg>
+        </div>
         <a
             href="/essays"
             class="text-3xl font-medium text-mauve hover:text-rosewater hover:underline focus:text-green"
@@ -72,13 +86,17 @@
             >About</a
         >
     </div>
+
+    <script>
+        const hamburger = document.getElementById!('hamburger')
+        const mobileMenu = document!.getElementById!('mobile-menu')
+        const close = document!.getElementById!('close')
+
+        hamburger!.addEventListener('click', () => {
+            mobileMenu!.classList!.toggle('hidden')
+        })
+        close!.addEventListener('click', () => {
+            mobileMenu!.classList!.toggle('hidden')
+        })
+    </script>
 </div>
-
-<script>
-    const hamburger = document.getElementById!('hamburger')
-    const mobileMenu = document!.getElementById!('mobile-menu')
-
-    hamburger!.addEventListener('click', () => {
-        mobileMenu!.classList!.toggle('hidden')
-    })
-</script>
