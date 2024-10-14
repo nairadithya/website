@@ -6,6 +6,6 @@ The colour scheme is a straight copy of the pleasant catppuccin colour scheme.
 
 This follows the typical structure of a normal Astro project, so use that filesystem to navigate this one. 
 
-Yoink as needed, credit would be nice tho.
+Steal as needed, credit would be nice tho.
 
 also, shameless [amrita.town](https://amrita.town) plug
