@@ -2,11 +2,12 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 import bookmarksOrig from '../bookmarks.json'
 import FormattedDate from '../components/FormattedDate.astro'
+import BookmarkCard from '../components/BookmarkCard.astro'
 let bookmarks = bookmarksOrig.slice().reverse()
 ---
 
 <BaseLayout title="Bookmarks">
-    <div class="bg-base-100 min-h-screen overflow-hidden">
+    <div class="min-h-screen overflow-hidden">
         <h1
             class="mx-auto w-full py-8 text-center text-5xl font-bold text-mauve"
         >
@@ -15,31 +16,13 @@ let bookmarks = bookmarksOrig.slice().reverse()
         <div class="mx-auto w-full max-w-4xl px-6">
             {
                 bookmarks.map((bookmark) => (
-                    <div class="bg-base-200 mb-8 rounded-lg p-6">
-                        <a href=`${bookmark.link}`>
-                            <div class="mb-2 flex items-center justify-between">
-                                <p class="hover:text-secondary text-2xl font-semibold text-mauve">
-                                    {bookmark.title}
-                                </p>
-                                <div class="text-sm text-green">
-                                    <FormattedDate date={bookmark.date} />
-                                </div>
-                            </div>
-                            <p class="mb-2 text-text">
-                                by{' '}
-                                <span class="font-semibold text-text">
-                                    {bookmark.author}
-                                </span>
-                            </p>
-                            {bookmark.notes && (
-                                <div class="bg-base-300 text-left mt-4 rounded">
-                                    <p class="text-subtext1">
-                                        {bookmark.notes}
-                                    </p>
-                                </div>
-                            )}
-                        </a>
-                    </div>
+                    <BookmarkCard
+                        title={bookmark.title}
+                        link={bookmark.link}
+                        author={bookmark.author}
+                        date={bookmark.date}
+                        notes={bookmark.notes}
+                    />
                 ))
             }
         </div>

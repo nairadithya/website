@@ -1,0 +1,30 @@
+---
+const { title, date, link, author, notes } = Astro.props
+import FormattedDate from './FormattedDate.astro'
+---
+
+<div class="bg-base-200 mb-8 rounded-lg p-6">
+    <a href=`${link}`>
+        <div class="mb-2 flex items-center justify-between">
+            <p class="hover:text-secondary text-2xl font-semibold text-mauve">
+                {title}
+            </p>
+            <div class="text-sm text-green">
+                <FormattedDate date={date} />
+            </div>
+        </div>
+        <p class="mb-2 text-text">
+            by{' '}
+            <span class="font-semibold text-text">
+                {author}
+            </span>
+        </p>
+        {
+            notes && (
+                <div class="bg-base-300 mt-4 rounded text-left">
+                    <p class="text-subtext1">{notes}</p>
+                </div>
+            )
+        }
+    </a>
+</div>
