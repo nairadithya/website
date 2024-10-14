@@ -1,5 +1,3 @@
-# README
-
 Here's the source for [my website](https://adithyanair.com).
 
 It's an amateurish build, lots of weird workarounds but hey, it works.
