@@ -14,7 +14,7 @@ For most of our lifespan as a species, art wasn't something you merely enjoyed. 
 
 The lack of recorded music also meant that the only way to preserve a piece of art is to share it as freely as possible. A long lineage of oral tradition exists behind most of the folk songs that still exist today, a communal effort that spans centuries upon centuries of passing down songs.
 
-The key here is _participation_. In these communities, it weren't the **artists** that made art, it was the members of the community. There were no artists.
+The key here is _participation_. In these communities, it was never the **artists** that made art, it was the members of the community. There were no artists.
 
 Songs were freely shared, stories were told over the campfire, paintings were smeared over every cave one could find. The notion of ownership did not exist. Anything was free game. You wanted to change a lyric? Go ahead. Didn't like the ending? Tell your children the one you wanted.
 
