@@ -48,7 +48,7 @@ It should give you questions you can't immediately answer, it should give you id
 
 > The evidence that you learned something hard is that you feel like you’re stupid. That stupidity is essential to the process, not of pushing at the boundaries of what is known, but simply of getting your mind to take in tools and ideas more abstract than it was ever meant to learn. Students need to know that this feeling is the norm when it comes to learning math. -[The Centrality Of Stupidity In Mathematics by Dan Finkel](https://mathforlove.com/2024/09/the-centrality-of-stupidity-in-mathematics/)
 
-Onto answering the question
+Onto answering the question.
 
 I was watching _Moulin Rouge_, directed by Baz Luhrmann the other day. It's a fantastic musical with spectacle and glitz, made in ways few movies care about . There's this theater group at the center of the story, who recite these 4 common notions for what they stand for. It's spread throughout the movie, like a recurring motif.
 
@@ -146,4 +146,4 @@ Mathematics is gradually becoming a significant part of who I am and I would nev
 
 Dive deep into the poetry of reason and the language of the universe, and find joy in the knowledge that you can understand it if you simply learned to submerge yourself in its embrace. Find joy in holding truth that will never waver, beauty that will never fade, freedom that is purely yours and love that will only grow.
 
-With this, I leave you. I wish you luck on your journey. The seas of chaos are treacherous, may the anchors of reason hold you steadfast towards where you want to go.
+With this, I leave you. I wish you luck on your journey. The seas of reality are treacherous, may the anchors of reason hold you steadfast towards where you want to go.
