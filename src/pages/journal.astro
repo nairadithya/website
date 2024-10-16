@@ -16,7 +16,7 @@ const journalEntries = (await getCollection('journal')).sort(
             <div class="flex flex-col space-y-5">
                 {
                     journalEntries.map((journalEntry) => (
-                        <div class="mx-auto w-full max-w-2xl rounded-lg bg-base p-5">
+                        <div class="mx-auto w-full max-w-2xl rounded-lg bg-base p-2">
                             <a
                                 href={`/journal/${journalEntry.slug}`}
                                 class="block"
