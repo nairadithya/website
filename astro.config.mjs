@@ -1,10 +1,19 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
-
+import rehypeMathjax from 'rehype-mathjax';
+import remarkMath from 'remark-math';
 import mdx from "@astrojs/mdx";
 
 export default defineConfig({
   site: 'https://adithyanair.com',
-  integrations: [tailwind(), mdx()]
+  markdown: {
+    remarkPlugins: [
+      'remark-gfm', 'remark-smartypants',
+      'remark-math'
+    ],
+    rehypePlugins: [
+      'rehype-mathjax'
+    ]
+  }, integrations: [tailwind(), mdx()]
 }
 )
