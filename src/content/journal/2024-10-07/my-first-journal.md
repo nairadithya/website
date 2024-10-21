@@ -1,5 +1,5 @@
 ---
-title: Welcome to the website
+title: Welcome To The Website
 description: An inaugural entry
 date: 2024-10-07
 ---
