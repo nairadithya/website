@@ -18,6 +18,8 @@
     "@fontsource/lato": "^5.0.21",
     "astro": "^4.11.3",
     "dotenv": "^16.4.5",
+    "markdown-it": "^14.1.0",
+    "sanitize-html": "^2.13.1",
     "typescript": "^5.4.5"
   },
   "devDependencies": {
