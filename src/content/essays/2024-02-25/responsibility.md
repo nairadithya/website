@@ -18,7 +18,9 @@ It's a paradoxical force of nature.
 
 We nourish ourselves with fire. We destroy ourselves with fire.
 
-![](./theresponsibility.jpg)![](https://substackcdn.com/image/fetch/w_720,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb01faf4e-8716-441d-a503-6bbe9e5585f7_1920x1280.jpeg)
+![](https://substackcdn.com/image/fetch/w_720,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5c6d43a8-2dca-48ee-8f2b-4f351c9a7723_1920x1280.jpeg)
+
+![](https://substackcdn.com/image/fetch/w_720,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb01faf4e-8716-441d-a503-6bbe9e5585f7_1920x1280.jpeg)
 
 Bringing people together and setting the world ablaze, possible with the same flame.
 
