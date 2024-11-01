@@ -56,9 +56,12 @@ import rss from '../assets/feed.svg'
         <div
           class="mx-auto flex items-center gap-4 text-center text-xl text-mauve md:text-lg"
         >
-          <picture>
-            <img class="w-5" src={rss.src} alt="rss" />
-          </picture>
+          <a href="/rss.xml">
+            <picture>
+              <img class="w-5" src={rss.src} alt="rss" />
+            </picture>
+          </a>
+          •
           <a href="https://amrita.town"> amrita.town </a>
           <a href="https://amrita.town/prev" class="">&#8592;</a>
           <a href="https://amrita.town/random" class="">&#9860;</a>
@@ -98,7 +101,7 @@ import rss from '../assets/feed.svg'
             <img class="w-5" src={rss.src} alt="rss" />
           </picture>
         </a>
- •
+        •
         <a href="https://amrita.town"> amrita.town </a>
         <a href="https://amrita.town/prev" class="">&#8592;</a>
         <a href="https://amrita.town/random" class="">&#9860;</a>

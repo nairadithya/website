@@ -6,8 +6,9 @@ const parser = new MarkdownIt()
 
 export async function GET(context) {
     var essays = await getCollection('essays')
-    essays.push.apply(essays, await getCollection('journal'))
+    var journal = await getCollection('journal')
     essays.sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+    journal.sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
     return rss({
         stylesheet: '/rss/styles.xsl',
         title: "Adithya Nair's Website",
