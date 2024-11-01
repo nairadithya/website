@@ -3,6 +3,7 @@ import HomeLayout from '../layouts/HomeLayout.astro'
 import githubIcon from '../assets/github.svg'
 import letterboxd from '../assets/letterboxd.svg'
 import linkedin from '../assets/linkedin.svg'
+import rss from '../assets/feed.svg'
 ---
 
 <HomeLayout title="Adithya Nair.">
@@ -55,6 +56,9 @@ import linkedin from '../assets/linkedin.svg'
         <div
           class="mx-auto flex items-center gap-4 text-center text-xl text-mauve md:text-lg"
         >
+          <picture>
+            <img class="w-5" src={rss.src} alt="rss" />
+          </picture>
           <a href="https://amrita.town"> amrita.town </a>
           <a href="https://amrita.town/prev" class="">&#8592;</a>
           <a href="https://amrita.town/random" class="">&#9860;</a>
@@ -89,6 +93,12 @@ import linkedin from '../assets/linkedin.svg'
       <div
         class="fixed bottom-0 mx-auto flex items-center gap-4 p-4 text-center text-xl text-mauve md:text-lg"
       >
+        <a href="/rss.xml">
+          <picture>
+            <img class="w-5" src={rss.src} alt="rss" />
+          </picture>
+        </a>
+ •
         <a href="https://amrita.town"> amrita.town </a>
         <a href="https://amrita.town/prev" class="">&#8592;</a>
         <a href="https://amrita.town/random" class="">&#9860;</a>
