@@ -11,7 +11,7 @@ export async function GET(context) {
     return rss({
         stylesheet: '/rss/styles.xsl',
         title: "Adithya Nair's Website",
-        description: 'The digital home of one Adithya Nair.',
+        description: 'A place where I wonder out loud.',
         site: context.site,
         items: essays.map((post) => ({
             title: post.data.title,
