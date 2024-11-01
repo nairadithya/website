@@ -74,6 +74,7 @@ import rss from '../assets/feed.svg'
           d="M6 18 18 6M6 6l12 12"></path>
       </svg>
     </div>
+
     <a
       href="/essays"
       class="text-3xl font-medium text-mauve hover:text-rosewater hover:underline focus:text-green"
@@ -94,6 +95,11 @@ import rss from '../assets/feed.svg'
       class="text-3xl font-medium text-mauve hover:text-rosewater hover:underline focus:text-green"
       >About</a
     >
+    <a href="/rss.xml">
+      <picture class="text-center">
+        <img class="w-5" src={rss.src} alt="rss" />
+      </picture>
+    </a>
   </div>
 
   <script>
