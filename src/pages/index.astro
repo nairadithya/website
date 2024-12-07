@@ -7,106 +7,135 @@ import rss from '../assets/feed.svg'
 ---
 
 <HomeLayout title="Adithya Nair.">
-  <div
-    class="flex h-screen w-screen flex-col items-center justify-center overflow-scroll selection:bg-mauve selection:text-base md:overflow-hidden"
-  >
-    <div class="mx-10 flex flex-col gap-10 py-14">
-      <div class="text-center text-4xl text-text sm:text-5xl md:text-7xl">
-        <span>Hi,</span> I'm <p
-          class="semibold inline text-mauve selection:text-crust"
-        >
-          Adithya.
-        </p>
-      </div>
-      <div class="text-wrap text-center text-2xl text-subtext1 sm:text-3xl">
-        I'm a student, writer and programmer.
-        <div class="pt-4">Welcome to my home on the internet.</div>
-      </div>
-      <div
-        class="mx-auto flex w-fit flex-col items-center gap-3 text-2xl text-mauve sm:text-3xl md:flex-row md:gap-4"
-      >
-        <a href="essays/"><div>Essays</div></a>
-        <a href="journal/"> <div>Journal</div></a>
-        <a href="bookmarks/"><div>Bookmarks</div></a>
-        <a href="about/"><div>About</div></a>
-      </div>
+    <div
+        class="flex h-screen w-screen flex-col items-center justify-center overflow-scroll selection:bg-mauve selection:text-base md:overflow-hidden"
+    >
+        <div class="mx-10 flex flex-col gap-10 py-14">
+            <div class="text-center text-4xl text-text sm:text-5xl md:text-7xl">
+                <span>Hi,</span> I'm <p
+                    class="semibold inline text-mauve selection:text-crust"
+                >
+                    Adithya.
+                </p>
+            </div>
+            <div
+                class="text-wrap text-center text-2xl text-subtext1 sm:text-3xl"
+            >
+                I'm a student, programmer and writer.
+                <div class="pt-4">Welcome to my home on the internet.</div>
+            </div>
+            <div
+                class="mx-auto flex w-fit flex-col items-center gap-3 text-2xl text-mauve sm:text-3xl md:flex-row md:gap-4"
+            >
+                <a href="essays/"><div>Essays</div></a>
+                <a href="journal/"> <div>Journal</div></a>
+                <a href="bookmarks/"><div>Bookmarks</div></a>
+                <a href="about/"><div>About</div></a>
+            </div>
 
-      <!-- Mobile View -->
+            <!-- Mobile View -->
 
-      <div
-        class="bottom-1 mx-auto flex contents flex-col items-center gap-2 text-center text-2xl text-mauve md:absolute md:bottom-4 md:text-xs lg:hidden"
-      >
-        <div class="mx-auto flex items-center">
-          <a href="https://github.com/nairadithya" class="mx-4">
-            <picture>
-              <img class="w-7 md:w-9" src={githubIcon.src} alt="GitHub" />
-            </picture>
-          </a>
-          <a href="https://letterboxd.com/AdithyaNair/" class="mx-4">
-            <picture>
-              <img class="w-7 md:w-9" src={letterboxd.src} alt="Letterboxd" />
-            </picture>
-          </a>
-          <a href="https://www.linkedin.com/in/nairadithya" class="mx-4">
-            <picture>
-              <img class="w-7 md:w-9" src={linkedin.src} alt="Linkedin" />
-            </picture>
-          </a>
+            <div
+                class="bottom-1 mx-auto flex contents flex-col items-center gap-2 text-center text-2xl text-mauve md:absolute md:bottom-4 md:text-xs lg:hidden"
+            >
+                <div class="mx-auto flex items-center">
+                    <a href="https://github.com/nairadithya" class="mx-4">
+                        <picture>
+                            <img
+                                class="w-7 md:w-9"
+                                src={githubIcon.src}
+                                alt="GitHub"
+                            />
+                        </picture>
+                    </a>
+                    <a href="https://letterboxd.com/AdithyaNair/" class="mx-4">
+                        <picture>
+                            <img
+                                class="w-7 md:w-9"
+                                src={letterboxd.src}
+                                alt="Letterboxd"
+                            />
+                        </picture>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/nairadithya"
+                        class="mx-4"
+                    >
+                        <picture>
+                            <img
+                                class="w-7 md:w-9"
+                                src={linkedin.src}
+                                alt="Linkedin"
+                            />
+                        </picture>
+                    </a>
+                </div>
+                <div
+                    class="mx-auto flex items-center gap-4 text-center text-xl text-mauve md:text-lg"
+                >
+                    <a href="/rss.xml">
+                        <picture>
+                            <img class="w-5" src={rss.src} alt="rss" />
+                        </picture>
+                    </a>
+                    •
+                    <a href="https://amrita.town"> amrita.town </a>
+                    <a href="https://amrita.town/prev" class="">&#8592;</a>
+                    <a href="https://amrita.town/random" class="">&#9860;</a>
+                    <a href="https://amrita.town/next" class="">&#8594;</a>
+                </div>
+            </div>
+            <!-- Desktop View -->
         </div>
         <div
-          class="mx-auto flex items-center gap-4 text-center text-xl text-mauve md:text-lg"
+            class="mx-auto flex hidden flex-col items-center gap-8 text-center text-2xl text-mauve md:bottom-4 md:text-xs lg:contents"
         >
-          <a href="/rss.xml">
-            <picture>
-              <img class="w-5" src={rss.src} alt="rss" />
-            </picture>
-          </a>
-          •
-          <a href="https://amrita.town"> amrita.town </a>
-          <a href="https://amrita.town/prev" class="">&#8592;</a>
-          <a href="https://amrita.town/random" class="">&#9860;</a>
-          <a href="https://amrita.town/next" class="">&#8594;</a>
+            <div class="mx-auto flex items-center">
+                <a href="https://github.com/nairadithya" class="mx-4">
+                    <picture>
+                        <img
+                            class="w-7 md:w-9"
+                            src={githubIcon.src}
+                            alt="GitHub"
+                        />
+                    </picture>
+                </a>
+                <a href="https://letterboxd.com/nairadithya/" class="mx-4">
+                    <picture>
+                        <img
+                            class="w-7 md:w-9"
+                            src={letterboxd.src}
+                            alt="Letterboxd"
+                        />
+                    </picture>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/adithya-nair-181120282"
+                    class="mx-4"
+                >
+                    <picture>
+                        <img
+                            class="w-7 md:w-9"
+                            src={linkedin.src}
+                            alt="Linkedin"
+                        />
+                    </picture>
+                </a>
+            </div>
+            <div
+                class="fixed bottom-0 mx-auto flex items-center gap-4 p-4 text-center text-xl text-mauve md:text-lg"
+            >
+                <a href="/rss.xml">
+                    <picture>
+                        <img class="w-5" src={rss.src} alt="rss" />
+                    </picture>
+                </a>
+                •
+                <a href="https://amrita.town"> amrita.town </a>
+                <a href="https://amrita.town/prev" class="">&#8592;</a>
+                <a href="https://amrita.town/random" class="">&#9860;</a>
+                <a href="https://amrita.town/next" class="">&#8594;</a>
+            </div>
         </div>
-      </div>
-      <!-- Desktop View -->
     </div>
-    <div
-      class="mx-auto flex hidden flex-col items-center gap-8 text-center text-2xl text-mauve md:bottom-4 md:text-xs lg:contents"
-    >
-      <div class="mx-auto flex items-center">
-        <a href="https://github.com/nairadithya" class="mx-4">
-          <picture>
-            <img class="w-7 md:w-9" src={githubIcon.src} alt="GitHub" />
-          </picture>
-        </a>
-        <a href="https://letterboxd.com/AdithyaNair/" class="mx-4">
-          <picture>
-            <img class="w-7 md:w-9" src={letterboxd.src} alt="Letterboxd" />
-          </picture>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/adithya-nair-181120282"
-          class="mx-4"
-        >
-          <picture>
-            <img class="w-7 md:w-9" src={linkedin.src} alt="Linkedin" />
-          </picture>
-        </a>
-      </div>
-      <div
-        class="fixed bottom-0 mx-auto flex items-center gap-4 p-4 text-center text-xl text-mauve md:text-lg"
-      >
-        <a href="/rss.xml">
-          <picture>
-            <img class="w-5" src={rss.src} alt="rss" />
-          </picture>
-        </a>
-        •
-        <a href="https://amrita.town"> amrita.town </a>
-        <a href="https://amrita.town/prev" class="">&#8592;</a>
-        <a href="https://amrita.town/random" class="">&#9860;</a>
-        <a href="https://amrita.town/next" class="">&#8594;</a>
-      </div>
-    </div>
-  </div>
 </HomeLayout>
