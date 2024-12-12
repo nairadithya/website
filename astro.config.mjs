@@ -4,6 +4,8 @@ import rehypeMathjax from 'rehype-mathjax';
 import remarkMath from 'remark-math';
 import mdx from "@astrojs/mdx";
 
+import sitemap from '@astrojs/sitemap';
+
 export default defineConfig({
   site: 'https://adithyanair.com',
   markdown: {
@@ -14,6 +16,6 @@ export default defineConfig({
     rehypePlugins: [
       'rehype-mathjax'
     ]
-  }, integrations: [tailwind(), mdx()]
+  }, integrations: [tailwind(), mdx(), sitemap()]
 }
 )
