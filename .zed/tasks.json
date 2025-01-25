@@ -1,0 +1,15 @@
+// Static tasks configuration.
+//
+// Example:
+[
+    {
+        "label": "Start dev server",
+        "command": "bun dev",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "always",
+        "reveal_target": "center",
+        "hide": "never",
+        "shell": "system"
+    }
+]
