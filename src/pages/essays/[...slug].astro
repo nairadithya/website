@@ -16,12 +16,14 @@ const { entry } = Astro.props
 const { Content } = await entry.render()
 ---
 
-<BaseLayout title={entry.data.title}>
+<BaseLayout title={entry.data.title} description={entry.data.description}>
     <div
         class="flex min-h-screen flex-col items-center justify-center px-4 pt-10"
     >
         <div class="w-full max-w-2xl">
-            <h1 class="text-center selection:bg-mauve selection:text-text text-4xl font-bold text-text">
+            <h1
+                class="text-center text-4xl font-bold text-text selection:bg-mauve selection:text-text"
+            >
                 {entry.data.title}
             </h1>
             <p class="mt-2 text-center text-lg text-green">
