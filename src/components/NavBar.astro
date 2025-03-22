@@ -1,74 +1,43 @@
 ---
-import rss from '@assets/feed.svg'
+let links = [
+    { text: 'Essays', link: '/essays' },
+    { text: 'Journal', link: '/journal' },
+    { text: 'Bookmarks', link: '/bookmarks' },
+    { text: 'About', link: '/about' },
+]
 ---
 
-<div class="mocha">
-    <div class="flex h-max w-full flex-row content-between items-center">
-        <div class="px-5 text-5xl font-bold">
-            <a href="/">α</a>
-        </div>
+<div class="flex h-max w-full flex-row content-between items-center">
+    <div class="px-5 text-xl font-bold dark:text-slate-200">
+        <a href="/"></a>
+    </div>
 
-        <div class="ml-auto hidden items-center space-x-6 px-5 md:flex">
-            <a href="/rss.xml">
-                <picture class="text-center">
-                    <img class="w-5" src={rss.src} alt="rss" />
-                </picture>
-            </a>
-            <a
-                href="/essays"
-                class="text-mauve hover:text-rosewater focus:text-green text-xl font-medium hover:underline"
-                >Essays</a
-            >
-            <a
-                href="/journal"
-                class="text-mauve hover:text-rosewater focus:text-green text-xl font-medium hover:underline"
-                >Journal</a
-            >
-            <a
-                href="/bookmarks"
-                class="text-mauve hover:text-rosewater focus:text-green text-xl font-medium hover:underline"
-                >Bookmarks</a
-            >
-            <a
-                href="/about"
-                class="text-mauve hover:text-rosewater focus:text-green text-xl font-medium hover:underline"
-                >About</a
-            >
-        </div>
+    <div class="ml-auto hidden items-center space-x-6 px-5 md:flex">
+        {
+            links.map((link) => (
+                <a
+                    href={link.link}
+                    class="text-mauve hover:text-rosewater focus:text-green text-xl font-medium hover:underline"
+                >
+                    {link.text}
+                </a>
+            ))
+        }
+    </div>
 
-        <div
-            id="mobile-menu"
-            class="absolute bottom-1 mx-auto flex w-full flex-row items-center justify-center space-x-4 bg-red-100 text-left md:hidden"
-        >
-            <a
-                href="/essays"
-                class="hover:text-rosewater focus:text-green font-medium hover:underline"
-            >
-                Essays
-            </a>
-            <a
-                href="/journal"
-                class="text-mauve hover:text-rosewater focus:text-green font-medium hover:underline"
-            >
-                Journal
-            </a>
-            <a
-                href="/bookmarks"
-                class="text-mauve hover:text-rosewater focus:text-green font-medium hover:underline"
-            >
-                Bookmarks
-            </a>
-            <a
-                href="/about"
-                class="text-mauve hover:text-rosewater focus:text-green font-medium hover:underline"
-            >
-                About
-            </a>
-            <a href="/rss.xml">
-                <picture class="text-left">
-                    <img class="w-5" src={rss.src} alt="rss" />
-                </picture>
-            </a>
-        </div>
+    <div
+        id="mobile-menu"
+        class="fixed bottom-0 mx-auto flex w-full flex-row items-center justify-center space-x-4 bg-red-100 text-left md:hidden"
+    >
+        {
+            links.map((link) => (
+                <a
+                    href={link.link}
+                    class="hover:text-rosewater focus:text-green font-medium hover:underline"
+                >
+                    {link.text}
+                </a>
+            ))
+        }
     </div>
 </div>
