@@ -1,16 +1,16 @@
 ---
-import FormattedDate from './FormattedDate.astro'
+import FormattedDate from '@/components/FormattedDate.astro'
 const { title, date, description } = Astro.props
 ---
 
-<div class="mx-auto max-w-2xl rounded-lg bg-base p-6 pb-5">
-    <h2 class="mb-2 text-3xl font-bold text-text">
+<div class="bg-base mx-auto max-w-2xl rounded-lg p-6 pb-5">
+    <h2 class="text-text mb-2 text-3xl font-bold">
         {title}
     </h2>
-    <p class="mb-1 text-sm text-green">
+    <p class="text-green mb-1 text-sm">
         <FormattedDate date={date} />
     </p>
-    <p class="mb-5 text-base text-subtext0">
+    <p class="text-subtext0 mb-5 text-base">
         {description}
     </p>
 </div>
