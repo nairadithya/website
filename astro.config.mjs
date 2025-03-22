@@ -16,4 +16,7 @@ export default defineConfig({
         rehypePlugins: ['rehype-mathjax'],
     },
     integrations: [mdx(), sitemap()],
+    experimental: {
+        svg: true,
+    },
 })

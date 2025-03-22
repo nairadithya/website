@@ -1,74 +1,62 @@
 ---
 import HomeLayout from '@/layouts/HomeLayout.astro'
-import githubIcon from '@/assets/github.svg'
-import letterboxd from '@/assets/letterboxd.svg'
-import linkedin from '@/assets/linkedin.svg'
-import rss from '@assets/feed.svg'
-import arrowLeft from '@/icons/svg/arrow-left.svg'
-import arrowRight from '@/icons/svg/arrow-right.svg'
-import reload from '@/icons/svg/reload.svg'
+import GithubIcon from '@assets/github.svg'
+import Letterboxd from '@assets/letterboxd.svg'
+import Linkedin from '@assets/linkedin.svg'
 
+import Footer from '@/components/Footer.astro'
+
+import { Image } from 'astro:assets'
+import Music from '@/icons/music.svg'
 const data = await fetch(
-    `http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=${import.meta.env.LAST_FM_USERNAME}&period=1month&api_key=${import.meta.env.LAST_FM_API_KEY}&format=json`
+    `http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=${import.meta.env.LAST_FM_USERNAME}&period=7day&limit=1&api_key=${import.meta.env.LAST_FM_API_KEY}&format=json`
 )
-const topAlbum = await data.json()
+
+const topTrack = await data.json()
+// mbid = topTrack.console.log(topTrack)
+const logos = [
+    { src: GithubIcon, link: 'https://github.com/nairadithya' },
+    { src: Letterboxd, link: 'https://letterboxd.com/nairadithya' },
+    { src: Linkedin, link: 'https://linkedin.com/in/nairadithya' },
+]
 ---
 
 <HomeLayout title="Adithya Nair.">
-    <div class="px-5">
-        <div class="font-manrope py-4 text-4xl">
-            Hello, I'm <b>Adithya</b>.
+    <div class="px-5 dark:text-slate-200">
+        <div class="py-4 font-serif text-4xl font-light">
+            Hello, I'm <p class="font-extrabold text-red-400">Adithya.</p>
         </div>
         <p>
             I am a student, writer and programmer. This is my place on the
             Internet. Read more about me <a
-                class="text-green-700 underline"
+                class="text-green-700 underline dark:text-green-200"
                 href="/about">here</a
             >.
         </p>
-        <div class="my-2 rounded-md border-1 p-3 text-center">
-            Member of <a
-                class="text-green-700 underline"
-                href="https://www.amrita.town"
-            >
-                amrita.town
-            </a>
-            <div
-                class="mx-auto flex place-content-center place-items-center py-2"
-            >
-                <div class="flex items-center space-x-2">
-                    <a href="https://amrita.town/prev">
-                        <img src={arrowLeft.src} />
-                    </a>
-                    <a href="https://amrita.town/random">
-                        <img src={reload.src} />
-                    </a>
-                    <a href="https://amrita.town/random">
-                        <img src={arrowRight.src} />
-                    </a>
+        <a href={topTrack.toptracks.track[0].url}>
+            <div class="flex py-4">
+                <Music size="50" />
+                <div class="flex flex-col">
+                    <div class="font-bold">
+                        {topTrack.toptracks.track[0].name}
+                    </div>
+                    <div class="p-0">
+                        {topTrack.toptracks.track[0].artist.name}
+                    </div>
                 </div>
             </div>
-        </div>
-        <h2 class="py-2 text-2xl">Quick Links</h2>
+        </a>
+        <h2 class="py-2 font-serif text-2xl font-extrabold">Quick Links</h2>
         <div class="grid grid-cols-3 place-items-center py-2">
-            <a href="https://www.github.com/nairadithya">
-                <img src={githubIcon.src} class="size-10" />
-            </a>
-            <a><img src={letterboxd.src} class="size-10" /></a>
-            <a><img src={linkedin.src} class="size-10" /></a>
+            {
+                logos.map((item) => (
+                    <a href={item.link}>
+                        <item.src size="20" />
+                    </a>
+                ))
+            }
         </div>
-        <h2 class="py-2 text-2xl">Current Top Album</h2>
-        <div class="flex flex-col">
-            <a class="mx-auto" href={topAlbum.topalbums.album[0].url}>
-                <img
-                    class="size-40 rounded-xl"
-                    src={topAlbum.topalbums.album[0].image[3]['#text']}
-                    alt="helo"
-                />
-            </a>
-            <p class="mx-auto font-bold">{topAlbum.topalbums.album[0].name}</p>
-            <p class="mx-auto">{topAlbum.topalbums.album[0].artist.name}</p>
-        </div>
+        <h2 class="py-2 text-2xl">Recent Essays</h2>
+        <Footer />
     </div>
-    <h2 class="py-2 text-2xl">Recent Essays</h2>
 </HomeLayout>
