@@ -3,6 +3,7 @@ interface Props {
     title: string
 }
 
+import NavBar from '@/components/NavBar.astro'
 const { title } = Astro.props
 ---
 
@@ -22,6 +23,7 @@ const { title } = Astro.props
             title="Adithya Nair's Website"
             href={new URL('rss.xml', Astro.site)}
         />
+        <link href="/src/styles/global.css" rel="stylesheet" />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <link
             rel="apple-touch-icon"
@@ -44,25 +46,9 @@ const { title } = Astro.props
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
     </head>
-    <style>
-        html,
-        body {
-            height: 100%;
-            accent-color: #1e1e2e;
-            margin: 0;
-            padding: 0;
-            background-color: #1e1e2e;
-            background-size: 10px 10px;
-            overflow: hidden;
-        }
-        main {
-            min-height: 100vh;
-        }
-        svg:hover {
-            color: #1e1e2e;
-        }
-    </style>
-    <main class="mocha min-h-screen w-full bg-base py-1">
+
+    <main class="mocha bg-base min-h-screen w-full py-1">
+        <NavBar />
         <slot />
     </main>
 

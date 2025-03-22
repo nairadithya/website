@@ -1,15 +1,18 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'
-import bookmarksOrig from '../bookmarks.json'
-import FormattedDate from '../components/FormattedDate.astro'
-import BookmarkCard from '../components/BookmarkCard.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import bookmarksOrig from '@/bookmarks.json'
+import FormattedDate from '@/components/FormattedDate.astro'
+import BookmarkCard from '@/components/BookmarkCard.astro'
 let bookmarks = bookmarksOrig.slice().reverse()
 ---
 
-<BaseLayout title="Bookmarks">
+<BaseLayout
+    title="Bookmarks"
+    description="This are the essential articles I constantly recommend"
+>
     <div class="min-h-screen overflow-hidden">
         <h1
-            class="mx-auto w-full py-8 text-center text-5xl font-bold text-mauve"
+            class="text-mauve mx-auto w-full py-8 text-center text-5xl font-bold"
         >
             Bookmarks
         </h1>

@@ -1,5 +1,5 @@
 ---
-import NavBar from '../components/NavBar.astro'
+import NavBar from '@/components/NavBar.astro'
 interface Props {
     title: string
     description: string
@@ -51,7 +51,7 @@ const { title, description } = Astro.props
         </style></head
     >
 
-    <main class="mocha min-h-screen w-full bg-base py-1">
+    <main class="mocha bg-base min-h-screen w-full py-1">
         <NavBar />
         <slot />
     </main>
