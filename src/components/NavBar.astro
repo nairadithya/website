@@ -1,9 +1,9 @@
 ---
 let links = [
-    { text: 'Essays', link: '/essays' },
-    { text: 'Journal', link: '/journal' },
-    { text: 'Bookmarks', link: '/bookmarks' },
-    { text: 'About', link: '/about' },
+    { text: 'Blog', link: '/blog', icon: 'article' },
+    { text: 'Garden', link: '/garden', icon: 'yard' },
+    { text: 'Projects', link: '/projects', icon: 'developer_mode_tv' },
+    { text: 'About', link: '/about', icon: 'person' },
 ]
 ---
 
@@ -11,7 +11,6 @@ let links = [
     <div class="px-5 text-xl font-bold dark:text-slate-200">
         <a href="/"></a>
     </div>
-
     <div class="ml-auto hidden items-center space-x-6 px-5 md:flex">
         {
             links.map((link) => (
@@ -31,12 +30,17 @@ let links = [
     >
         {
             links.map((link) => (
-                <a
-                    href={link.link}
-                    class="hover:text-rosewater focus:text-green font-medium hover:underline"
-                >
-                    {link.text}
-                </a>
+                <div class="flex flex-col">
+                    <a
+                        href={link.link}
+                        class="hover:text-rosewater focus:text-green font-medium hover:underline"
+                    >
+                        <span class="material-symbols-outlined">
+                            {link.icon}
+                        </span>
+                        {link.text}
+                    </a>
+                </div>
             ))
         }
     </div>
