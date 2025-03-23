@@ -12,8 +12,9 @@ const { title, description } = Astro.props
 <html class="h-full" lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="description" content="`{description}`" />
+        <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/src/styles/global.css" rel="stylesheet" />
         <link rel="icon" href="favicon.ico" />
         <link
             rel="apple-touch-icon"
@@ -35,25 +36,14 @@ const { title, description } = Astro.props
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
-        <style>
-            html,
-            body {
-                height: 100%;
-                margin: 0;
-                padding: 0;
-                background-color: #1e1e2e;
-                background-size: 10px 10px;
-                overflow-x: hidden;
-            }
-            main {
-                min-height: 100vh;
-            }
-        </style></head
+    </head>
+    <main
+        class="min-h-screen w-full bg-slate-200 py-1 font-serif dark:bg-slate-950"
     >
-
-    <main class="bg-base min-h-screen w-full py-1">
+        <div class="px-5 dark:text-slate-200">
+            <slot />
+        </div>
         <NavBar />
-        <slot />
     </main>
 
 

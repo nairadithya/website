@@ -1,33 +1,33 @@
 ---
 import Footer from '@/components/Footer.astro'
-import ThemeSwitcher from '@/components/ThemeSwitcher.astro'
 import QuickLinks from '@/components/QuickLinks.astro'
 import Music from '@/components/Music.astro'
 import HomeLayout from '@/layouts/HomeLayout.astro'
 ---
 
 <HomeLayout title="Adithya Nair.">
-    <div class="px-5 dark:text-slate-200">
-        <div class="flex items-center justify-between">
-            <div class="py-4 font-serif text-4xl font-light">
-                Hello, I'm <p class="font-extrabold text-blue-400">Adithya.</p>
-            </div>
-            <ThemeSwitcher />
+    <div class="flex items-center justify-between">
+        <div class="py-4 font-serif text-4xl font-light">
+            Hello, I'm <p class="font-extrabold text-blue-400">Adithya.</p>
         </div>
-        <p>
-            I am a student, writer and programmer. This is my place on the
-            Internet. Read more about me <a
-                class="text-green-700 underline dark:text-green-200"
-                href="/about">here</a
-            >.
-        </p>
-        <div class="w-fit">
+    </div>
+    <p>
+        I am a student, writer and programmer. This is my place on the Internet.
+        Read more about me <a
+            class="text-green-700 underline dark:text-green-200"
+            href="/about"
+            >here
+        </a>.
+    </p>
+    <div class="w-fit py-2">
+        <div>My current top song is:</div>
+        <div>
             <Music />
         </div>
-        <h2 class="py-2 font-serif text-2xl font-extrabold">Outgoing Links</h2>
-        <QuickLinks />
-        <div class="grid grid-cols-3 place-items-center py-2"></div>
-        <h2 class="py-2 text-2xl font-extrabold">Recent Essays</h2>
-        <Footer />
     </div>
+    <h2 class="py-2 font-serif text-2xl font-extrabold">Outgoing Links</h2>
+    <QuickLinks />
+    <div class="grid grid-cols-3 place-items-center py-2"></div>
+    <h2 class="py-2 text-2xl font-extrabold">Recent Essays</h2>
+    <Footer />
 </HomeLayout>
