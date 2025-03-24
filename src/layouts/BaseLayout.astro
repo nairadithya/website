@@ -1,6 +1,7 @@
 ---
 import NavBar from '@/components/NavBar.astro'
 import MobileThemeSwitcher from '@/components/MobileThemeSwitcher.astro'
+import Head from '@/components/Head.astro'
 interface Props {
     title: string
     description: string
@@ -11,33 +12,7 @@ const { title, description } = Astro.props
 
 <!doctype html>
 <html class="h-full bg-blue-100 font-serif" lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="description" content={description} />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="/src/styles/global.css" rel="stylesheet" />
-        <link rel="icon" href="favicon.ico" />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-        <meta name="generator" content={Astro.generator} />
-        <title>{title}</title>
-    </head>
+    <Head title={title} />
     <main class="min-h-screen w-full py-1">
         <NavBar />
         <div class="px-5">
@@ -54,6 +29,4 @@ const { title, description } = Astro.props
             </div>
         </div>
     </main>
-
-
 </html>

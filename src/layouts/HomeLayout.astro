@@ -3,58 +3,20 @@ interface Props {
     title: string
 }
 
+import Head from '@/components/Head.astro'
 import NavBar from '@/components/NavBar.astro'
 const { title } = Astro.props
 ---
 
 <!doctype html>
 <html class="h-full bg-blue-100" lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta
-            name="description"
-            content="Adithya Nair's home on the Internet."
-        />
-        <meta name="author" content="Adithya Nair" />
-        <meta name="viewport" content="width=device-width" />
-        <link
-            rel="alternate"
-            type="application/rss+xml"
-            title="Adithya Nair's Website"
-            href={new URL('rss.xml', Astro.site)}
-        />
-        <link href="/src/styles/global.css" rel="stylesheet" />
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-        <meta name="generator" content={Astro.generator} />
-        <title>{title}</title>
-    </head>
-
+    <Head title={title} />
     <main
-        class="min-h-screen w-full bg-blue-100 py-1 font-serif dark:bg-slate-950"
+        class="mx-auto min-h-screen bg-blue-100 py-1 font-serif md:w-5/12 dark:bg-slate-950"
     >
+        <NavBar />
         <div class="px-5 dark:text-slate-200">
             <slot />
         </div>
-        <NavBar />
     </main>
-
-
 </html>
