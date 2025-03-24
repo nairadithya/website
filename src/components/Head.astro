@@ -1,0 +1,34 @@
+---
+interface Props {
+    title: string
+    description?: string
+}
+
+const { title, description } = Astro.props
+---
+
+<head>
+    <meta charset="UTF-8" />
+    <meta
+        name="description"
+        content={description
+            ? description
+            : "Adithya Nair's home on the internet"}
+    />
+    <meta name="author" content="Adithya Nair" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+        rel="alternate"
+        type="application/rss+xml"
+        title="Adithya Nair's Website"
+        href={new URL('rss.xml', Astro.site)}
+    />
+    <link href="/src/styles/global.css" rel="stylesheet" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+</head>

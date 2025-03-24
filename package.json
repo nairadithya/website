@@ -11,17 +11,16 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
-    "@astrojs/mdx": "^4.2.0",
+    "@astrojs/mdx": "^4.2.1",
     "@astrojs/rss": "^4.0.11",
-    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/sitemap": "^3.3.0",
     "@astrojs/tailwind": "^5.1.5",
-    "@fontsource-variable/manrope": "^5.2.5",
-    "@fontsource/lato": "^5.2.5",
-    "@tailwindcss/vite": "^4.0.14",
-    "astro": "^5.5.2",
+    "@tailwindcss/vite": "^4.0.15",
+    "astro": "^5.5.4",
+    "astro-og-canvas": "^0.7.0",
     "dotenv": "^16.4.7",
     "markdown-it": "^14.1.0",
-    "sanitize-html": "^2.14.0",
+    "sanitize-html": "^2.15.0",
     "typescript": "^5.8.2"
   },
   "devDependencies": {
@@ -30,6 +29,6 @@
     "prettier-plugin-tailwindcss": "^0.6.11",
     "rehype-mathjax": "^6.0.0",
     "remark-math": "^6.0.0",
-    "tailwindcss": "^4.0.14"
+    "tailwindcss": "^4.0.15"
   }
 }
