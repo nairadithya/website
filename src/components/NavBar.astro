@@ -1,47 +1,90 @@
 ---
-let links = [
-    { text: 'Blog', link: '/blog', icon: 'article' },
-    { text: 'Garden', link: '/garden', icon: 'yard' },
-    { text: 'Projects', link: '/projects', icon: 'developer_mode_tv' },
-    { text: 'About', link: '/about', icon: 'person' },
-]
+import DesktopMobileSwitcher from '@/components/DesktopMobileSwitcher.astro'
 ---
 
-<div class="flex h-max w-full flex-row content-between items-center">
-    <div class="px-5 text-xl font-bold dark:text-slate-200">
-        <a href="/"></a>
-    </div>
-    <div class="ml-auto hidden items-center space-x-6 px-5 md:flex">
-        {
-            links.map((link) => (
-                <a
-                    href={link.link}
-                    class="text-mauve hover:text-rosewater focus:text-green text-xl font-medium hover:underline"
-                >
-                    {link.text}
-                </a>
-            ))
-        }
-    </div>
-
+<div class="flex h-max w-full">
     <div
-        id="mobile-menu"
-        class="fixed bottom-0 mx-auto flex w-full flex-row items-center justify-center space-x-4 bg-red-100 text-left font-sans md:hidden"
+        class="fixed bottom-0 mx-auto grid w-full grid-cols-5 items-center justify-evenly bg-blue-200 text-left font-sans md:left-0 md:h-full md:w-fit md:grid-cols-none md:grid-rows-6 md:place-items-center md:space-x-0 md:px-2"
     >
-        {
-            links.map((link) => (
-                <div class="flex flex-col">
-                    <a
-                        href={link.link}
-                        class="hover:text-rosewater focus:text-green font-medium hover:underline"
-                    >
-                        <span class="material-symbols-outlined">
-                            {link.icon}
-                        </span>
-                        {link.text}
-                    </a>
-                </div>
-            ))
-        }
+        <a href="/" class="py-2">
+            <div class="flex flex-col place-items-center">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="currentColor"
+                    ><path
+                        d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
+                    ></path></svg
+                >
+                <div class="text-xs">Home</div>
+            </div>
+        </a>
+        <a href="/blog" class="py-2 active:bg-white">
+            <div class="flex flex-col place-items-center">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="currentColor"
+                >
+                    <path
+                        d="M280-280h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm-80 480q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"
+                    ></path>
+                </svg>
+                <div class="text-xs">Blog</div>
+            </div>
+        </a>
+        <a href="/garden" class="focus:text-green py-2">
+            <div class="flex flex-col place-items-center">
+                <svg
+                    class="hover:w-full hover:rounded-lg hover:bg-blue-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="currentColor"
+                    ><path
+                        d="M480-200q0-100-70-170t-170-70q0 100 70 170t170 70Zm0-202q26 0 44-18t18-44v-6q8 6 16.5 9t19.5 3q26 0 44-18t18-44q0-20-9.5-35T604-576q17-6 26.5-21t9.5-35q0-26-18-44t-44-18q-11 0-19.5 3t-16.5 9v-6q0-26-18-44t-44-18q-26 0-44 18t-18 44v6q-8-6-16.5-9t-19.5-3q-26 0-44 18t-18 44q0 20 9.5 35t26.5 21q-17 6-26.5 21t-9.5 35q0 26 18 44t44 18q11 0 19.5-3t16.5-9v6q0 26 18 44t44 18Zm0-112q-26 0-44-17.5T418-576q0-26 18-44t44-18q26 0 44 18t18 44q0 27-18 44.5T480-514Zm0 314q100 0 170-70t70-170q-100 0-170 70t-70 170ZM160-80q-33 0-56.5-23.5T80-160v-640q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v640q0 33-23.5 56.5T800-80H160Zm0-80h640v-640H160v640Zm0 0v-640 640Z"
+                    ></path></svg
+                >
+                <div class="text-xs">Garden</div>
+            </div>
+        </a>
+        <a href="/journeys" class="hover:text-rosewater focus:text-green py-2">
+            <div class="flex flex-col place-items-center">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="currentColor"
+                    ><path
+                        d="m600-120-240-84-186 72q-20 8-37-4.5T120-170v-560q0-13 7.5-23t20.5-15l212-72 240 84 186-72q20-8 37 4.5t17 33.5v560q0 13-7.5 23T812-192l-212 72Zm-40-98v-468l-160-56v468l160 56Zm80 0 120-40v-474l-120 46v468Zm-440-10 120-46v-468l-120 40v474Zm440-458v468-468Zm-320-56v468-468Z"
+                    ></path>
+                </svg>
+                <div class="text-xs">Journeys</div>
+            </div>
+        </a>
+        <a href="/about" class="hover:text-rosewater focus:text-green py-2">
+            <div class="flex flex-col place-items-center">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="currentColor"
+                    ><path
+                        d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+                    ></path></svg
+                >
+                <div class="text-xs">About</div>
+            </div>
+        </a>
+        <div class="hidden md:block">
+            <DesktopMobileSwitcher />
+        </div>
     </div>
 </div>
