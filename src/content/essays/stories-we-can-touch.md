@@ -1,9 +1,8 @@
 ---
 title: The Stories We Can Touch.
 description: On the little mundane things we carry around.
-image:
-imageAlt:
 date: 2023-01-23
+isEssay: true
 ---
 
 So, I was reading [Show Your Work](https://www.goodreads.com/book/show/18290401-show-your-work?ac=1&from_search=true&qid=r0pcutnj4s&rank=1) by Austin Kleon and there was this chapter about how we are affected by the stories behind a piece of art and how that changes the way we might view that piece of art.

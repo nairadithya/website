@@ -2,6 +2,7 @@
 title: On Mathematics.
 description: A love letter to Mathematics
 date: 2024-10-16
+isEssay: true
 ---
 
 There's a problem with this essay, that I want to clear up from the first. The issue is that I'm not fully sure that you and I understand Mathematics the same way. This might lead to some conflict down the line. The math being taught in high schools and many higher education institutes are skimming the surface of a very deep lake. I only got exposed to the mathematics I speak of in college. Read the essay with that in mind.

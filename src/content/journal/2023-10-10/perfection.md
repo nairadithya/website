@@ -27,3 +27,11 @@ So… take this as a sign of things to come, I’m not promising as much of a ch
 To those who are reading and will continue to do so,
 
 Thank you.
+
+# Hackathon
+
+Every contribution I made was completely written by an LLM, and I felt really gross about it. It felt like I had no real place in the project, and that the only point in the project was to get it done. I'd rather use these events as a way to learn things, and that felt completely missing.
+
+I made a vow, I will never copy paste code generated from an LLM.
+
+This might be a bit of a shock...  but what I've found over the course of ChatGPT and Claude and all the other flavours of AI that have come out, is I stop having ownership of the code I write. The most fulfilling part of doing a project is seeing the results and feeling like I can take ownership of every part of it, all the potential bugs as well as all the ways it shines. Another issue is collaboration is quite stilted, since the person I'm working with will use an LLM and now no one has any clue about how the code is _supposed_ to behave.

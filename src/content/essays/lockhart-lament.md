@@ -2,6 +2,7 @@
 title: A Mathematician's Lament, And The Tragedy Of Modern Education
 description: A piece on the Mathematician's Lament, a book on how modern education has failed the teaching of mathematics.
 date: 2024-02-18
+isEssay: true
 ---
 
 Throughout my schooling life, I found myself at odds with my math teachers. I'd ask questions that were dismissed immediately as just the fancy of an overactive imagination. I was praised for my ability in proofs and also scolded for my weakness in arithmetic.

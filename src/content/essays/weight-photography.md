@@ -1,8 +1,8 @@
 ---
 title: 'The Weight Photography Holds'
 description: "Photography is an excellent, timeless and fascinating subject to talk about, so I guess that's what this newsletter is going to be about."
-image:
 date: 2023-01-02
+isEssay: true
 ---
 
 I think that a camera is something that everyone should have. These high quality devices to capture the memories we hold dear the most.

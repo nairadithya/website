@@ -2,6 +2,7 @@
 title: The Overanalysis Of Art
 description: or 'How to sound like you know what you're talking about.'
 date: 2023-07-10
+isEssay: true
 ---
 
 Disclaimer: I use the word art a lot in the latter part of this post, by art I do not mean paintings. I mean any form of creative expression **such as movies, books, poetry, heck even doodles on the wall that a 5-year-old kid made.**

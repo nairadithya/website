@@ -12,6 +12,6 @@ And yet... it's so fragile. Hard drives break all the time. Companies change han
 
 How do we reconcile with that?
 
-Every day passes, with more and more links dying every day. Vast repositories of knowledge are at risk constantly by being tampered with or being completely wiped out.
+Every day passes, with more and more links dying. Vast repositories of knowledge are at risk constantly by being tampered with or being completely wiped out.
 
 Every single day, Alexandria burns.

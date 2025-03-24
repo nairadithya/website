@@ -2,6 +2,7 @@
 title: "'One Way Out': A piece on Andor."
 description: What happens when you bring in someone who isn't a Star Wars fan to write a Star Wars show.
 date: 2023-07-17
+isEssay: true
 ---
 
 I forgot what it was like to experience a story so inspiring and moving that inspires new ideas in you. It's an intoxicating feeling that's far too rare nowadays. I found it in the last place I expected to find it, in a Disney Star Wars show.

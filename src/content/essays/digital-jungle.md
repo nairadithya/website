@@ -2,6 +2,7 @@
 title: The Survivor's Kit To Navigating The Digital Jungle
 description: How to stop relying on algorithms so much to find the stuff you like.
 date: 2024-05-29
+isEssay: true
 ---
 
 (Scroll to the end if you just want the recommendations. If you need convincing, read on.)

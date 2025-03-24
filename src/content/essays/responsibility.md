@@ -2,6 +2,7 @@
 title: The Responsibility Of Fuelling The Next Fire
 description: A large post collecting a somewhat comprehensive look into Artificial Intelligence as it stands in culture and technology on the day this post was published.
 date: 2024-02-25
+isEssay: true
 ---
 
 The story of Prometheus is an old Greek myth, about a god who gifted mankind fire. He was punished severely for it, being chained to a valley as a vulture ate away at his body for all of eternity.
@@ -62,7 +63,7 @@ This was so convincing that attributing human traits to computers became known a
 
 ### Intelligence Bias
 
-> “[…]Because of a persistent tendency to associate fluent expression with fluent thought, _**it is natural – but potentially misleading – to think that if an AI model can express itself fluently, that means it thinks and feels just like humans do.”**_  
+> “[…]Because of a persistent tendency to associate fluent expression with fluent thought, _**it is natural – but potentially misleading – to think that if an AI model can express itself fluently, that means it thinks and feels just like humans do.”**_
 > -Taken from The Conversation’s article, [Google’s powerful AI spotlights a human cognitive glitch: Mistaking fluent speech for fluent thought](https://theconversation.com/googles-powerful-ai-spotlights-a-human-cognitive-glitch-mistaking-fluent-speech-for-fluent-thought-185099)
 
 It is easy to assume that people are smarter than they actually are. Our brains develop mental shortcuts to judge things. What this means here is, we tend to associate coherent sentences, with intelligence.
@@ -238,8 +239,8 @@ AI art exists in complete opposition to all of that.
 
 Here's Nick Cave, from [The Red Hand Files](https://www.theredhandfiles.com/chat-gpt-what-do-you-think/):
 
-> "What makes a great song great is not its close resemblance to a recognizable work. Writing a good song is not mimicry, or replication, or pastiche, it is the opposite. **It is an act of self-murder that destroys all one has strived to produce in the past.**[...]This is part of the authentic creative struggle that precedes the invention of a unique lyric of actual value; it is **the breathless confrontation with one’s vulnerability, one’s perilousness, one’s smallness, pitted against a sense of sudden shocking discovery**;  
-> it is the redemptive artistic act that stirs the heart of the listener, where the listener recognizes in the inner workings of the song their own blood, their own struggle, their own suffering.  
+> "What makes a great song great is not its close resemblance to a recognizable work. Writing a good song is not mimicry, or replication, or pastiche, it is the opposite. **It is an act of self-murder that destroys all one has strived to produce in the past.**[...]This is part of the authentic creative struggle that precedes the invention of a unique lyric of actual value; it is **the breathless confrontation with one’s vulnerability, one’s perilousness, one’s smallness, pitted against a sense of sudden shocking discovery**;
+> it is the redemptive artistic act that stirs the heart of the listener, where the listener recognizes in the inner workings of the song their own blood, their own struggle, their own suffering.
 > This is what we humble humans can offer, that AI can only mimic, the transcendent journey of the artist that forever grapples with his or her own shortcomings. This is where human genius resides, deeply embedded within, yet reaching beyond, those limitations."
 
 Nick Cave being a musician, takes it from the perspective of music. But it's true for all art.
@@ -332,9 +333,9 @@ And as it does so. How does it react?
 
 Complete and utter ecstasy. Indescribable joy.
 
-> _Touch... I remember touch._  
-> _Pictures came with touch._  
-> _A painter in my mind,_  
+> _Touch... I remember touch._
+> _Pictures came with touch._
+> _A painter in my mind,_
 > _tell me what you see._
 
 It speaks in a complete human voice, in fact it delights in it as it bursts into a song, as if it was in a musical.
@@ -353,9 +354,9 @@ Our robot here is overjoyed, and it keeps seeking to climb the joys and heights 
 
 But, in somewhat of a slight tragedy, as it reaches the peaks of humanity's own consciousness, it understands quite simply that seems to be nowhere left for it to go.
 
-> _Touch... sweet touch._  
-> _You've given me too much to feel._  
-> _Sweet touch._  
+> _Touch... sweet touch._
+> _You've given me too much to feel._
+> _Sweet touch._
 > _You've almost convinced me I'm real._
 
 It is still too logical to be human. To be conscious. It is both dependent on the touch to exist as well as understanding that it has limits that it cannot surpass... That consciousness has limits it cannot surpass.
