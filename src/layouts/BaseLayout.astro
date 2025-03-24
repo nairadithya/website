@@ -1,5 +1,6 @@
 ---
 import NavBar from '@/components/NavBar.astro'
+import MobileThemeSwitcher from '@/components/MobileThemeSwitcher.astro'
 interface Props {
     title: string
     description: string
@@ -9,7 +10,7 @@ const { title, description } = Astro.props
 ---
 
 <!doctype html>
-<html class="h-full" lang="en">
+<html class="h-full bg-blue-100 font-serif" lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="description" content={description} />
@@ -37,13 +38,21 @@ const { title, description } = Astro.props
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
     </head>
-    <main
-        class="min-h-screen w-full bg-slate-200 py-1 font-serif dark:bg-slate-950"
-    >
-        <div class="px-5 dark:text-slate-200">
-            <slot />
-        </div>
+    <main class="min-h-screen w-full py-1">
         <NavBar />
+        <div class="px-5">
+            <div class="mx-auto flex items-center justify-between md:w-5/12">
+                <div class="py-8 text-4xl font-extrabold text-black">
+                    {title}
+                </div>
+                <div class="md:hidden">
+                    <MobileThemeSwitcher />
+                </div>
+            </div>
+            <div class="mx-auto md:w-5/12">
+                <slot />
+            </div>
+        </div>
     </main>
 
 
