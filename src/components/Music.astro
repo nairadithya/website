@@ -2,11 +2,15 @@
 const data = await fetch(
     `http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=${import.meta.env.LAST_FM_USERNAME}&period=7day&limit=1&api_key=${import.meta.env.LAST_FM_API_KEY}&format=json`
 )
-
 const topTrack = await data.json()
+const fetchedTrack = {
+    link: topTrack.toptracks.track[0].url,
+    name: topTrack.toptracks.track[0].name,
+    artist: topTrack.toptracks.track[0].artist.name,
+}
 ---
 
-<a href={topTrack.toptracks.track[0].url}>
+<a href={fetchedTrack.link}>
     <div
         class="my-2 flex w-full items-center justify-items-start space-x-2 p-4"
     >
@@ -25,10 +29,10 @@ const topTrack = await data.json()
         </div>
         <div class="flex h-10 flex-col justify-between leading-tight">
             <div class="font-bold">
-                {topTrack.toptracks.track[0].name}
+                {fetchedTrack.name}
             </div>
             <div class="p-0">
-                {topTrack.toptracks.track[0].artist.name}
+                {fetchedTrack.artist}
             </div>
         </div>
     </div>

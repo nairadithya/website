@@ -11,13 +11,13 @@ const { title, description } = Astro.props
 ---
 
 <!doctype html>
-<html class="h-full bg-blue-100 font-serif" lang="en">
-    <Head title={title} />
+<html class="bg-bg text-fg h-full font-serif" lang="en">
+    <Head title={title} client:load />
     <main class="min-h-screen w-full py-1">
         <NavBar />
         <div class="px-5">
             <div class="mx-auto flex items-center justify-between md:w-5/12">
-                <div class="py-8 text-4xl font-extrabold text-black">
+                <div class="text-fg dark:text-fg py-8 text-4xl font-extrabold">
                     {title}
                 </div>
                 <div class="md:hidden">

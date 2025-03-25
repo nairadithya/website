@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content'
+import Layout from '@/layouts/BaseLayout.astro'
+import FormattedDate from '@/components/FormattedDate.astro'
+const posts = (await getCollection('blog')).sort(
+    (a, b) => b.data.date.getTime() - a.data.date.getTime()
+)
+---
+
+<Layout title="Blog" description="This page is where I house my writings.">
+    <div class="flex flex-col space-y-2">
+        {
+            posts.map((post) => (
+                <div class="py-4">
+                    <div class="flex flex-col justify-between pb-1 md:pb-1">
+                        <div class="text-xl font-medium">
+                            <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+                        </div>
+                        <FormattedDate date={post.data.date} />
+                    </div>
+                    <div class="font-light">{post.data.description}</div>
+                </div>
+            ))
+        }
+    </div>
+</Layout>
