@@ -7,9 +7,10 @@ const postCollection = defineCollection({
         description: z.string(),
         date: z.date(),
         isEssay: z.boolean(),
+        isDraft: z.boolean().optional(),
     }),
 })
 
 export const collections = {
-    essays: postCollection,
+    blog: postCollection,
 }

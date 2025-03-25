@@ -1,10 +1,10 @@
 ---
-import DesktopMobileSwitcher from '@/components/DesktopMobileSwitcher.astro'
+import DesktopThemeSwitcher from '@/components/DesktopThemeSwitcher.astro'
 ---
 
 <div class="flex h-max w-full">
     <div
-        class="fixed bottom-0 mx-auto grid w-full grid-cols-5 items-center justify-evenly bg-blue-200 text-left font-sans md:left-0 md:h-full md:w-fit md:grid-cols-none md:grid-rows-6 md:place-items-center md:space-x-0 md:px-2"
+        class="fixed bottom-0 mx-auto grid w-full grid-cols-5 items-center justify-evenly bg-blue-200 text-left font-sans md:left-0 md:h-full md:w-fit md:grid-cols-none md:grid-rows-6 md:place-items-center md:space-x-0 md:px-2 dark:bg-blue-900 dark:text-blue-100"
     >
         <a href="/" class="py-2">
             <div class="flex flex-col place-items-center">
@@ -84,7 +84,7 @@ import DesktopMobileSwitcher from '@/components/DesktopMobileSwitcher.astro'
             </div>
         </a>
         <div class="hidden md:block">
-            <DesktopMobileSwitcher />
+            <DesktopThemeSwitcher />
         </div>
     </div>
 </div>
