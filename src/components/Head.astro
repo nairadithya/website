@@ -23,6 +23,13 @@ const { title, description } = Astro.props
         title="Adithya Nair's Website"
         href={new URL('rss.xml', Astro.site)}
     />
+    <meta
+        property="og:title"
+        content="Adithya Nair - The Personal Website Of A Student Writer And Programmer"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.adithyanair.com" />
+    <script src="/src/lib/colorscheme.ts"></script>
     <link href="/src/styles/global.css" rel="stylesheet" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
