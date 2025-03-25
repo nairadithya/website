@@ -1,14 +1,22 @@
 ---
-const data = await fetch(
-    `http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=${import.meta.env.LAST_FM_USERNAME}&period=7day&limit=1&api_key=${import.meta.env.LAST_FM_API_KEY}&format=json`
-)
-const topTrack = await data.json()
 const fetchedTrack = {
-    link: topTrack.toptracks.track[0].url,
-    name: topTrack.toptracks.track[0].name,
-    artist: topTrack.toptracks.track[0].artist.name,
+    link: '',
+    name: '',
+    artist: '',
 }
 ---
+
+<script lang="ts" type="module">
+    const data = await fetch(
+        `http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=${import.meta.env.LAST_FM_USERNAME}&period=7day&limit=1&api_key=${import.meta.env.LAST_FM_API_KEY}&format=json`
+    )
+    const topTrack = await data.json()
+    const fetchedTrack = {
+        link: topTrack.toptracks.track[0].url,
+        name: topTrack.toptracks.track[0].name,
+        artist: topTrack.toptracks.track[0].artist.name,
+    }
+</script>
 
 <a href={fetchedTrack.link}>
     <div
