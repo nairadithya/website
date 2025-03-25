@@ -9,8 +9,6 @@ function seededRandom(daySeed: number): number {
     return x - Math.floor(x)
 }
 
-const increment = 2
-
 /**
  * Returns a pseudo-random hue for the current day, but remains the same
  * for that day. The hue resets the next day.
@@ -24,7 +22,7 @@ function getDailyHueSeeded(): number {
         (now.getTime() - startOfYear.getTime()) / (24 * 60 * 60 * 1000)
     )
     // Convert that to a random float
-    const randomValue: number = seededRandom(dayOfYear + increment)
+    const randomValue: number = seededRandom(dayOfYear)
 
     // Scale up to 360 deg
     return Math.floor(randomValue * 360)
