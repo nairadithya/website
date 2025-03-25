@@ -5,9 +5,10 @@ import MarkdownIt from 'markdown-it'
 const parser = new MarkdownIt()
 
 export async function GET(context) {
-    var posts = await getCollection('essays')
-    posts.push.apply(posts, await getCollection('journal'))
-    posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+    const posts = await getCollection('blog')
+    posts
+        .filter((post) => !post.data.isDraft)
+        .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
     return rss({
         stylesheet: '/rss/styles.xsl',
         title: "Adithya Nair's Website",
@@ -17,10 +18,7 @@ export async function GET(context) {
             title: post.data.title,
             pubDate: post.data.date,
             description: post.data.description,
-            link:
-                post.collection == 'essays'
-                    ? `/essays/${post.slug}/`
-                    : `/journal/${post.slug}`,
+            link: `/blog/${post.slug}`,
             content: sanitizeHtml(parser.render(post.body), {
                 allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
             }),
