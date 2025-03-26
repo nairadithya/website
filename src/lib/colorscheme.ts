@@ -9,8 +9,6 @@ function seededRandom(daySeed: number): number {
     return x - Math.floor(x)
 }
 
-const increment = 9
-
 /**
  * Returns a pseudo-random hue for the current day, but remains the same
  * for that day. The hue resets the next day.
