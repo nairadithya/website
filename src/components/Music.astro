@@ -6,7 +6,7 @@ const fetchedTrack = {
 }
 ---
 
-<script lang="ts" type="module">
+<script>
     const data = await fetch(
         `http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=${import.meta.env.LAST_FM_USERNAME}&period=7day&limit=1&api_key=${import.meta.env.LAST_FM_API_KEY}&format=json`
     )
