@@ -3,9 +3,12 @@ interface Props {
     title: string
     description?: string
 }
+
 import '@/styles/global.css'
 
 const { title, description } = Astro.props
+
+import { ClientRouter } from 'astro:transitions'
 ---
 
 <head>
@@ -38,4 +41,5 @@ const { title, description } = Astro.props
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <ClientRouter />
 </head>
