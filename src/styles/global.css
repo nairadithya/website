@@ -11,7 +11,6 @@
     --color-bg: oklch(97% 0.02 var(--hue));
     --color-fg: oklch(18% 0.59 var(--hue));
     --color-fg-less: oklch(89% 0.05 var(--hue));
-    --color-link: oklch(49% 0.19 var(--hue));
     --color-hover: oklch(80% 0.12 var(--hue));
     --color-me-400: oklch(71% 0.19 var(--hue));
     --color-me-500: oklch(60% 0.27 var(--hue));
@@ -20,14 +19,12 @@
 }
 
 @variant dark {
-    --color-bg: oklch(12% 0.04 var(--hue));
-    --color-fg: oklch(89% 0.29 var(--hue));
-    --color-fg-less: oklch(23% 0.04 var(--hue));
-    --color-link: oklch(18% 0.59 var(--hue));
-    --color-me-300: oklch(80% 0.12 var(--hue));
+    --color-fg: oklch(83% 0.04 var(--hue));
+    --color-bg: oklch(06% 0.08 var(--hue));
+    --color-fg-less: oklch(19% 0.02 var(--hue));
+    --color-hover: oklch(80% 0.12 var(--hue));
     --color-me-400: oklch(71% 0.19 var(--hue));
     --color-me-500: oklch(60% 0.27 var(--hue));
-    --color-me-600: oklch(49% 0.19 var(--hue));
     --color-me-700: oklch(38% 0.12 var(--hue));
     --color-me-800: oklch(25% 0.04 var(--hue));
 }

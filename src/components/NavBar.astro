@@ -8,9 +8,11 @@ import DesktopThemeSwitcher from '@/components/DesktopThemeSwitcher.astro'
     >
         <a href="/" class="py-2">
             <div class="flex flex-col place-items-center">
-                <div class="hover:bg-hover w-96 w-full hover:rounded-lg">
+                <div
+                    class="hover:bg-hover w-96 w-full hover:rounded-lg"
+                >
                     <svg
-                        class="hover:bg-hover w-full hover:rounded-lg"
+                        class="dark:hover:text-bg hover:bg-hover w-full hover:rounded-lg"
                         xmlns="http://www.w3.org/2000/svg"
                         height="24px"
                         viewBox="0 -960 960 960"
@@ -27,7 +29,7 @@ import DesktopThemeSwitcher from '@/components/DesktopThemeSwitcher.astro'
         <a href="/blog" class="py-2">
             <div class="flex flex-col place-items-center">
                 <svg
-                    class="hover:bg-hover hover:w-full hover:rounded-lg"
+                    class="dark:hover:text-bg hover:bg-hover hover:w-full hover:rounded-lg"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24px"
                     viewBox="0 -960 960 960"
@@ -44,7 +46,7 @@ import DesktopThemeSwitcher from '@/components/DesktopThemeSwitcher.astro'
         <a href="/garden" class="focus:text-green py-2">
             <div class="flex flex-col place-items-center">
                 <svg
-                    class="hover:bg-hover hover:w-full hover:rounded-lg"
+                    class="dark:hover:text-bg hover:bg-hover hover:w-full hover:rounded-lg"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24px"
                     viewBox="0 -960 960 960"
@@ -60,7 +62,7 @@ import DesktopThemeSwitcher from '@/components/DesktopThemeSwitcher.astro'
         <a href="/journeys" class="hover:text-rosewater focus:text-green py-2">
             <div class="flex flex-col place-items-center">
                 <svg
-                    class="hover:bg-hover hover:w-full hover:rounded-lg"
+                    class="dark:hover:text-bg hover:bg-hover hover:w-full hover:rounded-lg"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24px"
                     viewBox="0 -960 960 960"
@@ -76,7 +78,7 @@ import DesktopThemeSwitcher from '@/components/DesktopThemeSwitcher.astro'
         <a href="/about" class="hover:text-rosewater focus:text-green py-2">
             <div class="flex flex-col place-items-center">
                 <svg
-                    class="hover:bg-hover hover:w-full hover:rounded-lg"
+                    class="dark:hover:text-bg hover:bg-hover hover:w-full hover:rounded-lg"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24px"
                     viewBox="0 -960 960 960"
@@ -89,5 +91,6 @@ import DesktopThemeSwitcher from '@/components/DesktopThemeSwitcher.astro'
                 <div class="text-xs">About</div>
             </div>
         </a>
+        <DesktopThemeSwitcher />
     </div>
 </div>

@@ -21,18 +21,19 @@ import { ClientRouter } from 'astro:transitions'
     />
     <meta name="author" content="Adithya Nair" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="preload" href="/src/lib/colorscheme.ts" as="script" />
     <link
         rel="alternate"
         type="application/rss+xml"
         title="Adithya Nair's Website"
         href={new URL('rss.xml', Astro.site)}
-    /><meta
+    />
+    <meta
         property="og:description"
         content={description
             ? description
-            : 'A material you inspired personal blog.'}
+            : 'A material you inspired personal website.'}
     />
-
     <meta
         property="og:title"
         content={title
@@ -41,7 +42,7 @@ import { ClientRouter } from 'astro:transitions'
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.adithyanair.com" />
-    <script src="/src/lib/colorscheme.ts" is:inline></script>
+    <script src="/src/lib/colorscheme.ts"></script>
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />

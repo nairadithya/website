@@ -23,7 +23,7 @@ document.addEventListener('astro:page-load', () => {
             (now.getTime() - startOfYear.getTime()) / (24 * 60 * 60 * 1000)
         )
         // Convert that to a random float
-        const randomValue: number = seededRandom(dayOfYear)
+        const randomValue: number = seededRandom(dayOfYear + 1)
 
         // Scale up to 360 deg
         return Math.floor(randomValue * 360)
