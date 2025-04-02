@@ -11,15 +11,3 @@ This follows the typical structure of a normal Astro project, so use that filesy
 Steal as needed, credit would be nice tho.
 
 also, shameless [amrita.town](https://amrita.town) plug
-
-* Wishlist
-- [X] Listening to music
-- [ ] Photo Gallery
-- [ ] Quotes generator (https://laurasinisterra.github.io/reading-notes/)
-- [ ] Merge blogs and essays? (Add a section called Essential Reads)
-- [ ] Make an actual notes page (with a character limit)
-- [ ] Projects page
-- [ ] A proper bookmarks view ( maybe even tooling to update the bookmarks )
-- [ ] A proper FAVOURITES view
-- [ ] Have a way to contact me
-- [ ] I love this [[https://nikhil.io/pasta/][Pasta]] page
