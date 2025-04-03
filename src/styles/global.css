@@ -4,10 +4,10 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
+    --hue: 0deg;
     --font-sans: 'Roboto', 'sans-serif';
     --font-serif: 'Roboto Serif', 'sans-serif';
 
-    --hue: 0deg;
     --color-bg: oklch(97% 0.02 var(--hue));
     --color-fg: oklch(18% 0.59 var(--hue));
     --color-fg-less: oklch(89% 0.05 var(--hue));
