@@ -11,8 +11,16 @@ const { title, description } = Astro.props
 ---
 
 <!doctype html>
-<html class="bg-bg text-fg h-full font-serif" lang="en">
-    <Head title={title} />
+<html
+    class="selection:text-bg selection:bg-fg bg-bg text-fg h-full font-serif"
+    lang="en"
+>
+    <Head
+        title={title}
+        description={description
+            ? description
+            : "Ideally, there should be a description here, but I seem to have forgotten. If you know me, just let me know I've been sloppy."}
+    />
     <main class="min-h-screen w-full py-1">
         <NavBar />
         <div class="px-5">
