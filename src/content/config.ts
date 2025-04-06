@@ -12,6 +12,18 @@ const postCollection = defineCollection({
     }),
 })
 
+const quotesCollection = defineCollection({
+    loader: file('src/content/notes.json'),
+    schema: z.object({
+        id: z.int(),
+        title: z.string(),
+        quote: z.string(),
+        author: z.string(),
+        category: z.string(),
+    }),
+})
+
 export const collections = {
     blog: postCollection,
+    quotes: quotesCollection,
 }
