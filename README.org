@@ -1,13 +1,13 @@
-* README
+#+TITLE: A Material You Inspired Website
+#+AUTHOR: Adithya Nair
 
-Here's the source for [[my website][https://adithyanair.com]].
+* About This Website
+This website is an built in close alignment with Material You's design system.
 
-Refrain from reading the commit messages, they were written in moments of darkness and pain.
+* Colorscheme
+The colorscheme changes daily, it uses the current date as a seed to generate a hue value which it then applies onto the rest of the stylesheet.
 
-The colour scheme is a straight copy of the pleasant catppuccin colour scheme.
-
-This follows the typical structure of a normal Astro project, so use that filesystem to navigate this one.
-
-Steal as needed, credit would be nice tho.
+* Colophon
+This website is built with Astro, TailwindCSS and icons from Material You.
 
 also, shameless [[amrita.town][https://amrita.town]] plug
