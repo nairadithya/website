@@ -1,6 +1,3 @@
-#+TITLE: A Material You Inspired Website
-#+AUTHOR: Adithya Nair
-
 * About This Website
 This website is an built in close alignment with Material You's design system.
 
