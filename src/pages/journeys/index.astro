@@ -1,10 +1,39 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro'
+
+import { getCollection } from 'astro:content'
+
+import FormattedDate from '@/components/FormattedDate.astro'
+const posts = (await getCollection('journeys'))
+    .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+    .filter((post) => !post.data.isDraft)
 ---
 
 <BaseLayout
     title="Journeys"
     description="This page contains all the things I'm curious about."
 >
-    <div>This page contains all the things I'm curious about.</div>
+    <div class="py-2">
+        This has a different function from my blog. My blog will be a set of
+        static entries that I will change only minimally after the fact. This
+        journeys page will be a set of dynamic documents that I plan to
+        constantly add to.
+    </div>
+
+    <div class="flex flex-col space-y-2">
+        {
+            posts.map((post) => (
+                <div class="hover:bg-fg-less rounded-lg p-4">
+                    <a href={`/journeys/${post.id}`}>
+                        <div class="flex flex-col justify-between pb-1 md:pb-1">
+                            <div class="text-xl font-medium">
+                                {post.data.title}
+                            </div>
+                        </div>
+                        <div class="font-light">{post.data.description}</div>
+                    </a>
+                </div>
+            ))
+        }
+    </div>
 </BaseLayout>

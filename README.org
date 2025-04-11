@@ -1,6 +1,6 @@
 * README
 
-Here's the source for [my website](https://adithyanair.com).
+Here's the source for [[my website][https://adithyanair.com]].
 
 Refrain from reading the commit messages, they were written in moments of darkness and pain.
 
@@ -10,4 +10,4 @@ This follows the typical structure of a normal Astro project, so use that filesy
 
 Steal as needed, credit would be nice tho.
 
-also, shameless [amrita.town](https://amrita.town) plug
+also, shameless [[amrita.town][https://amrita.town]] plug
