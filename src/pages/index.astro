@@ -5,6 +5,7 @@ import Music from '@/components/Music.astro'
 import HomeLayout from '@/layouts/HomeLayout.astro'
 import FormattedDate from '@/components/FormattedDate.astro'
 import ThemeSwitcher from '@/components/MobileThemeSwitcher.astro'
+import QuotesCard from '@/components/QuotesCard.astro'
 import { getCollection } from 'astro:content'
 
 const blogPosts = (await getCollection('blog')).sort(
@@ -50,7 +51,7 @@ const mostRecentPosts = blogPosts
             <div class="py-4">
                 <div class="flex flex-col justify-between pb-1 md:flex-row md:space-x-2 md:pb-1">
                     <div class="text-xl font-medium">
-                        <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+                        <a href={`/blog/${post.id}`}>{post.data.title}</a>
                     </div>
                     <div class="md:text-right">
                         <FormattedDate date={post.data.date} />
