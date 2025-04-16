@@ -28,6 +28,7 @@ import { ClientRouter } from 'astro:transitions'
         title="Adithya Nair's Website"
         href={new URL('rss.xml', Astro.site)}
     />
+
     <meta
         property="og:description"
         content={description
@@ -42,7 +43,25 @@ import { ClientRouter } from 'astro:transitions'
     />
     <meta property="og:image" content="/og.png" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.adithyanair.com" />
+    <meta property="og:url" content={Astro.site} />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content={Astro.site} />
+    <meta property="twitter:url" content={Astro.site} />
+    <meta
+        name="twitter:title"
+        content={title
+            ? title
+            : 'Adithya Nair | Student, Programmer And Writer'}
+    />
+    <meta
+        name="twitter:description"
+        content={description
+            ? description
+            : 'A material you inspired personal website.'}
+    />
+    <meta name="twitter:image" content="/og.png" />
+
     <script src="/src/lib/colorscheme.ts" is:inline></script>
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
