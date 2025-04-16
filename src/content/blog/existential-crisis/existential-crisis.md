@@ -3,6 +3,7 @@ title: 'I Had An Existential Crisis.'
 description: 'My first big essay, one I wrote after waking up from a nightmare and feeling small against the scope of the universe.'
 date: 2020-09-13
 isEssay: true
+slug: existential-crisis
 ---
 
 We, as humans, are naturally egoistic. I don't say that as if it's a problem but rather as an observation. The problems we face on a day to day basis casts a veil on our eyes so that we don't even stop to consider that maybe these problems don't matter. Take a look at this photo:
