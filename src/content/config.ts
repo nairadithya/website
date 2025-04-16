@@ -1,7 +1,7 @@
 import { z, defineCollection } from 'astro:content'
 import { glob, file } from 'astro/loaders'
 
-blogSchema = z.object({
+const blogSchema = z.object({
     title: z.string(),
     description: z.string(),
     date: z.date(),
