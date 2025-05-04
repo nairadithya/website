@@ -4,35 +4,14 @@ import NavItem from '@/components/NavItem.astro'
 import { getSubPage } from '@/lib/getSubPage.ts'
 const currLink = getSubPage(Astro.url)
 
-const links = [
-    {
-        link: '',
-        text: 'Home',
-    },
-    {
-        link: 'blog',
-        text: 'Blog',
-    },
-    {
-        link: 'garden',
-        text: 'Garden',
-    },
-    {
-        link: 'journeys',
-        text: 'Journeys',
-    },
-    {
-        link: 'about',
-        text: 'About',
-    },
-]
+const links = ['Home', 'Blog', 'Garden', 'Journeys', 'About']
 ---
 
 <div class="flex h-full w-full">
     <div
         class="bg-fg-less dark:bg-fg-less dark:text-fg fixed bottom-0 mx-auto flex w-full place-items-center items-center justify-evenly text-center font-sans select-none md:left-0 md:h-full md:w-fit md:grid-cols-none md:flex-col md:place-items-center md:justify-center md:space-x-0 md:px-2"
     >
-        {links.map((link) => <NavItem link={link.link} text={link.text} />)}
+        {links.map((link) => <NavItem name={link} />)}
         <DesktopThemeSwitcher />
     </div>
 </div>
