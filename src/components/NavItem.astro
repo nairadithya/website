@@ -1,0 +1,17 @@
+---
+import { getSubPage } from '@/lib/getSubPage'
+
+const { link, text } = Astro.props
+
+const currLink = getSubPage(Astro.url)
+
+const isActive = currLink == text.toLowerCase()
+const Icon = (await import(`/src/components/NavIcons/${text}.astro`)).default
+---
+
+<a href={`/${link}`} class="py-2">
+    <div class="flex flex-col place-items-center">
+        <Icon isActive={isActive} />
+    </div>
+    <div class="text-xs">{text}</div>
+</a>
