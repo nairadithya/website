@@ -6,19 +6,17 @@ interface Props {
 
 import '@/styles/global.css'
 
-const { title, description } = Astro.props
+const {
+    title = 'Adithya Nair | Student, Programmer And Writer',
+    description = "Adithya Nair's home on the internet",
+} = Astro.props
 
 import { ClientRouter } from 'astro:transitions'
 ---
 
 <head>
     <meta charset="UTF-8" />
-    <meta
-        name="description"
-        content={description
-            ? description
-            : "Adithya Nair's home on the internet"}
-    />
+    <meta name="description" content={description} />
     <meta name="author" content="Adithya Nair" />
     <meta name="viewport" content="width=device-width" />
     <link rel="preload" href="/src/lib/colorscheme.ts" as="script" />
@@ -29,18 +27,8 @@ import { ClientRouter } from 'astro:transitions'
         href={new URL('rss.xml', Astro.site)}
     />
 
-    <meta
-        property="og:description"
-        content={description
-            ? description
-            : 'A material you inspired personal website.'}
-    />
-    <meta
-        property="og:title"
-        content={title
-            ? title
-            : 'Adithya Nair | Student, Programmer And Writer'}
-    />
+    <meta property="og:description" content={description} />
+    <meta property="og:title" content={title} />
     <meta property="og:image" content="/og.png" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.site} />
@@ -48,18 +36,8 @@ import { ClientRouter } from 'astro:transitions'
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content={Astro.site} />
     <meta property="twitter:url" content={Astro.site} />
-    <meta
-        name="twitter:title"
-        content={title
-            ? title
-            : 'Adithya Nair | Student, Programmer And Writer'}
-    />
-    <meta
-        name="twitter:description"
-        content={description
-            ? description
-            : 'A material you inspired personal website.'}
-    />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content="/og.png" />
 
     <script src="/src/lib/colorscheme.ts" is:inline></script>
