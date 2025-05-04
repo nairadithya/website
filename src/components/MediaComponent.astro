@@ -1,0 +1,33 @@
+---
+const { title, author, type, link } = Astro.props
+import Book from '@/icons/book.svg'
+---
+
+<a href=`garden/${link}`>
+    <div
+        class="hover:bg-fg-less flex w-fit place-items-center items-start justify-items-center space-x-2 rounded-lg p-2"
+    >
+        {
+            type === 'book' ? (
+                <Book class="w-12" />
+            ) : (
+                <svg
+                    class="w-12"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 -960 960 960"
+                    width="auto"
+                    fill="currentColor"
+                >
+                    <path d="m160-800 80 160h120l-80-160h80l80 160h120l-80-160h80l80 160h120l-80-160h120q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800Zm0 240v320h640v-320H160Zm0 0v320-320Z" />
+                </svg>
+            )
+        }
+
+        <div class="flex flex-col items-start">
+            <div class="">{title}</div>
+            <div class="font-light italic">
+                {author}
+            </div>
+        </div>
+    </div>
+</a>
