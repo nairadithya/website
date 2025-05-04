@@ -1,8 +1,8 @@
-export function getSubPage(link: URL) {
-    let path: String | null = link.pathname
+export function getSubPage(link) {
+    let path = link.pathname
     if (path == '/') {
         return 'home'
     }
-    let subPageString: String | null = path.match(/\/(.+)/)[1]
+    let subPageString = path.match(/\/(\w+).*/)[1]
     return subPageString
 }
