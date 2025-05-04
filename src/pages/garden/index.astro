@@ -1,12 +1,13 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro'
 import QuotesCard from '@/components/QuotesCard.astro'
+import CollectionArray from '@/components/CollectionArray.astro'
 ---
 
 <BaseLayout
     title="The Garden"
     description="All the weird bits and bobs I deem worthy of showing off."
 >
-    <p class="py-2">Think of this page as public note-taking.</p>
-    <QuotesCard />
+    <div class="py-2 text-xl font-bold">Books</div>
+    <CollectionArray />
 </BaseLayout>
