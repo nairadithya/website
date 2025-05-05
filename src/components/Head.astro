@@ -29,7 +29,7 @@ import { ClientRouter } from 'astro:transitions'
 
     <meta property="og:description" content={description} />
     <meta property="og:title" content={title} />
-    <meta property="og:image" content="/og.png" />
+    <meta property="og:image" content="{Astro.site}/og.png" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.site} />
     <!-- Twitter -->
@@ -38,7 +38,7 @@ import { ClientRouter } from 'astro:transitions'
     <meta property="twitter:url" content={Astro.site} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content="/og.png" />
+    <meta name="twitter:image" content="{Astro.site}/og.png" />
 
     <script src="/src/lib/colorscheme.ts" is:inline></script>
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
