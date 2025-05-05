@@ -1,4 +1,4 @@
-export function getSubPage(link) {
+export function getSubPage(link: URL) {
     let path = link.pathname
     if (path == '/') {
         return 'home'
