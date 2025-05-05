@@ -3,6 +3,7 @@ import rehypeMathjax from 'rehype-mathjax'
 import remarkMath from 'remark-math'
 import tailwindcss from '@tailwindcss/vite'
 import mdx from '@astrojs/mdx'
+import cloudflare from '@astrojs/cloudflare'
 
 import sitemap from '@astrojs/sitemap'
 
@@ -16,7 +17,5 @@ export default defineConfig({
         rehypePlugins: ['rehype-mathjax'],
     },
     integrations: [mdx(), sitemap()],
-    experimental: {
-        svg: true,
-    },
+    adapter: cloudflare(),
 })
