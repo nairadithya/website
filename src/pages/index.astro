@@ -5,7 +5,6 @@ import Music from '@/components/Music.astro'
 import HomeLayout from '@/layouts/HomeLayout.astro'
 import FormattedDate from '@/components/FormattedDate.astro'
 import ThemeSwitcher from '@/components/MobileThemeSwitcher.astro'
-import QuotesCard from '@/components/QuotesCard.astro'
 import { getCollection } from 'astro:content'
 
 const blogPosts = (await getCollection('blog')).sort(

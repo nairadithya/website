@@ -3,7 +3,6 @@ import BaseLayout from '@/layouts/BaseLayout.astro'
 
 import { getCollection } from 'astro:content'
 
-import FormattedDate from '@/components/FormattedDate.astro'
 const posts = (await getCollection('journeys'))
     .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
     .filter((post) => !post.data.isDraft)
