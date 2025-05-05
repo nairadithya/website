@@ -6,7 +6,7 @@ const { name } = Astro.props
 const currLink = getSubPage(Astro.url)
 const link = name == 'Home' ? '' : name.toLowerCase()
 const isActive = currLink == name.toLowerCase()
-const Icon = (await import(`/src/components/NavIcons/${name}.astro`)).default
+const Icon = (await import(`./NavIcons/${name}.astro`)).default
 ---
 
 <a href={`/${link}`} class="py-2">
