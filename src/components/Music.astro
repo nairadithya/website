@@ -1,6 +1,7 @@
 ---
+const { env } = Astro.locals.runtime
 const data = await fetch(
-    `http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=${import.meta.env.LAST_FM_USERNAME}&period=7day&limit=1&api_key=${import.meta.env.LAST_FM_API_KEY}&format=json`
+    `http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=${env.LAST_FM_USERNAME}&period=7day&limit=1&api_key=${env.LAST_FM_API_KEY}&format=json`
 )
 
 const topTrack = await data.json()
