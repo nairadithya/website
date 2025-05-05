@@ -3,9 +3,9 @@ const { title, author, type, link } = Astro.props
 import Book from '@/icons/book.svg'
 ---
 
-<a href=`garden/${link}`>
+<a href={`garden/${link}`}>
     <div
-        class="hover:bg-fg-less flex w-fit place-items-center items-start justify-items-center space-x-2 rounded-lg p-2"
+        class="hover:bg-fg-less flex w-fit place-items-center items-start justify-items-center space-x-2 rounded-lg md:p-2"
     >
         {
             type === 'book' ? (

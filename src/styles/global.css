@@ -4,7 +4,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --hue: 0deg;
+    --hue: 2deg;
     --font-sans: 'Roboto', 'sans-serif';
     --font-serif: 'Roboto Serif', 'sans-serif';
 
