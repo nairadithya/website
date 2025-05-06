@@ -14,7 +14,7 @@ const Icon = (await import(`./NavIcons/${name}.astro`)).default
         <div
             class:list={[
                 'flex w-10 justify-center rounded-lg',
-                [isActive ? 'bg-hover' : ''],
+                [isActive ? 'bg-hover dark:text-bg' : ''],
             ]}
         >
             <Icon isActive={isActive} />
