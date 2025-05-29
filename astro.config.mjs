@@ -1,6 +1,4 @@
 import { defineConfig } from 'astro/config'
-import rehypeMathjax from 'rehype-mathjax'
-import remarkMath from 'remark-math'
 import tailwindcss from '@tailwindcss/vite'
 import mdx from '@astrojs/mdx'
 import cloudflare from '@astrojs/cloudflare'
@@ -13,8 +11,7 @@ export default defineConfig({
         plugins: [tailwindcss()],
     },
     markdown: {
-        remarkPlugins: ['remark-gfm', 'remark-smartypants', 'remark-math'],
-        rehypePlugins: ['rehype-mathjax'],
+        remarkPlugins: ['remark-gfm', 'remark-smartypants'],
     },
     integrations: [mdx(), sitemap()],
     adapter: cloudflare(),
