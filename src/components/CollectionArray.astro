@@ -2,21 +2,15 @@
 import { getCollection } from 'astro:content'
 import MediaComponent from '@/components/MediaComponent.astro'
 const quoteCollection = await getCollection('quotes')
-let bookCollection = quoteCollection.filter((item) => item.data.type == 'book')
-
-let movieCollection = quoteCollection.filter(
-    (item) => item.data.type == 'movie'
-)
-let articleCollection = quoteCollection.filter(
-    (item) => item.data.type == 'article'
-)
+const { type } = Astro.props
+let collection = quoteCollection.filter((item) => item.data.type == type)
 ---
 
 <div
     class="grid grid-cols-1 items-start justify-items-start gap-5 md:grid-cols-2"
 >
     {
-        bookCollection.map((quoteItem) => (
+        collection.map((quoteItem) => (
             <MediaComponent
                 title={quoteItem.data.title}
                 author={quoteItem.data.author}
