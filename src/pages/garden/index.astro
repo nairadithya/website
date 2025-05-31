@@ -5,8 +5,14 @@ import CollectionArray from '@/components/CollectionArray.astro'
 
 <BaseLayout
     title="The Garden"
-    description="All the weird bits and bobs I deem worthy of showing off."
+    description="The place I wanna keep all the things that inspire me."
 >
+    <div>
+        Think of this page as a collection of the ideas and views that I live by
+        the most, or as homage to some of the people I find most inspiring.
+    </div>
     <div class="py-2 text-xl font-bold">Books</div>
-    <CollectionArray />
+    <CollectionArray type="book" />
+    <div class="py-2 text-xl font-bold">Movies</div>
+    <CollectionArray type="movie" />
 </BaseLayout>
