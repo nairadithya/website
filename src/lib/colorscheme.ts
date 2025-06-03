@@ -1,4 +1,4 @@
-// Stolen completely from https://supergeekery.com/blog/create-mathematically-generated-css-color-schemes-with-oklch
+// Stolen from https://supergeekery.com/blog/create-mathematically-generated-css-color-schemes-with-oklch
 
 /**
  * Creates a pseudo-random float in the range [0, 1) using Math.sin
