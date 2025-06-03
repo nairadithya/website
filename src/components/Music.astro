@@ -1,42 +1,33 @@
 ---
-// @ts-ignore
-const { env } = Astro.locals.runtime
-const data = await fetch(
-    `http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=${env.LAST_FM_USERNAME}&period=7day&limit=1&api_key=${env.LAST_FM_API_KEY}&format=json`
-)
-
-const topTrack = await data.json()
+import { GET } from '@/pages/api/top-song.json.ts'
+let response = await GET()
+const data = await response.json()
 const fetchedTrack = {
-    link: topTrack.toptracks.track[0].url,
-    name: topTrack.toptracks.track[0].name,
-    artist: topTrack.toptracks.track[0].artist.name,
+    link: data?.toptracks?.track[0]?.url,
+    name: data?.toptracks?.track[0]?.name,
+    artist: data?.toptracks?.track[0]?.artist.name,
 }
 ---
 
-<a href={fetchedTrack.link}>
-    <div
-        class="my-2 flex w-full items-center justify-items-start space-x-2 p-4"
-    >
-        <div class="flex h-10 items-start">
-            <svg
-                class="h-full w-auto"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 -960 960 960"
-                fill="currentColor"
-            >
-                <path
-                    d="M400-120q-66 0-113-47t-47-113q0-66 47-113t113-47q23 0 42.5 5.5T480-418v-422h240v160H560v400q0 66-47 113t-113 47Z"
-                >
-                </path>
-            </svg>
-        </div>
-        <div class="flex h-10 flex-col justify-between leading-tight">
-            <div class="font-bold">
-                {fetchedTrack.name}
+{
+    fetchedTrack && (
+        <a href={fetchedTrack.link}>
+            <div class="my-2 flex w-full items-center justify-items-start space-x-2 p-4">
+                <div class="flex h-10 items-start">
+                    <svg
+                        class="h-full w-auto"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 -960 960 960"
+                        fill="currentColor"
+                    >
+                        <path d="M400-120q-66 0-113-47t-47-113q0-66 47-113t113-47q23 0 42.5 5.5T480-418v-422h240v160H560v400q0 66-47 113t-113 47Z" />
+                    </svg>
+                </div>
+                <div class="flex h-10 flex-col justify-between leading-tight">
+                    <div class="font-bold">{fetchedTrack.name}</div>
+                    <div class="p-0">{fetchedTrack.artist}</div>
+                </div>
             </div>
-            <div class="p-0">
-                {fetchedTrack.artist}
-            </div>
-        </div>
-    </div>
-</a>
+        </a>
+    )
+}
