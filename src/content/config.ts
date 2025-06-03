@@ -26,7 +26,7 @@ const quotesCollection = defineCollection({
         author: z.string(),
         source: z.string().optional(),
         category: z.string(),
-        type: z.enum(['article', 'book', 'movie', 'show', 'misc']),
+        type: z.enum(['article', 'book', 'movie', 'show', 'note']),
     }),
 })
 

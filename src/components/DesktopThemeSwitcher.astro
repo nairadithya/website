@@ -20,7 +20,7 @@
 </button>
 
 <script is:inline>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('astro:page-load', function () {
         const getInitialTheme = () => {
             const savedTheme = localStorage.getItem('theme')
             if (savedTheme) return savedTheme
