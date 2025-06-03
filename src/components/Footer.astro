@@ -1,63 +1,29 @@
-<div class="mt-2 mb-10 border-t-2 border-dashed p-3 text-center">
-    Member of <a class="underline" href="https://amrita.town"> amrita.town </a>
-    <div class="mx-auto flex place-content-center place-items-center py-2">
-        <div class="flex items-center space-x-2">
-            <a href="/rss.xml">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24px"
-                    viewBox="0 -960 960 960"
-                    width="24px"
-                    fill="currentColor"
-                >
-                    <path
-                        d="M200-120q-33 0-56.5-23.5T120-200q0-33 23.5-56.5T200-280q33 0 56.5 23.5T280-200q0 33-23.5 56.5T200-120Zm480 0q0-117-44-218.5T516-516q-76-76-177.5-120T120-680v-120q142 0 265 53t216 146q93 93 146 216t53 265H680Zm-240 0q0-67-25-124.5T346-346q-44-44-101.5-69T120-440v-120q92 0 171.5 34.5T431-431q60 60 94.5 139.5T560-120H440Z"
-                    >
-                    </path>
-                </svg></a
-            >•
-            <!-- Arrow Back -->
-            <a href="https://amrita.town/prev"
-                ><svg
-                    class=""
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24px"
-                    viewBox="0 -960 960 960"
-                    width="24px"
-                    fill="currentColor"
-                    ><path
-                        d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"
-                    ></path>
-                </svg>
-            </a>
-            <!-- Dice -->
-            <a href="https://amrita.town/random">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24px"
-                    viewBox="0 -960 960 960"
-                    width="24px"
-                    fill="currentColor"
-                    ><path
-                        d="M640-260q25 0 42.5-17.5T700-320q0-25-17.5-42.5T640-380q-25 0-42.5 17.5T580-320q0 25 17.5 42.5T640-260ZM480-420q25 0 42.5-17.5T540-480q0-25-17.5-42.5T480-540q-25 0-42.5 17.5T420-480q0 25 17.5 42.5T480-420ZM320-580q25 0 42.5-17.5T380-640q0-25-17.5-42.5T320-700q-25 0-42.5 17.5T260-640q0 25 17.5 42.5T320-580ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"
-                    ></path>
-                </svg>
-            </a>
-            <!-- Arrow Forward -->
-            <a href="https://amrita.town/next">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24px"
-                    viewBox="0 -960 960 960"
-                    width="24px"
-                    fill="currentColor"
-                >
-                    <path
-                        d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"
-                    >
-                    </path>
-                </svg>
+---
+import ArrowBack from '@/icons/arrow-back.svg'
+import Dice from '@/icons/dice.svg'
+import ArrowForward from '@/icons/arrow-forward.svg'
+import RSS from '@/icons/rss.svg'
+---
+
+<div class="mx-auto mt-2 mb-10 border-t-2 border-dashed p-3 py-2">
+    <div
+        class="flex place-content-center place-items-center space-x-2 text-center"
+    >
+        <div>
+            Member of <a class="underline" href="https://amrita.town">
+                amrita.town
             </a>
         </div>
+        <div>•</div>
+        <div class="flex place-content-center place-items-center">
+            <a href="https://amrita.town/prev"> <ArrowBack /> </a>
+            <a href="https://amrita.town/random"> <Dice /> </a>
+            <a href="https://amrita.town/next"> <ArrowForward /> </a>
+        </div>
+    </div>
+    <div
+        class="mx-auto flex place-content-center place-items-center space-x-2 pt-2"
+    >
+        <a href="/rss.xml"> <RSS /> </a>
     </div>
 </div>

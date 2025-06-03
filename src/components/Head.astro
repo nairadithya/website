@@ -19,6 +19,7 @@ import { ClientRouter } from 'astro:transitions'
     <meta name="description" content={description} />
     <meta name="author" content="Adithya Nair" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="preload" href="/src/lib/setTheme.ts" as="script" />
     <link rel="preload" href="/src/lib/colorscheme.ts" as="script" />
     <link
         rel="alternate"
@@ -39,7 +40,7 @@ import { ClientRouter } from 'astro:transitions'
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content=`${Astro.site}/og.png` />
-
+    <script src="/src/lib/setTheme.ts" is:inline></script>
     <script src="/src/lib/colorscheme.ts" is:inline></script>
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
