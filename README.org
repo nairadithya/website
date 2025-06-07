@@ -4,5 +4,4 @@ This website is an built in close alignment with Material You's design system.
 The colorscheme changes daily, it uses the current date as a seed to generate a hue value which it then applies onto the rest of the stylesheet.
 * Colophon
 This website is built with Astro, TailwindCSS and icons from Material You.
-
 also, shameless [[amrita.town][https://amrita.town]] plug

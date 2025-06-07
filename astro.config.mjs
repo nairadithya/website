@@ -12,6 +12,7 @@ export default defineConfig({
     },
     markdown: {
         remarkPlugins: ['remark-gfm', 'remark-smartypants'],
+        syntaxHighlight: 'prism',
     },
     integrations: [mdx(), sitemap()],
     adapter: cloudflare(),
