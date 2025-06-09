@@ -11,8 +11,8 @@ const fetchedTrack = {
 
 {
     fetchedTrack && (
-        <a href={fetchedTrack.link}>
-            <div class="my-2 flex w-full items-center justify-items-start space-x-2 p-4">
+        <a href={fetchedTrack.link} class="">
+            <div class="my-6 flex w-full items-center justify-start justify-items-start space-x-2">
                 <div class="flex h-10 items-start">
                     <svg
                         class="h-full w-auto"
@@ -25,7 +25,7 @@ const fetchedTrack = {
                 </div>
                 <div class="flex h-10 flex-col justify-between leading-tight">
                     <div class="font-bold">{fetchedTrack.name}</div>
-                    <div class="p-0">{fetchedTrack.artist}</div>
+                    <div>{fetchedTrack.artist}</div>
                 </div>
             </div>
         </a>

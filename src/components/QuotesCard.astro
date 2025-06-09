@@ -6,8 +6,6 @@ const quotes = await getCollection('quotes')
 let randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
 
 console.log(randomQuote)
-
-const { id } = Astro.props
 ---
 
 <div class="mx-1 border-l-2 px-3">
