@@ -12,7 +12,7 @@ const { title, description } = Astro.props
 
 <!doctype html>
 <html
-    class="selection:text-bg selection:bg-fg bg-bg text-fg h-full font-serif"
+    class="dark:bg-material-900 bg-material-100 text-material-800 dark:selection:bg-material-100 dark:selection:text-material-800 selection:bg-material-800 selection:text-material-100 dark:text-material-100 h-full"
     lang="en"
 >
     <Head
@@ -21,12 +21,14 @@ const { title, description } = Astro.props
             ? description
             : "Ideally, there should be a description here, but I seem to have forgotten. If you know me, just let me know I've been sloppy."}
     />
-    <main class="min-h-screen w-full py-1">
+    <main class="min-h-screen w-full py-1 font-serif">
         <NavBar />
         <div class="px-5">
-            <div class="mx-auto flex items-center justify-between md:w-1/2">
+            <div
+                class="mx-auto flex items-center justify-between md:w-1/2 print:w-4/5"
+            >
                 <div
-                    class="text-fg dark:text-fg py-8 text-4xl font-extrabold select-none"
+                    class="text-material-800 dark:text-material-100 py-8 text-4xl font-extrabold select-none"
                 >
                     {title}
                 </div>
@@ -34,7 +36,7 @@ const { title, description } = Astro.props
                     <MobileThemeSwitcher />
                 </div>
             </div>
-            <div class="mx-auto md:w-1/2">
+            <div class="mx-auto md:w-1/2 print:w-4/5">
                 <slot />
             </div>
         </div>

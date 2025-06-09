@@ -1,5 +1,6 @@
 ---
 import Footer from '@/components/Footer.astro'
+import RSS from '@/icons/rss.svg'
 import QuickLinks from '@/components/QuickLinks.astro'
 import Music from '@/components/Music.astro'
 import HomeLayout from '@/layouts/HomeLayout.astro'
@@ -44,7 +45,10 @@ const mostRecentPosts = blogPosts
     <h2 class="py-2 font-serif text-2xl font-extrabold">Links</h2>
     <QuickLinks />
     <div class="grid grid-cols-3 place-items-center py-2"></div>
-    <h2 class="py-2 text-2xl font-extrabold">Recent Essays</h2>
+    <div class="flex w-full items-center justify-between">
+        <h2 class="py-2 text-2xl font-extrabold">Start Here</h2>
+        <div class="justify-self-end"><a href="/rss.xml"><RSS /></a></div>
+    </div>
     {
         mostRecentPosts.map((post) => (
             <div class="py-4">

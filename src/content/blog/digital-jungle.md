@@ -5,6 +5,8 @@ date: 2024-05-29
 isEssay: true
 ---
 
+# Table Of Contents
+
 (Scroll to the end if you just want the recommendations. If you need convincing, read on.)
 
 This is a natural extension of the concerns I threw out last week. I found myself worrying a lot about the way things were going for me, and how terrifying it felt every time I looked up from my phone after a doom-scrolling spiral and watch as hours slipped away from me.

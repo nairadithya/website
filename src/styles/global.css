@@ -1,30 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght,GRAD@0,8..144,100..900,100;1,8..144,100..900,100&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'tailwindcss';
-@plugin "@tailwindcss/typography";
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --hue: 2deg;
+    --hue: 0deg;
     --font-sans: 'Roboto', 'sans-serif';
     --font-serif: 'Roboto Serif', 'sans-serif';
-
-    --color-bg: oklch(97% 0.02 var(--hue));
-    --color-fg: oklch(18% 0.59 var(--hue));
-    --color-fg-less: oklch(89% 0.05 var(--hue));
-    --color-hover: oklch(80% 0.12 var(--hue));
-    --color-me-400: oklch(71% 0.19 var(--hue));
-    --color-me-500: oklch(60% 0.27 var(--hue));
-    --color-me-700: oklch(38% 0.12 var(--hue));
-    --color-me-800: oklch(25% 0.04 var(--hue));
+    --font-mono: 'Roboto Mono', 'monospace';
+    --color-material-100: oklch(97% 0.04 var(--hue));
+    --color-material-200: oklch(29% 0.59 var(--hue));
+    --color-material-300: oklch(89% 0.11 var(--hue));
+    --color-material-400: oklch(80% 0.12 var(--hue));
+    --color-material-500: oklch(71% 0.19 var(--hue));
+    --color-material-600: oklch(60% 0.27 var(--hue));
+    --color-material-700: oklch(38% 0.12 var(--hue));
+    --color-material-800: oklch(30% 0.06 var(--hue));
+    --color-material-900: oklch(12% 0.04 var(--hue));
 }
 
-@variant dark {
-    --color-fg: oklch(83% 0.04 var(--hue));
-    --color-bg: oklch(06% 0.08 var(--hue));
-    --color-fg-less: oklch(19% 0.02 var(--hue));
-    --color-hover: oklch(80% 0.12 var(--hue));
-    --color-me-400: oklch(71% 0.19 var(--hue));
-    --color-me-500: oklch(60% 0.27 var(--hue));
-    --color-me-700: oklch(38% 0.12 var(--hue));
-    --color-me-800: oklch(25% 0.04 var(--hue));
+@layer components {
+    .prose {
+        h1,
+        h2,
+        h3 {
+            font-weight: 500;
+            line-height: 1.9rem;
+        }
+
+        h1,
+        h2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.75rem;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+
+        code {
+            font-family: 'Roboto Mono';
+        }
+        ul,
+        ol {
+            padding-left: 2em;
+        }
+        ul {
+            list-style: inside;
+            list-style-type: disc;
+        }
+        ol {
+            list-style-type: decimal;
+        }
+        li {
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+        }
+    }
 }

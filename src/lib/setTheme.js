@@ -1,13 +1,11 @@
-type theme = 'dark' | 'light'
-
 const getInitialTheme = () => {
-    const savedTheme: theme = localStorage.getItem('theme')
+    const savedTheme = localStorage.getItem('theme')
     if (savedTheme) return savedTheme
     return window.matchMedia('(prefers-color-scheme: dark)').matches
         ? 'dark'
         : 'light'
 }
-const applyTheme = (theme: theme) => {
+const applyTheme = (theme) => {
     if (theme === 'dark') {
         document.documentElement.classList.add('dark')
     } else {
