@@ -40,7 +40,7 @@
                         font-size: 1.875rem;
                     }
                     .item {
-                        max-width: 50%;
+                        max-width: 80%;
                     }
                     a {
                         color: oklch(38% 0.12 var(--hue));
@@ -48,6 +48,11 @@
                     }
                     footer {
                         color: var(--color-fg);
+                    }
+                    @media (min-width: 30em) {
+                        .item {
+                            max-width: 50%;
+                        }
                     }
                 </style>
             </head>
