@@ -91,11 +91,9 @@ This is done with XSLT, which converts XML to readable HTML, this also means tha
 
 My hypothesis is, the browser parses the newly created HTML, runs all scripts and CSS before even rendering? This would also explain why `DOMContentLoaded` wasn't firing off at first. This doesn't sound right, but it's my best working theory.
 
-### OpenGraph Images
-
 ## Math
 
-I have support for Math now, with [KaTeX](https://katex.org/). This was simple to do as well, I just added the `remark-math` and `rehype-katex` plugins, added the KaTeX script to the HTML head and I was done.
+I have support for Math now, with [$\KaTeX$](https://katex.org/). This was simple to do as well, I just added the `remark-math` and `rehype-katex` plugins, added the KaTeX script to the HTML head and I was done.
 
 Here's an equation:
 $$
@@ -106,17 +104,12 @@ Here's some inline math, $x + y$.
 
 I'm just waiting for the day when I can just use Typst syntax for this stuff, it's way better.
 
-I'm not sure when I will truly use Math anywhere, but I like having the option.
-
-I chose KaTeX over MathJaX because it's all pre-rendered and doesn't have any client-side overhead.
-
+I chose $\KaTeX$ over MathJaX because I prefer performance over completeness as of right now.
 ## The Garden
 
 The garden is something I've always wanted to ever since my first version of the website. I love taking quotes from books and other places. The original version of this was a [Quartz](https://quartz.jzhao.xyz/) website, and I realized I couldn't really fit things properly. It's more of an Obsidian Publish alternative than an actual way to showcase things.
 
 I ended up just doing things myself, and that's what you can see [here](/garden).
-
-I plan to put up quotes, and bookmarks on there for now.
 
 # The Music Widget
 
@@ -134,6 +127,8 @@ The blog is going to stay the same, hopefully with more posts down the line. I'm
 
 ## New Home Page
 
+The new layout is a more dense one, compared to the old one. It has 3 of my most recent posts and the music widget.
+
 ## Bookmarks
 
 I have removed the old bookmarks page in favour of The Garden. This is for two main reasons:
@@ -141,7 +136,7 @@ I have removed the old bookmarks page in favour of The Garden. This is for two m
 1. The bookmarks were stored in a `.json` file, and was very tedious to maintain.
 2. Many of the bookmarks did not stay evergreen, meaning none of them needed to persist in a permanent way on my website.
 
-This led to me having a higher amount of friction in even adding a bookmark to the list.
+This led to me having a higher amount of friction in even adding a bookmark to the list. Most of that has been moved over to [Essential Links](/garden/bookmarks).
 
 # Conclusion
 
