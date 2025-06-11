@@ -3,7 +3,7 @@ const { title, author, type, link } = Astro.props
 const Icon = (await import(`./MediaIcons/${type}.svg`)).default
 ---
 
-<a href={`garden/${link}`}>
+<a href={`${link}`}>
     <div
         class="flex w-fit place-items-center items-start justify-items-center space-x-2 rounded-lg md:p-2"
     >
