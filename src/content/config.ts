@@ -17,13 +17,11 @@ const postCollection = defineCollection({
     schema: blogSchema,
 })
 
-const journeyCollection = defineCollection({
-    loader: glob({ pattern: '*.md', base: 'src/content/journeys' }),
-    schema: blogSchema,
-})
-
-const quotesCollection = defineCollection({
-    loader: glob({ pattern: '*.md', base: 'src/content/quotes/' }),
+const gardenCollection = defineCollection({
+    loader: glob({
+        pattern: ['**/*.{md,mdx}', '*.{md,mdx}'],
+        base: 'src/content/garden/',
+    }),
     schema: z.object({
         title: z.string(),
         author: z.string(),
@@ -35,6 +33,5 @@ const quotesCollection = defineCollection({
 
 export const collections = {
     blog: postCollection,
-    journeys: journeyCollection,
-    quotes: quotesCollection,
+    garden: gardenCollection,
 }

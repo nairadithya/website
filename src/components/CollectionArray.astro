@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content'
 import MediaComponent from '@/components/MediaComponent.astro'
-const quoteCollection = await getCollection('quotes')
+const quoteCollection = await getCollection('garden')
 const { type } = Astro.props
 let collection = quoteCollection.filter((item) => item.data.type == type)
 ---
@@ -14,7 +14,7 @@ let collection = quoteCollection.filter((item) => item.data.type == type)
             <MediaComponent
                 title={quoteItem.data.title}
                 author={quoteItem.data.author}
-                type={quoteItem.data.type}
+                type={type}
                 link={quoteItem.id}
             />
         ))
