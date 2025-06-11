@@ -37,7 +37,7 @@ const mostRecentPosts = blogPosts
         >
     </p>
     <div class="w-fit py-2">
-        <div>My current top song is:</div>
+        <div>My top song this week is:</div>
         <div>
             <Music />
         </div>
@@ -46,21 +46,21 @@ const mostRecentPosts = blogPosts
     <QuickLinks />
     <div class="grid grid-cols-3 place-items-center py-2"></div>
     <div class="flex w-full items-center justify-between">
-        <h2 class="py-2 text-2xl font-extrabold">Start Here</h2>
+        <h2 class="py-2 text-2xl font-extrabold">Recent Posts</h2>
         <div class="justify-self-end"><a href="/rss.xml"><RSS /></a></div>
     </div>
     {
         mostRecentPosts.map((post) => (
             <div class="py-4">
-                <div class="flex flex-col justify-between pb-1 md:flex-row md:space-x-2 md:pb-1">
-                    <div class="text-xl font-medium">
-                        <a href={`/blog/${post.id}`}>{post.data.title}</a>
+                <a href={`/blog/${post.id}`}>
+                    <div class="flex flex-col justify-between pb-1 md:flex-row md:space-x-2 md:pb-1">
+                        <div class="text-xl font-medium">{post.data.title}</div>
+                        <div class="md:text-right">
+                            <FormattedDate date={post.data.date} />
+                        </div>
                     </div>
-                    <div class="md:text-right">
-                        <FormattedDate date={post.data.date} />
-                    </div>
-                </div>
-                <div class="font-light">{post.data.description}</div>
+                    <div class="font-light">{post.data.description}</div>
+                </a>
             </div>
         ))
     }
