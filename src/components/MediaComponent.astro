@@ -1,6 +1,6 @@
 ---
 const { title, author, type, link } = Astro.props
-const Icon = (await import(`/src/icons/media/${type}.svg`)).default
+const Icon = (await import(`./MediaIcons/${type}.svg`)).default
 ---
 
 <a href={`garden/${link}`}>
