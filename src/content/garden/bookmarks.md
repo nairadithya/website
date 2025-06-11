@@ -15,17 +15,19 @@ Here's a list of links I find I revisit a lot.
 
 [Good Conversations Have Lots Of Doorknobs](https://www.experimental-history.com/p/good-conversations-have-lots-of-doorknobs) by Experimental History - Great article on how to talk to people to have the best time.
 
-[Conversational Canyons](https://www.henrikkarlsson.xyz/p/conversation) by Henrik Karlsson - The first article from Henrik Karlsson I read.
+[Conversational Canyons](https://www.henrikkarlsson.xyz/p/conversation) by Henrik Karlsson - The first article from Henrik Karlsson I read. It's a completely refreshing perspective on how to make good conversations last and having the best kind of conversations.
 
-# Film
+[How Can We Bear To Throw Anything Away](https://www.youtube.com/watch?v=ukJ_UA-JS5o) by Jacob Geller - About the act of preservation, and the excesses that it can reach.
 
-[Satoshi Kon - Editing Space & Time](https://youtu.be/oz49vQwSoTE) - by Every Frame A Painting
+# Art
 
-[Telling a Story from the Inside Out](https://youtu.be/ulm7bcB2xvY) by Lessons From The Screenplay
+[Satoshi Kon - Editing Space & Time](https://youtu.be/oz49vQwSoTE) by Every Frame A Painting - An excellent video essay about animation and how a visionary allows a scene to flow by embodying the medium of animation to an extent with which live action cannot replicate.
 
-[How to Listen to Music Incorrectly and find Superman in the Avengers](https://youtu.be/0mbtI4uRG9I) by Sideways
+[Telling a Story from the Inside Out](https://youtu.be/ulm7bcB2xvY) by Lessons From The Screenplay - The story of how Inside Out was written.
 
-[You Might Also Be Interested](https://thebaffler.com/outbursts/you-might-also-be-interested-baranauskas) by Liam Baranauskas
+[How to Listen to Music Incorrectly and find Superman in the Avengers](https://youtu.be/0mbtI4uRG9I) by Sideways - It's about soundtracks and leitmotifs and the rich history you accidentally might tap into by just playing the right notes.
+
+[You Might Also Be Interested](https://thebaffler.com/outbursts/you-might-also-be-interested-baranauskas) by Liam Baranauskas - This article starts off simple, but descends into a critique on how we're all slaves to an algorithm and how hard it has become to truly sit with a piece of art.
 
 # Writing
 
@@ -35,13 +37,13 @@ Here's a list of links I find I revisit a lot.
 
 # Programming
 
-[When you browse Instagram and find former Australian Prime Minister Tony Abbott's passport number](https://mango.pdf.zone/finding-former-australian-prime-minister-tony-abbotts-passport-number-on-instagram/) by Alex Hope 
+[When you browse Instagram and find former Australian Prime Minister Tony Abbott's passport number](https://mango.pdf.zone/finding-former-australian-prime-minister-tony-abbotts-passport-number-on-instagram/) by Alex Hope - The title says it all, but this is a wild ride of a story.
 
-[On the cruelty of really teaching computing science ](https://www.cs.utexas.edu/~EWD/transcriptions/EWD10xx/EWD1036.html) by E W Dijkstra
+[On the cruelty of really teaching computing science ](https://www.cs.utexas.edu/~EWD/transcriptions/EWD10xx/EWD1036.html) by E W Dijkstra - Dijkstra writes masterfully on where things are heading with the dumbing down of education to serve business needs rather than academic needs. I find contention with many of his points but it's still a timeless article to read.
+
+[What Is ChatGPT Doing … and Why Does It Work?](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/) by Stephen Wolfram -
 
 [How To Become A Hacker](http://www.catb.org/~esr/faqs/hacker-howto.html) by Eric Steven Raymond - This is a timeless piece on the programmer's pipeline. I find it's worth reading because there's a lot of muddying in the waters on the craft of programming that I detest. Essential reading for someone who wants to get into programming.
-
-[What Is ChatGPT Doing … and Why Does It Work?](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/) by Stephen Wolfram
 
 [Early Computer Art in the 50’s & 60’s](https://www.amygoodchild.com/blog/computer-art-50s-and-60s) by Amy Goodchild
 
@@ -53,7 +55,4 @@ Here's a list of links I find I revisit a lot.
 
 [Antonymph](https://lyra.horse/antonymph/) by Lyra - I highly recommend viewing this on a desktop browser. An absolute feat of programming art.
 
-[The One Moment](https://youtu.be/QvW61K2s0tA) by OK Go
-
-[How Can We Bear To Throw Anything Away](https://www.youtube.com/watch?v=ukJ_UA-JS5o) by Jacob Geller
-
+[The One Moment](https://youtu.be/QvW61K2s0tA) by OK Go - This music video is remarkable. It's filmed over 4 seconds and slowed down to become a 3 minute long music video. The things they pulll off in the span of the video is very cool.
