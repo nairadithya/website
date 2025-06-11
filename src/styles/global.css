@@ -2,7 +2,6 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --hue: 0deg;
     --font-sans: 'Roboto', 'sans-serif';
     --font-serif: 'Roboto Serif', 'sans-serif';
     --font-mono: 'Roboto Mono', 'monospace';
@@ -13,7 +12,7 @@
     --color-material-500: oklch(71% 0.19 var(--hue));
     --color-material-600: oklch(60% 0.27 var(--hue));
     --color-material-700: oklch(38% 0.12 var(--hue));
-    --color-material-800: oklch(30% 0.06 var(--hue));
+    --color-material-800: oklch(35% 0.06 var(--hue));
     --color-material-900: oklch(12% 0.04 var(--hue));
 }
 
@@ -52,7 +51,9 @@
         a {
             text-decoration: underline;
         }
-
+        img {
+            border-radius: 0.5rem;
+        }
         code {
             font-family: 'Roboto Mono';
         }
@@ -70,6 +71,14 @@
         li {
             padding-top: 0.25rem;
             padding-bottom: 0.25rem;
+        }
+        blockquote {
+            padding: 1.25rem;
+            border-left-width: 0.25em;
+            border-left-style: solid;
+            border-left-color: var(--color-material-700);
+            margin-top: 1rem;
+            margin-bottom: 1rem;
         }
     }
 }
