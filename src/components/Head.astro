@@ -21,15 +21,14 @@ const origin = Astro.site!.origin
     <meta name="description" content={description} />
     <meta name="author" content="Adithya Nair" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="preload" href="/src/lib/setTheme.js" as="script" />
-    <link rel="preload" href="/src/lib/colorscheme.js" as="script" />
+    <link rel="preload" href="../lib/setTheme.js" as="script" />
+    <link rel="preload" href="../lib/colorscheme.js" as="script" />
     <link
         rel="alternate"
         type="application/rss+xml"
         title="Adithya Nair's Website"
         href={new URL('rss.xml', origin)}
     />
-
     <meta property="og:description" content={description} />
     <meta property="og:title" content={title} />
     <meta property="og:image" content=`${origin}/og.png` />
@@ -49,13 +48,14 @@ const origin = Astro.site!.origin
         href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet"
     />
-    <script src="/src/lib/setTheme.js"></script>
-    <script src="/src/lib/colorscheme.js"></script>
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link href="/hue.css" rel="stylesheet" />
+    <script src="../lib/setTheme.js"></script>
+    <script src="../lib/colorscheme.js"></script>
     <link href="/code.css" rel="stylesheet" />
     <meta name="generator" content={Astro.generator} />
     <!-- KATEX -->
