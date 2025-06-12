@@ -29,23 +29,13 @@ Here's a list of links I find I revisit a lot.
 
 [You Might Also Be Interested](https://thebaffler.com/outbursts/you-might-also-be-interested-baranauskas) by Liam Baranauskas - This article starts off simple, but descends into a critique on how we're all slaves to an algorithm and how hard it has become to truly sit with a piece of art.
 
-# Writing
-
-[The Age Of The Essay](https://paulgraham.com/essay.html) by Paul Graham
-
-[How To Think In Writing](https://www.henrikkarlsson.xyz/writing-to-think) by Henrik Karlsson
-
 # Programming
 
 [When you browse Instagram and find former Australian Prime Minister Tony Abbott's passport number](https://mango.pdf.zone/finding-former-australian-prime-minister-tony-abbotts-passport-number-on-instagram/) by Alex Hope - The title says it all, but this is a wild ride of a story.
 
 [On the cruelty of really teaching computing science ](https://www.cs.utexas.edu/~EWD/transcriptions/EWD10xx/EWD1036.html) by E W Dijkstra - Dijkstra writes masterfully on where things are heading with the dumbing down of education to serve business needs rather than academic needs. I find contention with many of his points but it's still a timeless article to read.
 
-[What Is ChatGPT Doing … and Why Does It Work?](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/) by Stephen Wolfram -
-
 [How To Become A Hacker](http://www.catb.org/~esr/faqs/hacker-howto.html) by Eric Steven Raymond - This is a timeless piece on the programmer's pipeline. I find it's worth reading because there's a lot of muddying in the waters on the craft of programming that I detest. Essential reading for someone who wants to get into programming.
-
-[Early Computer Art in the 50’s & 60’s](https://www.amygoodchild.com/blog/computer-art-50s-and-60s) by Amy Goodchild
 
 # Design
 
