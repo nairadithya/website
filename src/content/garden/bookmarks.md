@@ -37,12 +37,18 @@ Here's a list of links I find I revisit a lot.
 
 [How To Become A Hacker](http://www.catb.org/~esr/faqs/hacker-howto.html) by Eric Steven Raymond - This is a timeless piece on the programmer's pipeline. I find it's worth reading because there's a lot of muddying in the waters on the craft of programming that I detest. Essential reading for someone who wants to get into programming.
 
+[bare metal](https://waxbanks.wordpress.com/2025/08/01/bare-metal-the-emacs-essay/) by waxbanks - Nothing fully articulates the reasons I love Emacs quite like this essay. Despite the annoyances and imperfections and tradeoffs, I love the Emacs way for those moments of emergent interoperability, when the notion of siloed applications lose meaning, and the system becomes an organism of co-ordinated and cohesive chaos.
+
 # Design
 
 [Butterick’s Practical Typography](https://practicaltypography.com/) by Matthew Butterick - This guide is true to it's name. I had zero idea how typography works or how to even go about developing good taste. This guide is a great way to get the essentials you want to know.
+
+[Refactoring UI](https://www.refactoringui.com/) by Adam Wathan and Steve Schoger - This textbook allowed me to quickly make better decisions about the interfaces I build. It's simple and practical with clear examples on wrong and correct use cases. It's a great read as a first foray into UI design.
 
 # Cool Things
 
 [Antonymph](https://lyra.horse/antonymph/) by Lyra - I highly recommend viewing this on a desktop browser. An absolute feat of programming art.
 
 [The One Moment](https://youtu.be/QvW61K2s0tA) by OK Go - This music video is remarkable. It's filmed over 4 seconds and slowed down to become a 3 minute long music video. The things they pulll off in the span of the video is very cool.
+
+[WIN32.RUN](https://win32.run/) - A complete implementation of Windows XP running in the browser.

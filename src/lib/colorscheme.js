@@ -19,10 +19,10 @@ function getDailyHueSeeded() {
 
 const hueSeeded = getDailyHueSeeded()
 document.documentElement.style.setProperty('--hue', `${hueSeeded}deg`)
-/**
- * Creates a pseudo-random float in the range [0, 1) using Math.sin
- * of a seed, ensuring a stable output for each unique integer seed.
- */
+
+/** Creates a pseudo-random float in the range [0, 1) using Math.sin of a seed,
+ensuring a stable output for each unique integer seed. **/
+
 document.addEventListener('astro:page-load', () => {
     const hueSeeded = getDailyHueSeeded()
     document.documentElement.style.setProperty('--hue', `${hueSeeded}deg`)
