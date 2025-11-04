@@ -1,0 +1,13 @@
+---
+interface Props {
+  url: string
+  icon: string
+}
+
+const { url, icon } = Astro.props
+const Icon = (await import(`./SocialIcons/${icon}.svg`)).default
+---
+
+<a href={url} target="_blank">
+  <Icon />
+</a>
