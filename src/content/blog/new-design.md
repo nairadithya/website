@@ -111,6 +111,8 @@ The garden is something I've always wanted to ever since my first version of the
 
 I ended up just doing things myself, and that's what you can see [here](/garden).
 
+I'm now using [Raindrop](https://raindrop.io/) to fetch bookmarks tagged a specific way and then rendering them.
+
 # The Music Widget
 
 I stole this idea from [Cory Dransfeldt](https://coryd.dev), he has a Now Playing widget at the top of his home page.
