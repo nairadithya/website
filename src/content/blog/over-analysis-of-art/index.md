@@ -9,7 +9,7 @@ Disclaimer: I use the word art a lot in the latter part of this post, by art I d
 
 There’s this painting by Carl Bloch, called “In A Roman Osteria.” It’s a fairly simple and mundane painting, but it captured my imagination the first time I saw it.
 
-![The painting](./img/)
+![The painting](./inaromanosteria.jpg)
 
 I can’t remember where I saw this painting, but it captured me. I can’t fully explain why I’m drawn to this painting, but I am. I don’t know enough about ‘art’ to go over what makes this painting powerful, but I know that it is.
 

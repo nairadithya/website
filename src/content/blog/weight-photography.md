@@ -18,4 +18,4 @@ A good photo might just be one that helps you think. Like a painting does, a pho
 In short, I'd like to learn more, if not about photography… but what makes photography tick. It's a vast and broad subject and there are many branches and fields. Selfies stay at the bottom, anyone can take them… but what separates the amateurs from the pros?
 
 Relevant Articles:
-[Too Much Photography by Martin Parr](https://www.martinparr.com/2012/too-much-photography/)1
+[Too Much Photography by Martin Parr](https://www.martinparr.com/2012/too-much-photography/)
