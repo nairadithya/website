@@ -105,9 +105,10 @@ Here's some inline math, $x + y$.
 I'm just waiting for the day when I can just use Typst syntax for this stuff, it's way better.
 
 I chose $\KaTeX$ over MathJaX because I prefer performance over completeness as of right now.
+
 ## The Garden
 
-The garden is something I've always wanted to ever since my first version of the website. I love taking quotes from books and other places. The original version of this was a [Quartz](https://quartz.jzhao.xyz/) website, and I realized I couldn't really fit things properly. It's more of an Obsidian Publish alternative than an actual way to showcase things.
+The garden is something I've always wanted to have ever since my first version of the website. I love taking quotes from books and other places. The original version of this was a [Quartz](https://quartz.jzhao.xyz/) website, and I realized I couldn't really fit things properly. It's more of an Obsidian Publish alternative than an actual way to showcase things.
 
 I ended up just doing things myself, and that's what you can see [here](/garden).
 
