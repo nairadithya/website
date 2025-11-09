@@ -19,8 +19,9 @@ url = base_url + collection_id
 blogroll_path = "./src/content/garden/blogroll.md"
 
 headers = {'Authorization': f'Bearer {token}'}
+print("Fetching Data From Raindrop...")
 response = requests.get(url, headers=headers)
-data = json.loads(response.text)
+data = response.json()
 names = [(a['title'], a['link'], a['note']) for a in data['items'] if a['tags'] == ['website']]
 
 frontmatter = '''---
@@ -40,4 +41,5 @@ for count, item in enumerate(names):
         out += f"{count+1}. [{item[0]}]({item[1]}) - {item[2]}\n\n"
 
 with open(blogroll_path, 'w', encoding='utf_8') as f:
+    print(f"Blogroll generateed at {blogroll_path}")
     f.write(out)
