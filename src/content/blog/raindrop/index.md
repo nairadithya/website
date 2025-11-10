@@ -34,7 +34,7 @@ ideas/
 makers/
 ```
 
-I've given up all hope of ever being able to adopt a generic system, as appealing as something like PARA is... and there's still some merit to the ideas behind it, I don't think that's the right approach for this.
+I've given up all hope of ever being able to adopt a generic system, as appealing as something like [PARA](https://fortelabs.com/blog/para/) is... I don't think that's the right approach for this. This structure is an active reflection of the things I'm prioritizing.
 
 These are my top level views into the things I read. I don't fully like that there's an entire folder named 'ideas' but I can't think of anything better as of now.
 
@@ -46,4 +46,6 @@ I want to unify the [garden](/garden) and what I do with Raindrop. I plan to slo
 
 Another missing piece is that it's not as easy to save book highlights as well. It would seem all roads lead to [Readwise](https://readwise.io/)
 
-I'm not sure how long this is going to last, but the good thing is it's easy to migrate out of Raindrop, if I end up having special enough needs that I build up my own solution or find another tool more suitable for my use case. Regardless of the app, the motivation for me has never changed. I love preserving the links I find cool and useful. It's a small way of containing the infinite wealth of information out there on the internet. I have found it very important to have my own personal archive of great links to revisit.
+I'm not sure how long this is going to last, but the good thing is it's easy to migrate out of Raindrop, if I end up having special enough needs that I build up my own solution or find another tool more suitable for my use case. Regardless of the app, the motivation for me has never changed.
+
+I love preserving the links I find cool and useful. It's a small way of containing the infinite wealth of information out there on the internet. I have found it very important to have my own personal archive of great links to revisit.
