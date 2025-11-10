@@ -5,7 +5,9 @@ date: 2025-11-10
 isEssay: true
 ---
 
-There's a lot to gain from documenting and curating what you've been reading. It makes you remarkably more intentional about the things you read. Secondly, it's great to revisit things you found cool and re-evaluating them. It's part of the reason I started the [garden](/garden).
+There's a lot to gain from documenting and curating what you've been reading. It makes you remarkably more intentional about the things you read. Secondly, it's great to revisit things you found cool and re-evaluating them.
+
+It's one of the reasons why I started the [garden](/garden).
 
 The way I'm organizing my bookmarks is to optimize for those two feelings. Intentionality and the feeling of surprise when you revisit the things you found worth saving.
 
@@ -13,7 +15,7 @@ I lose a lot of links, they're often lost in random chats and my browser history
 
 I have used a lot of apps over the years. Instapaper, Omnivore (rip), Obsidan, Notion, Joplin and even a plaintext `bookmarks.txt` file.
 
-I found Raindrop around 2022, I remember thinking it was a bit overkill for my use case, which was just for reading good articles and filing them away.
+I found [Raindrop](https://raindrop.io) around 2022, I remember thinking it was a bit overkill for my use case, which was just for reading good articles and filing them away.
 
 I came back to it recently because I wanted a better 'bookmarks' app and that's exactly what Raindrop purports to be. It also has a generous free tier and a pro plan that I can probably justify to myself with enough heavy use.
 
