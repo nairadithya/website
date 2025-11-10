@@ -8,6 +8,7 @@ isEssay: false
 This is a bit of a record in my life, about 6 or so months after I left Instagram fully.
 
 # The Good
+
 I don't know how many among you can relate to this, but I was an addict. This wasn't my first attempt at quitting, but this was certainly the most successful attempt.
 
 Having no social media forces you to appreciate just how much time you really have in a day.
@@ -32,7 +33,7 @@ After I left social media, I realized I had more time to be able to do this now.
 
 These calls have become deeply important to me. They sometimes end up being the best part of my day.
 
-If someone is busy? That's no issue, someone else will pick up. If no one does(which hasn't happened yet) at least you've got your music.
+If someone is busy? That's no issue, someone else will pick up. If no one does(which hasn't happened yet) at least I've got my music.
 
 You'd think no one wants to call anymore but everyone I've called has always responded positively to it, and I've had some great conversations I wouldn't have had otherwise. It's gotten to the point where some even _expect_ the calls, and allocate time to it.
 
@@ -48,7 +49,7 @@ I'm worried that this might be the only reason I get back onto social media. As 
 
 > After talking to several people in my friend circle, I’ve come to realize its value - if not for content or socializing, it’s still the one place where I can find everyone in my life - past, present or future. People you meet in college can greatly affect your life, and I don’t want to lose contact with everyone I’m not directly friends with simply because I didn’t add them on Instagram. It’s a universal way of keeping a line of communication open. tl;dr - preemptive networking.
 
-It's a great directory for the people on the periphery of your own life.
+It's a great directory for the people in the periphery of your own life.
 
 WhatsApp can only go so far. An Instagram account is so convenient to share. I can search someone and find them, it's so easy.
 
