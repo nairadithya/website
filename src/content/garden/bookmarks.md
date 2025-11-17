@@ -19,6 +19,8 @@ Here's a list of links I find I revisit a lot.
 
 [How Can We Bear To Throw Anything Away](https://www.youtube.com/watch?v=ukJ_UA-JS5o) by Jacob Geller - About the act of preservation, and the excesses that it can reach.
 
+[Chronicle of a Death Foretold](https://www.patreon.com/posts/chronicle-of-66798563) by Simon Evans - This essay is a beautiful piece on grief and learning to appreciate the time given to us. It moved me, and I hope it makes you think about the shortness and value of your own life.
+
 # Art
 
 [Satoshi Kon - Editing Space & Time](https://youtu.be/oz49vQwSoTE) by Every Frame A Painting - An excellent video essay about animation and how a visionary allows a scene to flow by embodying the medium of animation to an extent with which live action cannot replicate.
