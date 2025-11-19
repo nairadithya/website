@@ -8,6 +8,6 @@ const { url, icon } = Astro.props
 const Icon = (await import(`./SocialIcons/${icon}.svg`)).default
 ---
 
-<a href={url} target="_blank">
+<a href={url} rel="me" target="_blank">
   <Icon />
 </a>
