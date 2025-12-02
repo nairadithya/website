@@ -1,7 +1,6 @@
 import { defineConfig } from 'astro/config'
 import tailwindcss from '@tailwindcss/vite'
 import remarkToc from 'remark-toc'
-import rehypeExternalLinks from 'rehype-external-links'
 import remarkGFM from 'remark-gfm'
 import remarkMath from 'remark-math'
 import remarkSmartyPants from 'remark-smartypants'
@@ -25,10 +24,7 @@ export default defineConfig({
             remarkGFM,
             remarkSmartyPants,
         ],
-        rehypePlugins: [
-            [rehypeExternalLinks, { rel: ['nofollow'] }],
-            rehypeKatex,
-        ],
+        rehypePlugins: [rehypeKatex],
         syntaxHighlight: 'prism',
     },
     integrations: [mdx(), sitemap()],
