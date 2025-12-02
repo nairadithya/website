@@ -4,19 +4,20 @@ import MediaComponent from '@/components/MediaComponent.astro'
 const gardenCollection = await getCollection('garden')
 const { type } = Astro.props
 let collection = gardenCollection.filter((item) => item.data.type == type)
+console.log(collection)
 ---
 
 <div
-    class="grid grid-cols-1 items-start justify-items-start gap-5 md:grid-cols-2"
+  class="grid grid-cols-1 items-start justify-items-start gap-5 md:grid-cols-2"
 >
-    {
-        collection.map((gardenItem) => (
-            <MediaComponent
-                title={gardenItem.data.title}
-                author={gardenItem.data.author}
-                type={type}
-                link={gardenItem.id}
-            />
-        ))
-    }
+  {
+    collection.map((gardenItem) => (
+      <MediaComponent
+        title={gardenItem.data.title}
+        author={gardenItem.data.author}
+        type={type}
+        link=`/garden/${gardenItem.id}`
+      />
+    ))
+  }
 </div>
