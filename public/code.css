@@ -1,6 +1,6 @@
 /*Code colours*/
 :root {
-    --code-background: oklch(98% 0.03 var(--hue));
+    --code-background: oklch(98% 0.08 var(--hue));
     --code-foreground: oklch(15% 0.04 var(--hue));
     --code-function: oklch(55% 0.1 var(--hue));
     --code-punctuation: oklch(40% 0.09 var(--hue));
@@ -9,17 +9,18 @@
     --code-number: oklch(65% 0.09 var(--hue));
     --code-variable: oklch(20% 0.05 var(--hue));
     --code-comment: oklch(70% 0.02 var(--hue));
-    html.dark {
-        --code-background: oklch(10% 0 0);
-        --code-foreground: oklch(85% 0.04 var(--hue));
-        --code-function: oklch(75% 0.1 var(--hue));
-        --code-punctuation: oklch(60% 0.08 var(--hue));
-        --code-token: oklch(70% 0.06 var(--hue));
-        --code-keyword: oklch(65% 0.12 var(--hue));
-        --code-number: oklch(80% 0.09 var(--hue));
-        --code-variable: oklch(78% 0.05 var(--hue));
-        --code-comment: oklch(50% 0.02 var(--hue));
-    }
+}
+
+html.dark {
+    --code-background: oklch(19% 0.08 var(--hue));
+    --code-foreground: oklch(85% 0.04 var(--hue));
+    --code-function: oklch(75% 0.1 var(--hue));
+    --code-punctuation: oklch(60% 0.08 var(--hue));
+    --code-token: oklch(70% 0.06 var(--hue));
+    --code-keyword: oklch(65% 0.12 var(--hue));
+    --code-number: oklch(80% 0.09 var(--hue));
+    --code-variable: oklch(78% 0.05 var(--hue));
+    --code-comment: oklch(50% 0.02 var(--hue));
 }
 
 code[class*='language-'],
