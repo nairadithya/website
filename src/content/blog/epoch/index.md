@@ -11,7 +11,7 @@ I've been working on [ATLAS](https://atlasdev.club), the systems programming clu
 
 # The Background
 
-One of the big things we envisioned was a community of people building a difficult project together and sharing their insights on the project. Taking inspiration from a  similar venture, [Tilde](https://hsp-ec.xyz/announcements/tilde-4.0) run by PES HSP, EC Campus. We wanted to build that culture of tackling difficult things and growing together as a community.
+One of the big things we envisioned was a community of people building a difficult project together and sharing their insights on the project. Taking inspiration from a  similar venture, [Tilde](https://hsp-ec.xyz/announcements/tilde-4.0) run by PES HSP, EC Campus. We wanted to build that culture of tackling difficult things and growing together.
 
 A large part of the ATLAS aesthetic is retrofuturism; a worship of the 80s. Amber terminals, behemoth corporations and the sci-fi that came out of that era. Just look at the [NASA worm](https://animalia-life.club/qa/pictures/nasa-space-worm).
 
