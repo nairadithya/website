@@ -74,8 +74,10 @@
             padding-bottom: 0.25rem;
         }
         blockquote {
-            padding: 1.25rem;
-            border-left-width: 0.25em;
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
+            padding-left: 0.75rem;
+            border-left-width: 0.15em;
             border-left-style: solid;
             border-left-color: var(--color-material-700);
         }
