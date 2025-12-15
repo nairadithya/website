@@ -1,7 +1,8 @@
 ---
 const { name, author, imageName, link } = Astro.props
-const images = import.meta.glob('./Album/*')
-const { default: AlbumArt } = await images[`./Album/${imageName}`]()
+const images = import.meta.glob<{ default: ImageMetadata }>('./Album/*')
+const imageMod = await images[`./Album/${imageName}`]()
+const AlbumArt = imageMod.default
 ---
 
 <a href={`${link}`}>
