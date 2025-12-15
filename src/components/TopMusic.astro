@@ -1,0 +1,57 @@
+---
+import MusicItem from '@/components/MusicItem.astro'
+
+const music = [
+    {
+        pic: 'ram-daft-punk.jpg',
+        name: 'Random Access Memories',
+        author: 'Daft Punk',
+        link: 'https://www.last.fm/music/Daft+Punk/Random+Access+Memories',
+    },
+    {
+        pic: 'desire-caroline-polachek.jpg',
+        name: 'Desire, I Want To Turn Into You',
+        author: 'Caroline Polachek',
+        link: 'https://www.last.fm/music/Daft+Punk/Random+Access+Memories',
+    },
+    {
+        pic: 'trench-top.jpg',
+        name: 'Trench',
+        author: 'twenty one pilots',
+        link: 'https://www.last.fm/music/Daft+Punk/Random+Access+Memories',
+    },
+    {
+        pic: 'worlds-porter.jpg',
+        name: 'Worlds',
+        author: 'Porter Robinson',
+        link: 'https://www.last.fm/music/Daft+Punk/Random+Access+Memories',
+    },
+    {
+        pic: 'tlg-odesza.jpg',
+        name: 'The Last Goodbye',
+        author: 'ODESZA',
+        link: 'https://www.last.fm/music/Daft+Punk/Random+Access+Memories',
+    },
+    {
+        pic: 'htbahb-glass-animals.jpg',
+        name: 'How To Be A Human Being',
+        author: 'Glass Animals',
+        link: 'https://www.last.fm/music/Daft+Punk/Random+Access+Memories',
+    },
+]
+---
+
+<div
+    class="grid grid-cols-2 items-start justify-items-start gap-2 md:grid-cols-3"
+>
+    {
+        music.map((musicItem) => (
+            <MusicItem
+                name={musicItem.name}
+                author={musicItem.author}
+                imageName={musicItem.pic}
+                link={musicItem.link}
+            />
+        ))
+    }
+</div>
