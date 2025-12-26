@@ -21,8 +21,6 @@ const origin = Astro.site!.origin
     <meta name="description" content={description} />
     <meta name="author" content="Adithya Nair" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="preload" href="../lib/setTheme.js" as="script" />
-    <link rel="preload" href="../lib/colorscheme.js" as="script" />
     <link
         rel="alternate"
         type="application/rss+xml"
@@ -53,10 +51,9 @@ const origin = Astro.site!.origin
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link href="/hue.css" rel="stylesheet" />
+    <link href="/code.css" rel="stylesheet" />
     <script src="../lib/setTheme.js"></script>
     <script src="../lib/colorscheme.js"></script>
-    <link href="/code.css" rel="stylesheet" />
     <meta name="generator" content={Astro.generator} />
     <!-- KATEX -->
     <link
