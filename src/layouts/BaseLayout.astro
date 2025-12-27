@@ -5,10 +5,10 @@ import Head from '@/components/Head.astro'
 interface Props {
     title: string
     description: string
-    slug: string
+    slug?: string
 }
 
-const { title, description, slug } = Astro.props
+const { title, description, slug = '' } = Astro.props
 ---
 
 <!doctype html>
