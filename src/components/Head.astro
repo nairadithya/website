@@ -2,6 +2,7 @@
 interface Props {
     title?: string
     description?: string
+    slug?: string
 }
 
 import '@/styles/global.css'
@@ -9,6 +10,7 @@ import '@/styles/global.css'
 const {
     title = 'Adithya Nair | Student, Programmer And Writer',
     description = "Adithya Nair's home on the internet",
+    slug = '',
 } = Astro.props
 
 import { ClientRouter } from 'astro:transitions'
@@ -29,7 +31,16 @@ const origin = Astro.site!.origin
     />
     <meta property="og:description" content={description} />
     <meta property="og:title" content={title} />
-    <meta property="og:image" content=`${origin}/og.png` />
+    {
+        slug ? (
+            <meta
+                property="og:image"
+                content={`${origin}/api/social-images/${slug}.png`}
+            />
+        ) : (
+            <meta property="og:image" content={`${origin}/og.png`} />
+        )
+    }
     <meta property="og:type" content="website" />
     <meta property="og:url" content={origin} />
 

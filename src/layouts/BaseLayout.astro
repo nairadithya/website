@@ -5,9 +5,10 @@ import Head from '@/components/Head.astro'
 interface Props {
     title: string
     description: string
+    slug: string
 }
 
-const { title, description } = Astro.props
+const { title, description, slug } = Astro.props
 ---
 
 <!doctype html>
@@ -20,6 +21,7 @@ const { title, description } = Astro.props
         description={description
             ? `${description} | Adithya Nair's Website`
             : "Adithya Nair's Website"}
+        slug={slug}
     />
     <main class="min-h-screen w-full py-1 font-serif">
         <NavBar />
