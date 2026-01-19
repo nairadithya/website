@@ -11,6 +11,9 @@ Events I've attended and noteworthy talks from them:
   - [You don't have to be a wizard: A beginner's journey into kernel development by Hridesh MG](https://youtu.be/0_TExIe4rNw?list=PLOGilj110olxij6kbNUlRdd3Ez8bWczny&t=522)
 - [Innovations In Compiler Technology 2025](https://compilertech.org/)
   - [Evolving The OCAML Programming Language by KC Sivaramakrishnan](https://youtu.be/gxJJhjYJ5oo)
+- [Bengaluru Systems](https://hasgeek.com/bengalurusystemsmeetup)
+  - [BLR Systems #6 @ e6data](https://hasgeek.com/bengalurusystemsmeetup/6/)
+  - [BLR Systems #11 @ razorpay](https://hasgeek.com/bengalurusystemsmeetup/11/)
 - [1000x World Tour - TigerBeetle x Bengaluru Systems](https://youtu.be/yKgfk8lTQuE) (the recording is from Amsterdam but the contents were largely the same)
 - [BLR IndieWeb Club](https://blr.indiewebclub.org/)
   - [#16](https://underline.center/t/indiewebclub-16-with-ankur-and-tanvi/622), we largely focused on getting amrita.town's new layout down and I wrote my post on The Truman Show.
