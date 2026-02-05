@@ -5,7 +5,7 @@ category: site
 type: note
 ---
 
-Events I've attended and noteworthy talks from them:
+Events I've attended:
 - [IndiaFOSS 2025](https://fossunited.org/indiafoss/2025)
   1. [Making Open Data Useful: Lessons from Diagram Chasing](https://youtu.be/7NCUE02l1DE)
   2. [You don't have to be a wizard: A beginner's journey into kernel development by Hridesh MG](https://youtu.be/0_TExIe4rNw?list=PLOGilj110olxij6kbNUlRdd3Ez8bWczny&t=522)
@@ -20,3 +20,5 @@ Events I've attended and noteworthy talks from them:
 - [MangaloreFOSS 2026](https://fossunited.org/c/mangalore/mangalorefoss)
   1. [Building Indic dictionaries: From Go to Rust](https://fossunited.org/c/mangalore/mangalorefoss/cfp/ebu0v5qd24)
   2. Building a Multi-Architecture Kernel Development Lab at Home - Dipankar Sharma
+- [IRC 2026](https://roverchallenge.org/irc/)
+  1. I worked as the Automation Lead for [Team Odyssey](https://teamodyssey.space).
