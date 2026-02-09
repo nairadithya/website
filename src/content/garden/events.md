@@ -17,6 +17,7 @@ Events I've attended:
 - [1000x World Tour - TigerBeetle x Bengaluru Systems](https://youtu.be/yKgfk8lTQuE) (the recording is from Amsterdam but the contents were largely the same)
 - [BLR IndieWeb Club](https://blr.indiewebclub.org/)
   1. [#16](https://underline.center/t/indiewebclub-16-with-ankur-and-tanvi/622), we largely focused on getting amrita.town's new layout down and I wrote my post on The Truman Show.
+  2. [#19](https://underline.center/t/indiewebclub-19/708), i wrote my post on reviews
 - [MangaloreFOSS 2026](https://fossunited.org/c/mangalore/mangalorefoss)
   1. [Building Indic dictionaries: From Go to Rust](https://fossunited.org/c/mangalore/mangalorefoss/cfp/ebu0v5qd24)
   2. Building a Multi-Architecture Kernel Development Lab at Home - Dipankar Sharma
