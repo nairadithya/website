@@ -8,11 +8,8 @@ const Icon = (await import(`./MediaIcons/${type}.svg`)).default
         class="flex w-fit place-items-center items-start justify-items-center space-x-2 rounded-lg md:p-2"
     >
         <Icon class="w-12" />
-        <div class="flex flex-col items-start">
+        <div class="flex flex-col items-center">
             <div class="">{title}</div>
-            <div class="font-light italic">
-                {author}
-            </div>
         </div>
     </div>
 </a>
