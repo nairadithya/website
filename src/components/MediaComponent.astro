@@ -5,10 +5,10 @@ const Icon = (await import(`./MediaIcons/${type}.svg`)).default
 
 <a href={`${link}`}>
     <div
-        class="flex w-fit place-items-center items-start justify-items-center space-x-2 rounded-lg md:p-2"
+        class="flex w-fit place-items-center items-center justify-items-center space-x-2 rounded-lg md:p-2"
     >
         <Icon class="w-12" />
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col justify-center">
             <div class="">{title}</div>
         </div>
     </div>
