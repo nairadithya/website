@@ -7,6 +7,9 @@ type: note
 
 Log of things I had from my college canteen
 
+**20th March, 2026**
+Had _dilpasand_ and tea cake. Not terrible, but not great either.
+
 **3rd March, 2026**
 
 Probably the best cream bun I've had from the canteen so far. The bun wasn't stale and there was a solid dollop of cream inside. Incredible experience.
