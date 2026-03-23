@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config'
+import { defineConfig, fontProviders } from 'astro/config'
 import tailwindcss from '@tailwindcss/vite'
 import remarkToc from 'remark-toc'
 import remarkGFM from 'remark-gfm'
@@ -31,5 +31,23 @@ export default defineConfig({
         rehypePlugins: [rehypeKatex],
         syntaxHighlight: 'prism',
     },
+    fonts: [
+        {
+            provider: fontProviders.fontsource(),
+            name: 'Roboto',
+            cssVariable: '--font-roboto',
+        },
+        {
+            provider: fontProviders.fontsource(),
+            name: 'Roboto Serif',
+            weights: [100, 300, 400, 500, 800],
+            cssVariable: '--font-roboto-serif',
+        },
+        {
+            provider: fontProviders.fontsource(),
+            name: 'Roboto Mono',
+            cssVariable: '--font-roboto-mono',
+        },
+    ],
     integrations: [mdx(), sitemap()],
 })

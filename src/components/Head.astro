@@ -1,4 +1,5 @@
 ---
+import { Font } from 'astro:assets'
 interface Props {
     title?: string
     description?: string
@@ -31,6 +32,9 @@ const origin = Astro.site!.origin
     />
     <meta property="og:description" content={description} />
     <meta property="og:title" content={title} />
+    <Font cssVariable="--font-roboto" />
+    <Font cssVariable="--font-roboto-serif" />
+    <Font cssVariable="--font-roboto-mono" />
     {
         slug ? (
             <meta
@@ -50,13 +54,6 @@ const origin = Astro.site!.origin
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content=`${origin}/og.png` />
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet"
-    />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />

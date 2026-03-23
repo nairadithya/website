@@ -1,10 +1,10 @@
 @import 'tailwindcss';
 @custom-variant dark (&:where(.dark, .dark *));
 
-@theme {
-    --font-sans: 'Roboto', 'sans-serif';
-    --font-serif: 'Roboto Serif', 'sans-serif';
-    --font-mono: 'Roboto Mono', 'monospace';
+@theme inline {
+    --font-sans: var(--font-roboto);
+    --font-serif: var(--font-roboto-serif);
+    --font-mono: var(--font-roboto-mono);
     --color-material-100: oklch(97% 0.04 var(--hue));
     --color-material-200: oklch(29% 0.59 var(--hue));
     --color-material-300: oklch(89% 0.11 var(--hue));
