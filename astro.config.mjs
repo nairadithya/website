@@ -42,6 +42,7 @@ export default defineConfig({
             name: 'Roboto Serif',
             weights: [100, 300, 400, 500, 800],
             cssVariable: '--font-roboto-serif',
+            formats: ['woff'],
         },
         {
             provider: fontProviders.fontsource(),

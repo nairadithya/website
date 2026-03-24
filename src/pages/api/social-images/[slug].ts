@@ -3,6 +3,7 @@ import satori from 'satori'
 import sharp from 'sharp'
 import { getCollection, getEntry } from 'astro:content'
 import type { APIRoute, GetStaticPaths } from 'astro'
+import { fontData } from 'astro:assets'
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const posts = await getCollection('blog')
@@ -11,7 +12,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     }))
 }
 
-export const GET: APIRoute = async ({ params }) => {
+export const GET: APIRoute = async ({ params, url }) => {
     const { slug } = params
 
     if (!slug) {
@@ -26,10 +27,8 @@ export const GET: APIRoute = async ({ params }) => {
         return new Response('Not found', { status: 404 })
     }
 
-    const robotoSerifData = await fs.readFile(
-        './public/fonts/Roboto_Serif/static/RobotoSerif-Black.ttf'
-    )
-
+    const robotoSerifData = fontData['--font-roboto-serif']
+    console.log(robotoSerifData[2].src)
     const svg = await satori(
         {
             type: 'div',
@@ -69,8 +68,10 @@ export const GET: APIRoute = async ({ params }) => {
             height: 630,
             fonts: [
                 {
-                    name: 'Roboto',
-                    data: robotoSerifData,
+                    name: 'Roboto Serif',
+                    data: await fetch(
+                        new URL(robotoSerifData[4].src[0].url, url.origin)
+                    ).then((res) => res.arrayBuffer()),
                     weight: 400,
                     style: 'normal',
                 },

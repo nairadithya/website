@@ -7,7 +7,12 @@ type: note
 
 Log of things I had from my college canteen
 
+**23rd March, 2026**
+
+It is a glorious day today. The canteen has introduced UPI today. To commemorate this momentous occassion, I had a Boost and a kachori.
+
 **20th March, 2026**
+
 Had _dilpasand_ and tea cake. Not terrible, but not great either.
 
 **3rd March, 2026**
