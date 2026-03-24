@@ -1,4 +1,3 @@
-import fs from 'fs/promises'
 import satori from 'satori'
 import sharp from 'sharp'
 import { getCollection, getEntry } from 'astro:content'
@@ -79,7 +78,7 @@ export const GET: APIRoute = async ({ params, url }) => {
         }
     )
 
-    const png = await sharp(Buffer.from(svg)).png().toBuffer()
+    const png = new Uint8Array(await sharp(Buffer.from(svg)).png().toBuffer())
 
     return new Response(png, {
         headers: {
