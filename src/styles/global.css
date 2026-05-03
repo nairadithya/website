@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 @custom-variant dark (&:where(.dark, .dark *));
 
-@theme inline {
+:root {
     --font-sans: var(--font-roboto);
     --font-serif: var(--font-roboto-serif);
     --font-mono: var(--font-roboto-mono);
@@ -16,70 +16,75 @@
     --color-material-900: oklch(16% 0.08 var(--hue));
 }
 
-@layer components {
-    .prose {
-        h1,
-        h2,
-        h3 {
-            font-weight: 500;
-            line-height: 1.9rem;
-        }
+main {
+    min-height: 100vw;
+    width: 100%;
+    padding-top: ;
+}
 
-        h1,
-        h2 {
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-        }
 
-        h1 {
-            font-size: 1.8rem;
-        }
+.prose {
+    h1,
+    h2,
+    h3 {
+        font-weight: 500;
+        line-height: 1.9rem;
+    }
 
-        h2 {
-            font-size: 1.4rem;
-        }
+    h1,
+    h2 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
 
-        h3 {
-            font-size: 1.2rem;
-        }
+    h1 {
+        font-size: 1.8rem;
+    }
 
-        p {
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-        }
+    h2 {
+        font-size: 1.4rem;
+    }
 
-        a {
-            text-decoration: underline;
-        }
-        img {
-            border-radius: 0.5rem;
-        }
-        code {
-            font-family: 'Roboto Mono';
-        }
-        ul,
-        ol {
-            padding-left: 1em;
-            padding-top: 0.25rem;
-            padding-bottom: 0.25rem;
-        }
-        ul {
-            list-style-type: disc;
-        }
-        ol {
-            list-style-type: decimal;
-        }
-        li {
-            padding-top: 0.25rem;
-            padding-bottom: 0.25rem;
-        }
-        blockquote {
-            margin-top: 1.25rem;
-            margin-bottom: 1.25rem;
-            padding-left: 0.75rem;
-            border-left-width: 0.15em;
-            border-left-style: solid;
-            border-left-color: var(--color-material-700);
-        }
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+    img {
+        border-radius: 0.5rem;
+    }
+    code {
+        font-family: 'Roboto Mono';
+    }
+    ul,
+    ol {
+        padding-left: 1em;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+    ul {
+        list-style-type: disc;
+    }
+    ol {
+        list-style-type: decimal;
+    }
+    li {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+    blockquote {
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+        padding-left: 0.75rem;
+        border-left-width: 0.15em;
+        border-left-style: solid;
+        border-left-color: var(--color-material-700);
     }
 }
