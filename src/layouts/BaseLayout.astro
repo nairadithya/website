@@ -1,6 +1,6 @@
 ---
 import NavBar from '@/components/NavBar.astro'
-import MobileThemeSwitcher from '@/components/MobileThemeSwitcher.astro'
+
 import Head from '@/components/Head.astro'
 interface Props {
     title: string
@@ -11,10 +11,7 @@ const { title, description, slug = '' } = Astro.props
 ---
 
 <!doctype html>
-<html
-    class="dark:bg-material-900 bg-material-100 text-material-800 dark:selection:bg-material-100 dark:selection:text-material-800 selection:bg-material-800 selection:text-material-100 dark:text-material-100 h-full"
-    lang="en"
->
+<html lang="en">
     <Head
         title={title}
         description={description
@@ -22,22 +19,15 @@ const { title, description, slug = '' } = Astro.props
             : "Adithya Nair's Website"}
         slug={slug}
     />
-    <main class="min-h-screen w-full py-1 font-serif">
+    <main>
         <NavBar />
-        <div class="px-5">
-            <div
-                class="mx-auto flex items-center justify-between md:w-1/2 print:w-4/5"
-            >
-                <div
-                    class="text-material-800 dark:text-material-100 py-8 text-4xl font-extrabold select-none"
-                >
+        <div>
+            <div>
+                <div>
                     {title}
                 </div>
-                <div class="md:hidden">
-                    <MobileThemeSwitcher />
-                </div>
             </div>
-            <div class="mx-auto pb-20 md:w-1/2 print:w-4/5">
+            <div>
                 <slot />
             </div>
         </div>

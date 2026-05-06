@@ -14,7 +14,7 @@ Funnily enough, this started as a bit. [Nikhil](https://heftymouse.me) is a devo
 
 This design is pretty closely aligned in spirit with [Material 3](https://m3.material.io),
 
-# Lessons Learned 
+# Lessons Learned
 
 This redesign really makes as much use of Astro as much as possible. Everything is abstracted away into components, and code is written as concisely as possible. This makes no difference to the final website, but it makes things much more pleasant for me, who's writing it.
 
@@ -45,6 +45,7 @@ Matt Webb over at [Interconnected](https://interconnected.org/) allows people to
 OKLCH is a colour space, which uses lightness, chroma and hue as parameters. What this means is, making a monochrome colour scheme is dead simple. I can fix the hue and adjust along the lightness and chroma axis.
 
 Here's the entire colour scheme:
+
 ```css
 @theme {
     --color-material-100: oklch(97% 0.04 var(--hue));
@@ -63,7 +64,7 @@ The individual values are just me tweaking around with what seemed to work for m
 
 I really like thinking about colour in this way, fixing a hue, and then adjusting the lightness and chroma parameters gave me exactly what I wanted.
 
-The way the colourscheme changer works is by using the current date as the seed for a random number generator, run through a sine function to really shake things up, and finally squeezed into the range 0-360. 
+The way the colourscheme changer works is by using the current date as the seed for a random number generator, run through a sine function to really shake things up, and finally squeezed into the range 0-360.
 
 This number is then set as a CSS variable, and every other CSS variable uses this as the base hue.
 
@@ -71,7 +72,7 @@ This number is then set as a CSS variable, and every other CSS variable uses thi
 
 I used a custom [Prism](https://prismjs.com/) stylesheet that renders code with the computed colours. I took notes mainly from the [DuoTone](https://simurai.com/projects/2016/01/01/duotone-themes) themes by simurai.
 
-I wanted to make a dark theme, but the way the light theme against the dark mode *really* stood out for me. I'm not sure but I might not actually make a dark mode variant.
+I wanted to make a dark theme, but the way the light theme against the dark mode _really_ stood out for me. I'm not sure but I might not actually make a dark mode variant.
 
 ```python
 a = 5
@@ -84,6 +85,7 @@ def a():
 ### RSS Feed
 
 If you view my [rss.xml](/rss.xml), you'll notice that it is:
+
 1. Styled and readable on browser, which isn't usually the case with XML.
 2. Following the same color scheme as the rest of my website.
 
@@ -96,6 +98,7 @@ My hypothesis is, the browser parses the newly created HTML, runs all scripts an
 I have support for Math now, with [$\KaTeX$](https://katex.org/). This was simple to do as well, I just added the `remark-math` and `rehype-katex` plugins, added the KaTeX script to the HTML head and I was done.
 
 Here's an equation:
+
 $$
 L = \frac{1}{2} \rho v^2 S C_L
 $$
@@ -124,7 +127,7 @@ Earlier the screen would flash light before moving to dark mode, since I wrapped
 
 # The Blog
 
-The blog is going to stay the same, hopefully with more posts down the line. I'm going to start swaying a bit more technical, but I've decided to remove the dichotomy behind essays and blogs. The home page will show the last few *essays* as a good first look, but other than that, I make no distinction.
+The blog is going to stay the same, hopefully with more posts down the line. I'm going to start swaying a bit more technical, but I've decided to remove the dichotomy behind essays and blogs. The home page will show the last few _essays_ as a good first look, but other than that, I make no distinction.
 
 # Changes From The Old Design
 

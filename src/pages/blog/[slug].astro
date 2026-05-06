@@ -23,7 +23,7 @@ const { Content } = await render(entry)
     slug={entry.id}
 >
     <FormattedDate date={entry.data.date} />
-    <div class="py-4 font-light">{entry.data.description}</div>
+    <div>{entry.data.description}</div>
     <Prose>
         <Content />
     </Prose>

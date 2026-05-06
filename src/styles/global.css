@@ -1,10 +1,8 @@
 @import 'tailwindcss';
 @custom-variant dark (&:where(.dark, .dark *));
 
+
 :root {
-    --font-sans: var(--font-roboto);
-    --font-serif: var(--font-roboto-serif);
-    --font-mono: var(--font-roboto-mono);
     --color-material-100: oklch(97% 0.04 var(--hue));
     --color-material-200: oklch(29% 0.59 var(--hue));
     --color-material-300: oklch(89% 0.11 var(--hue));
@@ -19,9 +17,8 @@
 main {
     min-height: 100vw;
     width: 100%;
-    padding-top: ;
+    padding-top:;
 }
-
 
 .prose {
     h1,

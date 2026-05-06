@@ -22,4 +22,3 @@ Probably the best cream bun I've had from the canteen so far. The bun wasn't sta
 **26th February, 2026**
 
 Had a doughnut to start the log off. I despise the doughnut, it's really sticky so I needed to eat it to log about it here. I forgot to pack my lunch so I had an aloo paratha.
-

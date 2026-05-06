@@ -11,15 +11,15 @@ I've been working on [ATLAS](https://atlasdev.club), the systems programming clu
 
 # The Background
 
-One of the big things we envisioned was a community of people building a difficult project together and sharing their insights on the project. Taking inspiration from a  similar venture, [Tilde](https://hsp-ec.xyz/announcements/tilde-4.0) run by PES HSP, EC Campus. We wanted to build that culture of tackling difficult things and growing together.
+One of the big things we envisioned was a community of people building a difficult project together and sharing their insights on the project. Taking inspiration from a similar venture, [Tilde](https://hsp-ec.xyz/announcements/tilde-4.0) run by PES HSP, EC Campus. We wanted to build that culture of tackling difficult things and growing together.
 
 A large part of the ATLAS aesthetic is retrofuturism; a worship of the 80s. Amber terminals, behemoth corporations and the sci-fi that came out of that era. Just look at the [NASA worm](https://animalia-life.club/qa/pictures/nasa-space-worm).
 
-So, I knew I didn't want a traditional reel to promote the event. I wanted to do something different, inspired from the principles that inform the entirety of ATLAS' aesthetic while still feeling refreshing. 
+So, I knew I didn't want a traditional reel to promote the event. I wanted to do something different, inspired from the principles that inform the entirety of ATLAS' aesthetic while still feeling refreshing.
 
 The first piece of that puzzle was this [reel](https://www.instagram.com/p/DO-7phDDPB6/) from Nova Club that I stumbled upon in Instagram. It conveniently has the ATLAS orange and looks incredible. What a way to announce yourself.
 
-The second piece of that puzzle was Daft Punk. They wrote the soundtrack that filled the soundstage of the movie Tron: Legacy, which is a movie that's got a cult fanbase of its own. I find the film lacking in plot, but despairingly beautiful. The soundtrack and visuals are made with such love and care. It's a genuine ode to the Tron universe. It's a film with a soundtrack that respects 80s sci-fi just as much as ATLAS is trying to do. 
+The second piece of that puzzle was Daft Punk. They wrote the soundtrack that filled the soundstage of the movie Tron: Legacy, which is a movie that's got a cult fanbase of its own. I find the film lacking in plot, but despairingly beautiful. The soundtrack and visuals are made with such love and care. It's a genuine ode to the Tron universe. It's a film with a soundtrack that respects 80s sci-fi just as much as ATLAS is trying to do.
 
 There's a monologue in the beginning of that film that's used to start the main sonic motif of the entire film. It's in a track called The Grid. In isolation, with no context on what the story is about, it sounds somewhat like a man narrating his curiosity on what goes on inside a computer and finally "getting in". What a wonderful monologue for what systems programming feels like.
 
@@ -32,6 +32,7 @@ For the span of a week, this video consumed me. I would take my laptop everywher
 # The Technical Details
 
 There are two main problems to solve:
+
 1. How do we make this look retro?
 2. How do we show text at the right time in a rapidly iterable way?
 
@@ -45,32 +46,32 @@ Here's an example JSON.
 
 ```json
 [
-  {
-    "timestamp_ms": 44980,
-    "duration_ms": 1500,
-    "type": "lyric",
-    "text": "I got in",
-    "alignment": "center",
-    "effect": "instant_flash"
-  },
-  {
-    "timestamp_ms": 47270,
-    "duration_ms": 4700,
-    "type": "announcement",
-    "text": "ATLAS",
-    "subtext": "PRESENTS",
-    "effect": "braille_big_text",
-    "pulse_on_beat": false
-  },
-  {
-    "timestamp_ms": 51970,
-    "duration_ms": 4700,
-    "type": "announcement",
-    "text": "THE EPOCH PROGRAM",
-    "subtext": "v0 // INIT",
-    "effect": "braille_big_text",
-    "pulse_on_beat": false
-  }
+    {
+        "timestamp_ms": 44980,
+        "duration_ms": 1500,
+        "type": "lyric",
+        "text": "I got in",
+        "alignment": "center",
+        "effect": "instant_flash"
+    },
+    {
+        "timestamp_ms": 47270,
+        "duration_ms": 4700,
+        "type": "announcement",
+        "text": "ATLAS",
+        "subtext": "PRESENTS",
+        "effect": "braille_big_text",
+        "pulse_on_beat": false
+    },
+    {
+        "timestamp_ms": 51970,
+        "duration_ms": 4700,
+        "type": "announcement",
+        "text": "THE EPOCH PROGRAM",
+        "subtext": "v0 // INIT",
+        "effect": "braille_big_text",
+        "pulse_on_beat": false
+    }
 ]
 ```
 
@@ -88,7 +89,7 @@ One thing I tried was to use the Kitty Graphics Protocol and convert these logos
 
 The last and final challenge was syncing up the monologue and the text with the audio track.
 
-There was no getting around the manual work I had to do. I played back the program repeatedly hundreds of time to get the timestamp and duration *just* right.
+There was no getting around the manual work I had to do. I played back the program repeatedly hundreds of time to get the timestamp and duration _just_ right.
 
 It's the most boring work ever, but someone's gotta do it. I have practically memorized the timing and duration of every beat in the track now. This took me about an hour or two to do properly.
 
@@ -103,6 +104,7 @@ hyprctl dispatch resizewindowpixel exact <res1> <res2>,address:$(hyprctl activew
 When all the work for the video was done, it was just a matter of writing a version of this that rendered all the text that shows up in one single frame instead of over video. Check it out [here](https://www.instagram.com/p/DRsYYOzk5Xz/).
 
 # Closing Notes
+
 A lot of the time spent on making this video is reaching dead ends in the process and trying new ways to get around them.
 
 None of this would've been possible without the support of [Nikhil](https://heftymouse.me), the smartest guy I know. I'm grateful to have someone who believes in the wild ideas I come up with.

@@ -10,15 +10,10 @@ const Icon = (await import(`./NavIcons/${name}.astro`)).default
 ---
 
 <a href={`/${link}`} class="py-2">
-    <div class="flex flex-col place-items-center">
-        <div
-            class:list={[
-                'flex w-10 justify-center rounded-lg',
-                [isActive ? 'bg-material-400 dark:text-material-800' : ''],
-            ]}
-        >
+    <div>
+        <div class:list={[]}>
             <Icon isActive={isActive} />
         </div>
     </div>
-    <div class="text-xs">{name}</div>
+    <div>{name}</div>
 </a>

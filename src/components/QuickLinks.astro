@@ -1,14 +1,14 @@
 ---
 let links = [
-  { url: 'https://github.com/nairadithya', icon: 'GitHub' },
-  { url: 'https://letterboxd.com/nairadithya', icon: 'LetterBoxd' },
-  { url: 'https://linkedin.com/in/nairadithya', icon: 'LinkedIn' },
-  { url: 'https://x.com/nairad1thya', icon: 'X' },
+    { url: 'https://github.com/nairadithya', icon: 'GitHub' },
+    { url: 'https://letterboxd.com/nairadithya', icon: 'LetterBoxd' },
+    { url: 'https://linkedin.com/in/nairadithya', icon: 'LinkedIn' },
+    { url: 'https://x.com/nairad1thya', icon: 'X' },
 ]
 
 import SocialLink from './SocialLink.astro'
 ---
 
 <div class="grid grid-cols-4 place-items-center py-2">
-  {links.map((link) => <SocialLink url={link.url} icon={link.icon} />)}
+    {links.map((link) => <SocialLink url={link.url} icon={link.icon} />)}
 </div>

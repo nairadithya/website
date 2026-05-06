@@ -61,7 +61,6 @@ There's this one scene in Episode 6 where Cinta sees a Star Destroyer for the fi
 
 The crazy part is the pieces are all there since the first film back in 1977. The scale was all there, we subconsciously knew and understood just how big the Empire was. This is the first show to take that concept and do something magnificent with it.
 
-
 # Oppression Is The Mask Of Fear
 
 > The Imperial need for control is so desperate because it is so unnatural. Tyranny requires constant effort. It breaks, it leaks. Authority is brittle. Oppression is the mask of fear. - _Nemik's Manifesto_

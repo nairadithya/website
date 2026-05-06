@@ -5,7 +5,7 @@ import QuickLinks from '@/components/QuickLinks.astro'
 import Music from '@/components/Music.astro'
 import HomeLayout from '@/layouts/HomeLayout.astro'
 import FormattedDate from '@/components/FormattedDate.astro'
-import ThemeSwitcher from '@/components/MobileThemeSwitcher.astro'
+
 import { getCollection } from 'astro:content'
 
 const blogPosts = (await getCollection('blog')).sort(
@@ -18,48 +18,42 @@ const mostRecentPosts = blogPosts
 ---
 
 <HomeLayout title="Adithya Nair.">
-    <div class="md:pb-0">
-        <div class="flex items-center justify-between py-4 md:mt-14 md:mb-8">
-            <div class="text-4xl font-light select-none">
-                Hello, I'm <p class="block font-extrabold md:inline">
-                    Adithya.
-                </p>
-            </div>
-            <div class="md:hidden">
-                <ThemeSwitcher />
+    <div>
+        <div>
+            <div>
+                Hello, I'm <p>Adithya.</p>
             </div>
         </div>
     </div>
     <p>
         I am a student, writer and programmer. This is my place on the Internet.<br
         />
-        <a class="text-link dark:text-link underline" href="/about">Read more</a
-        >
+        <a href="/about">Read more</a>
     </p>
-    <div class="w-fit py-2">
+    <div>
         <div>My top song this week is:</div>
         <div>
             <Music />
         </div>
     </div>
-    <h2 class="py-2 text-2xl font-extrabold">Links</h2>
+    <h2>Links</h2>
     <QuickLinks />
-    <div class="grid grid-cols-3 place-items-center py-2"></div>
-    <div class="flex w-full items-center justify-between">
-        <h2 class="py-2 text-2xl font-black">Recent Posts</h2>
-        <div class="justify-self-end"><a href="/rss.xml"><RSS /></a></div>
+    <div></div>
+    <div>
+        <h2>Recent Posts</h2>
+        <div><a href="/rss.xml"><RSS /></a></div>
     </div>
     {
         mostRecentPosts.map((post) => (
-            <div class="py-4">
+            <div>
                 <a href={`/blog/${post.id}`}>
-                    <div class="flex flex-col justify-between pb-1 md:flex-row md:space-x-2 md:pb-1">
-                        <div class="text-xl font-medium">{post.data.title}</div>
-                        <div class="md:text-right">
+                    <div>
+                        <div>{post.data.title}</div>
+                        <div>
                             <FormattedDate date={post.data.date} />
                         </div>
                     </div>
-                    <div class="font-light">{post.data.description}</div>
+                    <div>{post.data.description}</div>
                 </a>
             </div>
         ))
