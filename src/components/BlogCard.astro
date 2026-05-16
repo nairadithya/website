@@ -3,14 +3,13 @@ const { title, description, link, date } = Astro.props
 import FormattedDate from '@/components/FormattedDate.astro'
 ---
 
-<div class="rounded-lg py-4">
+<div>
     <a href={link}>
-        <div class="flex flex-col justify-between pb-1 md:pb-1">
-            <div class="text-xl font-medium">
+        <div>
+            <h2>
                 {title}
-            </div>
-            <FormattedDate date={date} />
+                <i style="text-decoration: none;"> <FormattedDate date={date} /></i>
+            </h2>
         </div>
-        <div class="font-light">{description}</div>
     </a>
 </div>

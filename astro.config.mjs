@@ -1,5 +1,4 @@
 import { defineConfig, fontProviders } from 'astro/config'
-import tailwindcss from '@tailwindcss/vite'
 import remarkToc from 'remark-toc'
 import remarkGFM from 'remark-gfm'
 import remarkMath from 'remark-math'
@@ -11,9 +10,6 @@ import sitemap from '@astrojs/sitemap'
 
 export default defineConfig({
     site: 'https://adithyanair.com',
-    vite: {
-        plugins: [tailwindcss()],
-    },
     output: 'static',
     prefetch: {
         prefetchAll: true,
@@ -29,25 +25,25 @@ export default defineConfig({
             remarkSmartyPants,
         ],
         rehypePlugins: [rehypeKatex],
-        syntaxHighlight: 'prism',
+        syntaxHighlight: 'shiki',
     },
     fonts: [
         {
             provider: fontProviders.fontsource(),
-            name: 'Roboto',
-            cssVariable: '--font-roboto',
+            name: 'IBM Plex Serif',
+            cssVariable: '--font-serif',
         },
         {
             provider: fontProviders.fontsource(),
-            name: 'Roboto Serif',
+            name: 'IBM Plex Sans',
             weights: [100, 300, 400, 500, 800],
-            cssVariable: '--font-roboto-serif',
+            cssVariable: '--font-sans',
             formats: ['woff'],
         },
         {
             provider: fontProviders.fontsource(),
-            name: 'Roboto Mono',
-            cssVariable: '--font-roboto-mono',
+            name: 'IBM Plex Mono',
+            cssVariable: '--font-mono',
         },
     ],
     integrations: [mdx(), sitemap()],

@@ -1,8 +1,6 @@
 ---
 title: Uses
 author: Adithya Nair
-category: site
-type: note
 ---
 
 # Software

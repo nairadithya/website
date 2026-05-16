@@ -2,8 +2,8 @@
 import Footer from '@/components/Footer.astro'
 import RSS from '@/icons/rss.svg'
 import QuickLinks from '@/components/QuickLinks.astro'
-import Music from '@/components/Music.astro'
-import HomeLayout from '@/layouts/HomeLayout.astro'
+/* import Music from '@/components/Music.astro' */
+import BaseLayout from '@/layouts/BaseLayout.astro'
 import FormattedDate from '@/components/FormattedDate.astro'
 
 import { getCollection } from 'astro:content'
@@ -13,50 +13,25 @@ const blogPosts = (await getCollection('blog')).sort(
 )
 
 const mostRecentPosts = blogPosts
-    .filter((entry) => entry.data.isEssay && !entry.data.isDraft)
-    .slice(0, 3)
+.filter((entry) => entry.data.isEssay && !entry.data.isDraft)
+.slice(0, 5)
 ---
 
-<HomeLayout title="Adithya Nair.">
+<BaseLayout>
     <div>
-        <div>
-            <div>
-                Hello, I'm <p>Adithya.</p>
-            </div>
-        </div>
-    </div>
+	<header>Hi,</header>
     <p>
-        I am a student, writer and programmer. This is my place on the Internet.<br
-        />
-        <a href="/about">Read more</a>
+        I am a student, writer and programmer. This is my personal website,
+        where I write about whatever strikes my fancy.
     </p>
-    <div>
-        <div>My top song this week is:</div>
-        <div>
-            <Music />
-        </div>
-    </div>
-    <h2>Links</h2>
+
+    <p>
+        Interested in working with me? Check out my <a
+            href="https://nairadithya.github.io/">portfolio</a
+        >.
+    </p>
+    <h2>Socials</h2>
     <QuickLinks />
-    <div></div>
-    <div>
-        <h2>Recent Posts</h2>
-        <div><a href="/rss.xml"><RSS /></a></div>
     </div>
-    {
-        mostRecentPosts.map((post) => (
-            <div>
-                <a href={`/blog/${post.id}`}>
-                    <div>
-                        <div>{post.data.title}</div>
-                        <div>
-                            <FormattedDate date={post.data.date} />
-                        </div>
-                    </div>
-                    <div>{post.data.description}</div>
-                </a>
-            </div>
-        ))
-    }
     <Footer />
-</HomeLayout>
+</BaseLayout>

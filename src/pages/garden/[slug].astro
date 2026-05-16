@@ -15,7 +15,5 @@ const { Content } = await render(entry)
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.author}>
-    <Prose>
-        <Content />
-    </Prose>
+    <Content />
 </BaseLayout>

@@ -21,15 +21,11 @@ const { title, description, slug = '' } = Astro.props
     />
     <main>
         <NavBar />
-        <div>
-            <div>
-                <div>
-                    {title}
-                </div>
-            </div>
-            <div>
-                <slot />
-            </div>
-        </div>
+        <header>
+            {title}
+        </header>
+	<div class="home">
+            <slot />
+	</div>
     </main>
 </html>

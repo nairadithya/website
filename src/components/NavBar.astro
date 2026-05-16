@@ -1,12 +1,13 @@
 ---
-import DesktopThemeSwitcher from '@/components/DesktopThemeSwitcher.astro'
 import NavItem from '@/components/NavItem.astro'
-const links = ['Home', 'Blog', 'Garden', 'About']
+const links = ['Blog', 'Garden', 'About']
 ---
 
-<div>
-    <div>
-        {links.map((link) => <NavItem name={link} />)}
-        <DesktopThemeSwitcher />
+<nav>
+    <div class="navbar-top">
+        <a href="/"> Adithya Nair </a>
+        <div class="navbar-links">
+            {links.map((link) => <NavItem name={link} />)}
+        </div>
     </div>
-</div>
+</nav>

@@ -1,8 +1,6 @@
 ---
 title: Essential Links
 author: Adithya Nair
-category: personal
-type: note
 ---
 
 Here's a list of links I find I revisit a lot.

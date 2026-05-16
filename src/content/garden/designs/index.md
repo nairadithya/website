@@ -1,8 +1,6 @@
 ---
 title: Designs
 author: Adithya Nair
-category: site
-type: note
 ---
 
 # Prototype Design

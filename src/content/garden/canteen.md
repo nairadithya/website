@@ -1,11 +1,23 @@
 ---
 title: Canteen
 author: Adithya Nair
-category: personal
-type: note
 ---
 
 Log of things I had from my college canteen
+
+**12th May, 2026**
+
+Had a tea and a cutlet today. The cutlet was a bit stale, but serviceable.
+
+**7th May, 2026**
+
+I had a cream bun that was pretty solid. The tea didn't have enough sugar.
+
+
+**1-4 April, 2026**
+
+We got treated to the best the college could offer. A MeitY-funded bootcamp, and the college spared no expense in providing very good meals for 4 days straight.
+
 
 **23rd March, 2026**
 

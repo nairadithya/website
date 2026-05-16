@@ -26,9 +26,6 @@ const gardenCollection = defineCollection({
     schema: z.object({
         title: z.string(),
         author: z.string(),
-        source: z.string().optional(),
-        category: z.string(),
-        type: z.enum(['article', 'book', 'movie', 'show', 'note']),
     }),
 })
 

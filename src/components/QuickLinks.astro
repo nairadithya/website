@@ -9,6 +9,6 @@ let links = [
 import SocialLink from './SocialLink.astro'
 ---
 
-<div class="grid grid-cols-4 place-items-center py-2">
+<div class="quicklinks">
     {links.map((link) => <SocialLink url={link.url} icon={link.icon} />)}
 </div>

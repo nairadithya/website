@@ -1,21 +1,26 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro'
 import CollectionArray from '@/components/CollectionArray.astro'
-import TopMusic from '@/components/TopMusic.astro'
+import { getCollection } from 'astro:content'
+const gardenCollection = await getCollection('garden')
+const { type } = Astro.props
+
 ---
 
 <BaseLayout
     title="The Garden"
     description="The place I wanna keep all the things that inspire me."
 >
-    <div>
-        <p>
-            Think of this as a page that expresses my tastes. I document my
-            favourites in the best way I can.
-        </p>
-    </div>
-    <div>Personal</div>
-    <CollectionArray type="note" />
-    <div>Music</div>
-    <TopMusic />
+    <p>
+        Think of this as a page that expresses my tastes. I document my
+        favourites in the best way I can.
+    </p>
+    <h2>Notes</h2>
+  {
+    gardenCollection.map((gardenItem) => (
+    <a href=`/garden/${gardenItem.id}`>
+	<h3>{gardenItem.data.title}</h3>
+    </a>
+    ))
+  }
 </BaseLayout>

@@ -1,8 +1,6 @@
 ---
 title: Events
 author: Adithya Nair
-category: site
-type: note
 ---
 
 Events I've attended:
