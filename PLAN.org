@@ -1,0 +1,7 @@
+#+title: Planning Document
+#+author: Adithya Nair
+
+* TODO Things I want
+1. Simple clean design
+2. https://azan-n.com/library/ I want this library design
+3. 
