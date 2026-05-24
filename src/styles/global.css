@@ -3,12 +3,12 @@
     --foreground: light-dark(oklch(14.38% 0.007 256.88), oklch(99.4% 0 0));
     --background: light-dark(oklch(99.4% 0 0), oklch(14.38% 0.007 256.88));
     --accent: light-dark(oklch(64.24% 0.175 144.92),oklch(69.86% 0.162 144.92));
+    --gray: light-dark(oklch(69.01% 0.003 286.32), oklch(88.28% 0.003 286.34));
 
     /* Defaults */
     background-color: var(--background);
     color: var(--foreground);
     font-family: var(--font-serif), serif;
-    
 }
 
 a {
@@ -49,10 +49,11 @@ posts {
 
 }
 
-time {
+a time {
     font-size: 1.2rem;
     font-style: italic;
-    color: var(--uchu-dark-gray);
+    color: var(--gray);
+    display: block;
     text-decoration: none;
 }
 
