@@ -1,0 +1,36 @@
+---
+let links = [
+    { url: 'https://github.com/nairadithya', icon: 'GitHub' },
+    { url: 'https://letterboxd.com/nairadithya', icon: 'LetterBoxd' },
+    { url: 'https://linkedin.com/in/nairadithya', icon: 'LinkedIn' },
+    { url: 'https://x.com/nairad1thya', icon: 'X (The Bird Site)' },
+    { url: 'https://discord.com/app', icon: 'Discord (@nairadithya)' },
+]
+
+import ArrowForward from '@/icons/arrow-forward.svg'
+---
+
+<div class="quicklinks card">
+    <h2>Find Me Elsewhere</h2>
+    {
+        links.map((link) => (
+            <div class="link">
+                <ArrowForward />
+                <a href={link.url}>{link.icon}</a>
+            </div>
+        ))
+    }
+</div>
+
+<style>
+    .link {
+        display: flex;
+        align-items: center;
+        gap: 0.3em;
+    }
+    .link svg {
+        color: var(--accent);
+        width: var(--size-xl);
+        height: auto;
+    }
+</style>

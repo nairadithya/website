@@ -1,0 +1,26 @@
+---
+import { GET } from '@/pages/api/latest-review.json.ts'
+let data = await (await GET()).json()
+import Film from '@/icons/film.svg'
+---
+
+<div class="card">
+    <div>
+        <h2>Latest Review</h2>
+        <a href={data.link}><span>{data.film}</span></a><br />
+        <span>{data.stars}</span>
+    </div>
+    <Film />
+</div>
+
+<style>
+    .card {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card svg {
+        width: 4em;
+    }
+</style>

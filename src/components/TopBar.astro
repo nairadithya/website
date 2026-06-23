@@ -1,0 +1,135 @@
+---
+import Home from '@/components/NavIcons/Home.svg'
+import FormattedDate from '@/components/FormattedDate.astro'
+import { getCollection } from 'astro:content'
+const count =
+    (await getCollection('garden')).length +
+    (await getCollection('blog')).length
+
+const currentPath = Astro.url.pathname
+const links = [
+    { label: 'blog', href: '/blog' },
+    { label: 'garden', href: '/garden' },
+    { label: 'about', href: '/about' },
+    { label: 'now', href: '/now' },
+    { label: 'rss', href: '/rss.xml' },
+]
+
+let currentDate = new Date(Date.now())
+
+const isCurrent = (href) =>
+    href === '/' ? currentPath === '/' : currentPath.startsWith(href)
+---
+
+<header class="topbar">
+    <a href="/" class="home-icon" aria-label="Go to homepage"
+        ><Home aria-hidden="true" /> <span>Home</span></a
+    >
+
+    <div class="site-title" aria-label="Site name">
+        <p>Adithya Nair</p>
+        <nav>
+            <ul>
+                {
+                    links.map((link) => (
+                        <li>
+                            <a
+                                aria-current={
+                                    isCurrent(link.href) ? 'page' : undefined
+                                }
+                                href={link.href}
+                            >
+                                {link.label}
+                            </a>
+                        </li>
+                    ))
+                }
+            </ul>
+        </nav>
+    </div>
+
+    <div class="metadata" role="group" aria-label="Page info">
+        <span>Blogging Since: <FormattedDate date="2024-10-13" /> </span>
+        <span>Last Updated: <FormattedDate date={currentDate} /> </span>
+        <span> No. of articles: {count}</span>
+    </div>
+</header>
+
+<style>
+    .topbar {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        width: 100%;
+    }
+
+    .topbar > * + * {
+        border-left: none;
+    }
+
+    .topbar > .site-title {
+        font-size: var(--size-4xl);
+        font-weight: bold;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .site-title > p {
+        margin: 0;
+        align-self: stretch;
+        padding: 0.5em 0px 0.5em 0px;
+        font-family: var(--font-serif);
+        border-bottom: 1px dashed var(--accent);
+    }
+
+    nav ul {
+        margin: 0;
+        list-style: none;
+        padding: 0.8em 0;
+        display: flex;
+        gap: 1em;
+        font-size: var(--size-2xl);
+    }
+
+    nav ul a::before {
+        content: '[';
+    }
+
+    nav ul a::after {
+        content: ']';
+    }
+
+    nav ul a[aria-current='page'] {
+        color: var(--accent-active);
+    }
+
+    .topbar > .metadata {
+        display: flex;
+        align-items: flex-start;
+        justify-items: left;
+        flex-direction: column;
+        gap: 1.2em;
+    }
+
+    .topbar > * {
+        border: 1px solid var(--accent);
+        padding: 0.5rem 1rem;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .home-icon {
+        flex-direction: column;
+        gap: 0.2em;
+    }
+
+    .home-icon svg {
+        width: 96px;
+        height: auto;
+    }
+</style>

@@ -1,0 +1,58 @@
+---
+const badges = [
+    {
+        src: '/badges/at.gif',
+        label: 'Amrita.town',
+        href: 'https://amrita.town',
+    },
+    {
+        src: '/badges/dark-mode.gif',
+        alt: 'Dark Mode',
+        href: 'https://www.youtube.com/watch?v=bOwsLtwa2Ts',
+    },
+    {
+        src: '/badges/thread-locked.gif',
+        alt: 'ThreadLocked',
+        href: 'https://threadlocked.xyz/',
+    },
+    {
+        src: '/badges/hl.gif',
+        alt: 'Half Life',
+        href: 'https://youtu.be/2Whsld94IHQ',
+    },]
+---
+
+<div class="card">
+    <h2>Badges</h2>
+    <div class="sticker-gallery">
+        {
+            badges.map((badge) => (
+                <a href={badge.href}>
+                    <img src={badge.src} alt={badge.label} loading="lazy" width="88" height="31" />
+                </a>
+            ))
+        }
+    </div>
+</div>
+
+<style>
+    .card {
+        gap: 1em;
+    }
+    .sticker-gallery {
+        display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
+        grid-template-rows: 1fr 1fr;
+    }
+
+ .sticker-gallery a {
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .sticker-gallery img {
+     image-rendering: pixelated;
+     display: block;
+     }
+</style>
