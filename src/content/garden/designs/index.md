@@ -1,6 +1,6 @@
 ---
 title: Designs
-author: Adithya Nair
+description: Screenshots of all the various iterations of this website
 ---
 
 # Prototype Design

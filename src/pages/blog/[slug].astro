@@ -21,7 +21,7 @@ const { Content } = await render(entry)
     description={entry.data.description}
     slug={entry.id}
 >
+    <h1>{entry.data.title}</h1>
     <FormattedDate date={entry.data.date} />
     <Content />
-    <Footer />
 </BaseLayout>

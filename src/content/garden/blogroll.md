@@ -1,6 +1,6 @@
 ---
-title: People 
-author: Adithya Nair
+title: People
+description: A collection of some of the most influential voices on the Internet for me.
 ---
 
 1. [Interconnected](https://interconnected.org/) - Matt Webb is an incredibly creative man, with a lot of playful wit packed into all of his posts. He takes your mind for walks along untrodden paths and leaves you with refreshing ideas and re-imaginings of the things we take for granted.

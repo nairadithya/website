@@ -1,6 +1,6 @@
 ---
 title: Essential Links
-author: Adithya Nair
+description: A list of bookmarks that I think are incredible and well worth your time.
 ---
 
 Here's a list of links I find I revisit a lot.

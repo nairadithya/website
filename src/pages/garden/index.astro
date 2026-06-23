@@ -15,12 +15,14 @@ const { type } = Astro.props
         Think of this as a page that expresses my tastes. I document my
         favourites in the best way I can.
     </p>
-    <h2>Notes</h2>
+    <div class="garden-grid">
   {
     gardenCollection.map((gardenItem) => (
-    <a href=`/garden/${gardenItem.id}`>
-	<h3>{gardenItem.data.title}</h3>
+    <a class="garden-item" href=`/garden/${gardenItem.id}`>
+	<h2>{gardenItem.data.title}</h2>
+	<p>{gardenItem.data.description}</p>
     </a>
     ))
-  }
+    }
+    </div>
 </BaseLayout>

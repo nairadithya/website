@@ -2,179 +2,107 @@
     color-scheme: light dark;
     --foreground: light-dark(oklch(14.38% 0.007 256.88), oklch(99.4% 0 0));
     --background: light-dark(oklch(99.4% 0 0), oklch(14.38% 0.007 256.88));
-    --accent: light-dark(oklch(64.24% 0.175 144.92),oklch(69.86% 0.162 144.92));
+    --accent: light-dark(
+        oklch(64.24% 0.175 144.92),
+        oklch(69.86% 0.162 144.92)
+    );
     --gray: light-dark(oklch(69.01% 0.003 286.32), oklch(88.28% 0.003 286.34));
+    --accent-hover: light-dark(
+        oklch(72% 0.155 144.92),
+        oklch(78% 0.145 144.92)
+    );
+    --accent-active: light-dark(
+        oklch(54% 0.195 144.92),
+        oklch(60% 0.18 144.92)
+    );
 
-    /* Defaults */
-    background-color: var(--background);
+    --size-xs: 0.75rem;
+    --size-base: 1rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    background: var(--background);
     color: var(--foreground);
-    font-family: var(--font-serif), serif;
-}
-
-a {
-    text-decoration: none;
-    color: var(--accent);
-}
-
-svg {
-    color: var(--foreground);
-}
-
-recent-posts {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-post {
-    display: flex;
-    flex-direction: column;
-    margin: 1.1rem 0;
-    gap: 0.8rem;
-    font-size: 1.4rem;
-    color: var(--foreground);
-    text-decoration: none;
-    justify-content: space-between;
-}
-
-posts {
-    display: flex;
-    flex-direction: column;
-}
-
-@media (max-width: 720px) {
-    post {
-	display: block;
-    }
-
-}
-
-a time {
-    font-size: 1.2rem;
-    font-style: italic;
-    color: var(--gray);
-    display: block;
-    text-decoration: none;
-}
-
-nav > .navbar-top {
-    display: flex;
-    font-size: 1.8rem;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar-links {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    justify-content: space-evenly;
-}
-
-.quicklinks {
-    display: flex;
-    justify-content: space-evenly;
+    font-family: var(--font-mono);
 }
 
 main {
-    max-width: 800px;
-    min-height: 100vw;
-    margin: 0 auto;
-    padding: 2rem 0;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 0.9fr minmax(0, 80ch) 0.8fr;
+    grid-template-rows: minmax(0, 1fr);
+    overflow: hidden;
 }
 
-.home {
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    justify-content: space-between;
 }
 
-header {
-    padding: 1rem 0;
-    font-size: 3rem;
-    font-weight: bold;
+main > * {
+    border: 1px solid var(--accent);
+    border-top: 0;
+    min-height: 0;
 }
 
-li {
-    font-size: 1.3rem;
+a {
+    color: var(--accent);
+    text-decoration: none;
 }
 
-footer {
+a:hover {
+    color: var(--accent-hover);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.content {
+    padding: 0.8rem;
+    overflow-y: auto;
+    scrollbar-width: auto;
+    font-family: var(--font-serif);
+    scrollbar-color: var(--accent) transparent;
+}
+
+.content::-webkit-scrollbar {
+    width: 12px; /* was 8px, if you added it */
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border: 2px solid transparent; /* gives breathing room */
+    background-clip: padding-box;
+    border-radius: 6px;
+}
+
+.content::-webkit-scrollbar-track {
+    background: transparent;
+}
+.content p {
+    font-size: var(--size-xl);
+}
+
+.card {
+    font-size: var(--size-xl);
     display: flex;
-    margin: 0 auto;
-    align-self: end;
-    padding: 0 auto;
     flex-direction: column;
-    justify-items: center;
-    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--accent);
 }
 
-.link-footer {
-    font-size: 1.4rem;
-    gap: 1.0em;
-    display: flex;
-}
-
-
-h1,
-h2,
-h3 {
-    font-weight: 500;
-    line-height: 1.9rem;
-}
-
-h1,
-h2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-h1 {
-    font-size: 2rem;
-}
-
-h2 {
-    font-size: 1.6rem;
-}
-
-h3 {
-    font-size: 1.4rem;
-}
-
-p {
-    font-size: 1.3rem;
-}
-
-img {
-    border-radius: 0.5rem;
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto;
-}
-
-ul {
-    list-style-type: disc;
-}
-
-ol {
-    list-style-type: decimal;
-}
-
-blockquote {
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    padding-left: 0.75rem;
-    border-left-width: 0.15em;
-    border-left-style: solid;
-}
-
-pre.astro-code {
-    background-color: var(--uchu-gray);
-    padding: 1.2rem;
-    border-radius: 0.8rem;
-    font-size: 1.1rem; !important;
-    font: var(--font-mono);
+.card h2 {
+    margin: 0;
 }

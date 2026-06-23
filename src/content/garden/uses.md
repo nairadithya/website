@@ -1,6 +1,6 @@
 ---
 title: Uses
-author: Adithya Nair
+description: A page hosting all the things I use.
 ---
 
 # Software

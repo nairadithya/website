@@ -13,25 +13,8 @@ const blogPosts = (await getCollection('blog')).sort(
 )
 
 const mostRecentPosts = blogPosts
-.filter((entry) => entry.data.isEssay && !entry.data.isDraft)
-.slice(0, 5)
+    .filter((entry) => entry.data.isEssay && !entry.data.isDraft)
+    .slice(0, 5)
 ---
 
-<BaseLayout>
-    <div>
-	<header>Hi,</header>
-    <p>
-        I am a student, writer and programmer. This is my personal website,
-        where I write about whatever strikes my fancy.
-    </p>
-
-    <p>
-        Interested in working with me? Check out my <a
-            href="https://nairadithya.github.io/">portfolio</a
-        >.
-    </p>
-    <h2>Socials</h2>
-    <QuickLinks />
-    </div>
-    <Footer />
-</BaseLayout>
+<BaseLayout />

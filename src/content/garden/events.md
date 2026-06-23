@@ -1,6 +1,6 @@
 ---
 title: Events
-author: Adithya Nair
+description: All the things I've attended.
 ---
 
 Events I've attended:
