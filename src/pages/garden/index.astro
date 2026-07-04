@@ -1,10 +1,8 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro'
-import CollectionArray from '@/components/CollectionArray.astro'
 import { getCollection } from 'astro:content'
 const gardenCollection = await getCollection('garden')
 const { type } = Astro.props
-
 ---
 
 <BaseLayout
@@ -16,13 +14,13 @@ const { type } = Astro.props
         favourites in the best way I can.
     </p>
     <div class="garden-grid">
-  {
-    gardenCollection.map((gardenItem) => (
-    <a class="garden-item" href=`/garden/${gardenItem.id}`>
-	<h2>{gardenItem.data.title}</h2>
-	<p>{gardenItem.data.description}</p>
-    </a>
-    ))
-    }
+        {
+            gardenCollection.map((gardenItem) => (
+                <a class="garden-item" href={`/garden/${gardenItem.id}`}>
+                    <h2>{gardenItem.data.title}</h2>
+                    <p>{gardenItem.data.description}</p>
+                </a>
+            ))
+        }
     </div>
 </BaseLayout>

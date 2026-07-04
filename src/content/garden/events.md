@@ -22,3 +22,4 @@ Events I've attended:
     2. Building a Multi-Architecture Kernel Development Lab at Home - Dipankar Sharma
 - [IRC 2026](https://roverchallenge.org/irc/)
     1. I worked as the Automation Lead for [Team Odyssey](https://teamodyssey.space).
+- [Bangerlore v5](https://partiful.com/e/qQ5j2mNkpfIittsNo34X?) - Met some wonderful people here.

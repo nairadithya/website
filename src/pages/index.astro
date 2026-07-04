@@ -1,10 +1,5 @@
 ---
-import Footer from '@/components/Footer.astro'
-import RSS from '@/icons/rss.svg'
-import QuickLinks from '@/components/QuickLinks.astro'
-/* import Music from '@/components/Music.astro' */
 import BaseLayout from '@/layouts/BaseLayout.astro'
-import FormattedDate from '@/components/FormattedDate.astro'
 
 import { getCollection } from 'astro:content'
 
@@ -13,8 +8,20 @@ const blogPosts = (await getCollection('blog')).sort(
 )
 
 const mostRecentPosts = blogPosts
-    .filter((entry) => entry.data.isEssay && !entry.data.isDraft)
-    .slice(0, 5)
+    .filter((entry) => !entry.data.isDraft)
+    .slice(0, 3)
 ---
 
-<BaseLayout />
+
+<BaseLayout title="Adithya Nair" description="Welcome to my website">
+    <h2>Latest Posts</h2>
+    {
+        mostRecentPosts.map((entry) => (
+            <div>
+                <a href={`/blog/${entry.id}`}>
+                    <h2>{entry.data.title}</h2>
+                </a>
+            </div>
+        ))
+    }
+</BaseLayout>

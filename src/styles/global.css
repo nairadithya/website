@@ -1,20 +1,10 @@
 :root {
     color-scheme: light dark;
-    --foreground: light-dark(oklch(14.38% 0.007 256.88), oklch(99.4% 0 0));
-    --background: light-dark(oklch(99.4% 0 0), oklch(14.38% 0.007 256.88));
-    --accent: light-dark(
-        oklch(64.24% 0.175 144.92),
-        oklch(69.86% 0.162 144.92)
-    );
-    --gray: light-dark(oklch(69.01% 0.003 286.32), oklch(88.28% 0.003 286.34));
-    --accent-hover: light-dark(
-        oklch(72% 0.155 144.92),
-        oklch(78% 0.145 144.92)
-    );
-    --accent-active: light-dark(
-        oklch(54% 0.195 144.92),
-        oklch(60% 0.18 144.92)
-    );
+
+    --foreground: light-dark(oklch(13% 0 0), oklch(93% 0 0));
+    --background: light-dark(oklch(98% 0.008 60), oklch(12% 0.015 20));
+    --accent: light-dark(oklch(62% 0.12 195), oklch(55% 0.13 300));
+    --gray: light-dark(oklch(68% 0.04 10), oklch(75% 0 0));
 
     --size-xs: 0.75rem;
     --size-base: 1rem;
@@ -31,7 +21,7 @@
 main {
     flex: 1;
     display: grid;
-    grid-template-columns: 0.9fr minmax(0, 80ch) 0.8fr;
+    grid-template-columns: 0.8fr minmax(0, 100ch) 0.6fr;
     grid-template-rows: minmax(0, 1fr);
     overflow: hidden;
 }
@@ -70,20 +60,31 @@ a:hover {
 }
 
 .content {
-    padding: 0.8rem;
+    padding: 0;
+    border-left: 0;
+    border-right: 0;
     overflow-y: auto;
-    scrollbar-width: auto;
     font-family: var(--font-serif);
-    scrollbar-color: var(--accent) transparent;
+}
+
+.content-inner {
+    margin: 0 auto;
+    padding: 0.8rem;
+    max-width: 80ch;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
 }
 
 .content::-webkit-scrollbar {
-    width: 12px; /* was 8px, if you added it */
+    width: 12px;
 }
 
 .content::-webkit-scrollbar-thumb {
     background: var(--accent);
-    border: 2px solid transparent; /* gives breathing room */
+    border: 2px solid transparent;
     background-clip: padding-box;
     border-radius: 6px;
 }
@@ -100,9 +101,15 @@ a:hover {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    border-bottom: 1px solid var(--accent);
+    margin: 1rem;
+
+    border: 1px solid var(--accent);
 }
 
 .card h2 {
     margin: 0;
+}
+
+time {
+    color: var(--gray);
 }

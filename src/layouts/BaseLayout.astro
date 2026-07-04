@@ -1,8 +1,9 @@
 ---
 import Head from '@/components/Head.astro'
 import LeftSidebar from '@/components/LeftSidebar.astro'
-import StickerGallery from '@/components/Widgets/StickerGallery.astro'
+import RightSidebar from '@/components/RightSidebar.astro'
 import TopBar from '@/components/TopBar.astro'
+import BottomBar from '@/components/BottomBar.astro'
 interface Props {
     title: string
     description: string
@@ -24,8 +25,11 @@ const { title, description, slug = '' } = Astro.props
     <main>
         <LeftSidebar />
         <div class="content">
-            <slot />
+            <div class="content-inner">
+                <slot />
+            </div>
         </div>
-        <div><StickerGallery /></div>
+        <RightSidebar />
+        <BottomBar />
     </main>
 </html>

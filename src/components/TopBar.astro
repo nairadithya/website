@@ -1,11 +1,6 @@
 ---
 import Home from '@/components/NavIcons/Home.svg'
 import FormattedDate from '@/components/FormattedDate.astro'
-import { getCollection } from 'astro:content'
-const count =
-    (await getCollection('garden')).length +
-    (await getCollection('blog')).length
-
 const currentPath = Astro.url.pathname
 const links = [
     { label: 'blog', href: '/blog' },
@@ -51,7 +46,6 @@ const isCurrent = (href) =>
     <div class="metadata" role="group" aria-label="Page info">
         <span>Blogging Since: <FormattedDate date="2024-10-13" /> </span>
         <span>Last Updated: <FormattedDate date={currentDate} /> </span>
-        <span> No. of articles: {count}</span>
     </div>
 </header>
 
@@ -68,7 +62,7 @@ const isCurrent = (href) =>
     }
 
     .topbar > .site-title {
-        font-size: var(--size-4xl);
+        font-size: var(--size-5xl);
         font-weight: bold;
         flex-direction: column;
         justify-content: flex-start;
@@ -80,7 +74,7 @@ const isCurrent = (href) =>
         align-self: stretch;
         padding: 0.5em 0px 0.5em 0px;
         font-family: var(--font-serif);
-        border-bottom: 1px dashed var(--accent);
+        border-bottom: 4px double var(--accent);
     }
 
     nav ul {

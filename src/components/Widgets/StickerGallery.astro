@@ -6,9 +6,9 @@ const badges = [
         href: 'https://amrita.town',
     },
     {
-        src: '/badges/dark-mode.gif',
-        alt: 'Dark Mode',
-        href: 'https://www.youtube.com/watch?v=bOwsLtwa2Ts',
+        src: '/badges/atlasbutton.png',
+        alt: 'ATLAS ASEB',
+        href: 'https://atlasdev.club',
     },
     {
         src: '/badges/thread-locked.gif',
@@ -16,10 +16,21 @@ const badges = [
         href: 'https://threadlocked.xyz/',
     },
     {
+        src: '/badges/dark-mode.gif',
+        alt: 'Dark Mode',
+        href: 'https://www.youtube.com/watch?v=bOwsLtwa2Ts',
+    },
+    {
         src: '/badges/hl.gif',
         alt: 'Half Life',
         href: 'https://youtu.be/2Whsld94IHQ',
-    },]
+    },
+    {
+        src: '/badges/emacsemacsemacs.gif',
+        alt: 'Emacs',
+        href: 'https://youtu.be/urcL86UpqZc',
+    },
+]
 ---
 
 <div class="card">
@@ -28,7 +39,13 @@ const badges = [
         {
             badges.map((badge) => (
                 <a href={badge.href}>
-                    <img src={badge.src} alt={badge.label} loading="lazy" width="88" height="31" />
+                    <img
+                        src={badge.src}
+                        alt={badge.label}
+                        loading="lazy"
+                        width="88"
+                        height="31"
+                    />
                 </a>
             ))
         }
@@ -39,20 +56,21 @@ const badges = [
     .card {
         gap: 1em;
     }
+
     .sticker-gallery {
+        margin: 0 auto;
         display: flex;
-	flex-wrap: wrap;
-	gap: 0.5em;
-        grid-template-rows: 1fr 1fr;
+        flex-wrap: wrap;
+        gap: 0.5em;
     }
 
- .sticker-gallery a {
-     display: flex;
-     justify-content: center;
- }
- 
- .sticker-gallery img {
-     image-rendering: pixelated;
-     display: block;
-     }
+    .sticker-gallery a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sticker-gallery img {
+        image-rendering: pixelated;
+        display: block;
+    }
 </style>

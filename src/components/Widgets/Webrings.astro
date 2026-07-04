@@ -1,0 +1,84 @@
+---
+const webringData = [
+    {
+        name: 'amrita.town',
+        href: 'https://amrita.town',
+        prev: '/prev',
+        next: '/next',
+        random: '/random',
+    },
+    {
+        name: 'threadlocked',
+        href: 'https://ring.seggs.lol',
+        prev: '/redirect?from=nairadithya&dir=prev',
+        random: '/random',
+        next: '/redirect?from=nairadithya&dir=next',
+    },
+    {
+        name: 'IndieWebClub BLR',
+        href: 'https://blr.indiewebclub.org',
+        prev: '/webring/previous.html',
+        next: '/webring/next.html',
+    },
+]
+
+import ArrowForward from '@/icons/arrow-forward.svg'
+import Dice from '@/icons/dice.svg'
+import ArrowBack from '@/icons/arrow-back.svg'
+---
+
+<div class="card">
+    <h2>Webrings</h2>
+    {
+        webringData.map((ring) => (
+            <div class="webring-row">
+                <a href={ring.href} class="webring-name">
+                    {ring.name}
+                </a>
+                <div class="webring-nav">
+                    <a href={ring.href + ring.prev}>
+                        <ArrowBack />
+                    </a>
+                    {ring.random && (
+                        <a href={ring.href + ring.random}>
+                            <Dice />
+                        </a>
+                    )}
+                    <a href={ring.href + ring.next}>
+                        <ArrowForward />
+                    </a>
+                </div>
+            </div>
+        ))
+    }
+</div>
+
+<style>
+    .webring-nav svg {
+        width: 2ch;
+    }
+
+    .webring-row {
+        display: flex;
+        gap: 0.5em;
+        padding: 0.4em;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .webring-name {
+        text-overflow: ellipsis;
+    }
+
+    .webring-nav {
+        display: flex;
+        gap: 0.4em;
+        flex-shrink: 0;
+    }
+    .webring-nav a {
+        flex-shrink: 0;
+        display: inline-flex;
+        justify-content: center;
+        font-size: 0.85em;
+    }
+</style>
