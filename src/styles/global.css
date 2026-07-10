@@ -1,10 +1,11 @@
 :root {
     color-scheme: light dark;
 
-    --foreground: light-dark(oklch(13% 0 0), oklch(93% 0 0));
-    --background: light-dark(oklch(98% 0.008 60), oklch(12% 0.015 20));
-    --accent: light-dark(oklch(62% 0.12 195), oklch(55% 0.13 300));
-    --gray: light-dark(oklch(68% 0.04 10), oklch(75% 0 0));
+    --foreground: light-dark(oklch(18% 0.03 70), oklch(93% 0 0));
+    --background: light-dark(oklch(90% 0.03 80), oklch(12% 0.015 20));
+    --accent: light-dark(oklch(55% 0.18 55), oklch(55% 0.13 300));
+    --gray: light-dark(oklch(62% 0.04 75), oklch(75% 0 0));
+    --accent-hover: light-dark(oklch(45% 0.19 55), oklch(65% 0.16 300));
 
     --size-xs: 0.75rem;
     --size-base: 1rem;
@@ -65,6 +66,8 @@ a:hover {
     border-right: 0;
     overflow-y: auto;
     font-family: var(--font-serif);
+    scrollbar-color: var(--accent) transparent;
+    scrollbar-width: auto;
 }
 
 .content-inner {
@@ -79,21 +82,125 @@ a:hover {
 }
 
 .content::-webkit-scrollbar {
-    width: 12px;
+    width: 16px;
 }
 
 .content::-webkit-scrollbar-thumb {
     background: var(--accent);
-    border: 2px solid transparent;
-    background-clip: padding-box;
-    border-radius: 6px;
 }
 
 .content::-webkit-scrollbar-track {
-    background: transparent;
+    background: color-mix(in oklch, var(--accent) 12%, transparent);
 }
 .content p {
     font-size: var(--size-xl);
+    line-height: 1.6;
+}
+
+/* ── Content Typography: lists ── */
+
+.content ul,
+.content ol {
+    font-size: var(--size-xl);
+    line-height: 1.6;
+    padding-left: 1.5em;
+}
+
+.content li {
+    margin-bottom: 0.3em;
+}
+
+.content li::marker {
+    color: var(--accent);
+}
+
+.content li > ul,
+.content li > ol {
+    margin-top: 0.3em;
+    font-size: 0.9em;
+}
+
+/* ── Content Typography: headings ── */
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 1.5em 0 0.5em 0;
+}
+
+.content h1 {
+    font-size: var(--size-4xl);
+}
+
+.content h1:first-child {
+    padding-bottom: 0.2em;
+}
+
+.content h2 {
+    font-size: var(--size-3xl);
+    padding-bottom: 0.15em;
+}
+
+.content h3 {
+    font-size: var(--size-2xl);
+}
+
+.content h4 {
+    font-size: var(--size-xl);
+}
+
+.content h1:first-child {
+    margin-top: 0;
+}
+
+/* ── Content Typography: blockquotes ── */
+
+.content blockquote {
+    margin: 1em 0;
+    padding: 0.2em 1em;
+    border-left: 3px double var(--accent);
+    font-style: italic;
+    color: var(--gray);
+}
+
+/* ── Content Typography: inline ── */
+
+.content strong {
+    font-weight: 600;
+    color: var(--foreground);
+}
+
+.content em {
+    font-style: italic;
+}
+
+.content code {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    padding: 0.1em 0.3em;
+    background: color-mix(in oklch, var(--accent) 10%, transparent);
+    border-radius: 3px;
+}
+
+.content pre {
+    font-family: var(--font-mono);
+    font-size: var(--size-base);
+    padding: 1em;
+    border: 1px solid var(--accent);
+    overflow-x: auto;
+    line-height: 1.5;
+}
+
+.content hr {
+    border: none;
+    border-top: 1px solid var(--accent);
+    margin: 2em 0;
 }
 
 .card {
@@ -110,6 +217,6 @@ a:hover {
     margin: 0;
 }
 
-time {
+.content time {
     color: var(--gray);
 }

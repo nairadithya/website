@@ -5,14 +5,62 @@ const imageMod = await images[`./Album/${imageName}`]()
 const AlbumArt = imageMod.default
 ---
 
-<a href={`${link}`}>
-    <div>
-        <img src={AlbumArt.src} />
-        <div>
-            <div>{name}</div>
-            <div>
-                {author}
-            </div>
-        </div>
+<a href={link} class="music-card">
+    <img src={AlbumArt.src} alt={`${name} by ${author}`} />
+    <div class="music-meta">
+        <span class="music-name">{name}</span>
+        <span class="music-artist">{author}</span>
     </div>
 </a>
+
+<style>
+    .music-card {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: inherit;
+        border: 1px solid var(--accent);
+        transition: background 0.15s ease;
+    }
+
+    .music-card:hover {
+        background: color-mix(in oklch, var(--accent) 10%, transparent);
+    }
+
+    .music-card img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+    .music-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1em;
+        padding: 0.4em 0.5em;
+        border-top: 1px solid var(--accent);
+        font-family: var(--font-mono);
+        font-size: var(--size-xs);
+        line-height: 1.3;
+    }
+
+    .music-name {
+        color: var(--foreground);
+        font-weight: 600;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .music-card:hover .music-name {
+        color: var(--accent);
+    }
+
+    .music-artist {
+        color: var(--gray);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+</style>

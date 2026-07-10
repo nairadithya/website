@@ -1,0 +1,98 @@
+---
+import { getCollection } from 'astro:content'
+import { execSync } from 'node:child_process'
+import { existsSync } from 'node:fs'
+import { resolve } from 'node:path'
+import FormattedDate from '@/components/FormattedDate.astro'
+
+function getGitDate(filePath: string): Date | null {
+    try {
+        const result = execSync(
+            `git log -1 --format=%cI -- "${filePath}"`,
+            { cwd: process.cwd(), encoding: 'utf-8', timeout: 3000 }
+        ).trim()
+        return result ? new Date(result) : null
+    } catch {
+        return null
+    }
+}
+
+function findFileDate(collection: string, id: string): Date | null {
+    const base = resolve(`src/content/${collection}`)
+    for (const ext of ['.md', '.mdx']) {
+        const filePath = resolve(base, `${id}${ext}`)
+        if (existsSync(filePath)) {
+            return getGitDate(filePath)
+        }
+    }
+    return null
+}
+
+const blogEntries = await getCollection('blog')
+const gardenEntries = await getCollection('garden')
+
+interface Entry {
+    title: string
+    url: string
+    date: Date
+}
+
+const allEntries: Entry[] = [
+    ...blogEntries
+        .filter((e) => !e.data.isDraft)
+        .map((e) => ({
+            title: e.data.title,
+            url: `/blog/${e.id}`,
+            date: e.data.date,
+        })),
+    ...gardenEntries
+        .map((e) => {
+            const date = findFileDate('garden', e.id)
+            return date
+                ? { title: e.data.title, url: `/garden/${e.id}`, date }
+                : null
+        })
+        .filter((e): e is Entry => e !== null),
+]
+
+const recentEntries = allEntries
+    .sort((a, b) => b.date.getTime() - a.date.getTime())
+    .slice(0, 5)
+---
+
+{
+    recentEntries.map((entry) => (
+        <div class="recent-entry">
+            <a href={entry.url}>
+                <h2>{entry.title}</h2>
+            </a>
+            <span class="dot-leader" aria-hidden="true"></span>
+            <FormattedDate date={entry.date} />
+        </div>
+    ))
+}
+
+<style>
+    .recent-entry {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .recent-entry a {
+        flex-shrink: 0;
+    }
+
+    .recent-entry h2 {
+        margin: 0;
+        font-size: var(--size-xl);
+        display: inline;
+    }
+
+    .dot-leader {
+        flex: 1;
+        min-width: 0.5em;
+        margin: 0 0.5em;
+        border-bottom: 1px dotted var(--foreground);
+    }
+</style>

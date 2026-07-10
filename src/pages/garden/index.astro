@@ -1,26 +1,143 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro'
+import MusicItem from '@/components/MusicItem.astro'
 import { getCollection } from 'astro:content'
+
 const gardenCollection = await getCollection('garden')
-const { type } = Astro.props
+
+const albums = [
+    {
+        name: 'Desire, I Want To Turn Into You',
+        author: 'Caroline Polachek',
+        imageName: 'desire-caroline-polachek.jpg',
+        link: 'https://musicbrainz.org/release/b7598df2-2020-4776-a45f-8f01f6d770c5',
+    },
+    {
+        name: 'How To Be A Human Being',
+        author: 'Glass Animals',
+        imageName: 'htbahb-glass-animals.jpg',
+        link: 'https://musicbrainz.org/release/78226ae9-50a1-4027-9300-40d2cc6fec9a',
+    },
+    {
+        name: 'Random Access Memories',
+        author: 'Daft Punk',
+        imageName: 'ram-daft-punk.jpg',
+        link: 'https://musicbrainz.org/release/d07a06cc-d10c-4998-9eba-54bdc64beebc',
+    },
+    {
+        name: 'The Last Goodbye',
+        author: 'ODESZA',
+        imageName: 'tlg-odesza.jpg',
+        link: 'https://musicbrainz.org/release/20b2b3a5-b2e1-46b4-a87a-b7f47b9d91a1',
+    },
+    {
+        name: 'Trench',
+        author: 'Twenty One Pilots',
+        imageName: 'trench-top.jpg',
+        link: 'https://musicbrainz.org/release/89173603-2e4a-4058-9cf8-f1cfa5a98bb9',
+    },
+    {
+        name: 'Worlds',
+        author: 'Porter Robinson',
+        imageName: 'worlds-porter.jpg',
+        link: 'https://musicbrainz.org/release/3961d5c6-0249-49c0-94b7-2e2bede59b14',
+    },
+]
 ---
 
 <BaseLayout
     title="The Garden"
     description="The place I wanna keep all the things that inspire me."
 >
-    <p>
-        Think of this as a page that expresses my tastes. I document my
-        favourites in the best way I can.
-    </p>
-    <div class="garden-grid">
+    <h1>The Garden</h1>
+
+    <div class="garden-list">
         {
-            gardenCollection.map((gardenItem) => (
-                <a class="garden-item" href={`/garden/${gardenItem.id}`}>
-                    <h2>{gardenItem.data.title}</h2>
-                    <p>{gardenItem.data.description}</p>
+            gardenCollection.map((item) => (
+                <a class="garden-link" href={`/garden/${item.id}`}>
+                    <span class="gl-name">{item.data.title}</span>
+                    <span class="gl-desc">{item.data.description}</span>
                 </a>
             ))
         }
     </div>
+
+    <h2>Albums I Love</h2>
+
+    <div class="album-grid">
+        {
+            albums.map((album) => (
+                <MusicItem
+                    name={album.name}
+                    author={album.author}
+                    imageName={album.imageName}
+                    link={album.link}
+                />
+            ))
+        }
+    </div>
 </BaseLayout>
+
+<style>
+    .garden-list, .album-grid {
+        max-width: 80ch;
+        margin: 0 auto;
+        padding: 0 0.8rem;
+    }
+
+    .garden-list {
+        font: var(--size-base) var(--font-mono);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .garden-link {
+        display: grid;
+        grid-template-columns: 16ch 1fr;
+        gap: 2ch;
+        padding: 0.15rem 0.3rem;
+        border-radius: 2px;
+        transition: background 0.1s;
+    }
+
+    .garden-link:hover {
+        background: color-mix(in oklch, var(--accent) 10%, transparent);
+    }
+
+    .garden-link:hover .gl-name {
+        text-decoration: underline;
+    }
+
+    .gl-name, .gl-desc {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .gl-name { color: var(--accent); }
+    .gl-desc { color: var(--gray); }
+
+    .album-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 0.8rem;
+    }
+
+    @media (max-width: 600px) {
+        .garden-list, .album-grid { padding: 0 0.5rem; }
+
+        .garden-link {
+            grid-template-columns: 1fr;
+            gap: 0.1rem;
+            padding: 0.4rem 0.3rem;
+        }
+
+        .gl-name { font-weight: 600; }
+        .gl-desc { font-size: 0.85rem; }
+
+        .album-grid {
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 0.5rem;
+        }
+    }
+</style>

@@ -1,6 +1,6 @@
 ---
 title: Canteen
-description: A log of all the things I've eating at my college canteen
+description: Everything I ate at my college canteen
 ---
 
 Log of things I had from my college canteen

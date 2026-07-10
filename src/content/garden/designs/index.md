@@ -1,6 +1,6 @@
 ---
 title: Designs
-description: Screenshots of all the various iterations of this website
+description: All iterations of this site
 ---
 
 # Prototype Design

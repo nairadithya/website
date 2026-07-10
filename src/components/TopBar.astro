@@ -12,7 +12,7 @@ const links = [
 
 let currentDate = new Date(Date.now())
 
-const isCurrent = (href) =>
+const isCurrent = (href: string) =>
     href === '/' ? currentPath === '/' : currentPath.startsWith(href)
 ---
 
@@ -73,7 +73,7 @@ const isCurrent = (href) =>
         margin: 0;
         align-self: stretch;
         padding: 0.5em 0px 0.5em 0px;
-        font-family: var(--font-serif);
+        font-family: var(--font-mono);
         border-bottom: 4px double var(--accent);
     }
 

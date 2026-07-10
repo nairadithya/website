@@ -1,6 +1,6 @@
 ---
-title: Essential Links
-description: A list of bookmarks that I think are incredible and well worth your time.
+title: Bookmarks
+description: The best links in the interwebs
 ---
 
 Here's a list of links I find I revisit a lot.

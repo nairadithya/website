@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro'
+import RecentlyUpdated from '@/components/Widgets/RecentlyUpdated.astro'
+import FormattedDate from '@/components/FormattedDate.astro'
 
 import { getCollection } from 'astro:content'
 
@@ -12,16 +14,48 @@ const mostRecentPosts = blogPosts
     .slice(0, 3)
 ---
 
-
 <BaseLayout title="Adithya Nair" description="Welcome to my website">
-    <h2>Latest Posts</h2>
-    {
-        mostRecentPosts.map((entry) => (
-            <div>
-                <a href={`/blog/${entry.id}`}>
-                    <h2>{entry.data.title}</h2>
-                </a>
-            </div>
-        ))
-    }
+    <h1>Hello, I'm Adithya.</h1>
+    <p>
+        Welcome to my home on the Internet.
+        <h1>Latest Posts</h1>
+        {
+            mostRecentPosts.map((entry) => (
+                <div class="recent-entry">
+                    <a href={`/blog/${entry.id}`}>
+                        <h2>{entry.data.title}</h2>
+                    </a>
+                    <span class="dot-leader" aria-hidden="true"></span>
+                    <FormattedDate date={entry.data.date} />
+                </div>
+            ))
+        }
+        <h1>Recently Updated</h1>
+        <RecentlyUpdated />
+    </p>
 </BaseLayout>
+
+<style>
+    .recent-entry {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .recent-entry a {
+        flex-shrink: 0;
+    }
+
+    .recent-entry h2 {
+        margin: 0;
+        font-size: var(--size-xl);
+        display: inline;
+    }
+
+    .dot-leader {
+        flex: 1;
+        min-width: 0.5em;
+        margin: 0 0.5em;
+        border-bottom: 1px dotted var(--foreground);
+    }
+</style>
