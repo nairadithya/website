@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content'
 import { execSync } from 'node:child_process'
 import { existsSync } from 'node:fs'
 import { resolve } from 'node:path'
-import FormattedDate from '@/components/FormattedDate.astro'
+import BlogCard from '@/components/BlogCard.astro'
 
 function getGitDate(filePath: string): Date | null {
     try {
@@ -62,37 +62,6 @@ const recentEntries = allEntries
 
 {
     recentEntries.map((entry) => (
-        <div class="recent-entry">
-            <a href={entry.url}>
-                <h2>{entry.title}</h2>
-            </a>
-            <span class="dot-leader" aria-hidden="true"></span>
-            <FormattedDate date={entry.date} />
-        </div>
+        <BlogCard title={entry.title} link={entry.url} date={entry.date} />
     ))
 }
-
-<style>
-    .recent-entry {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .recent-entry a {
-        flex-shrink: 0;
-    }
-
-    .recent-entry h2 {
-        margin: 0;
-        font-size: var(--size-xl);
-        display: inline;
-    }
-
-    .dot-leader {
-        flex: 1;
-        min-width: 0.5em;
-        margin: 0 0.5em;
-        border-bottom: 1px dotted var(--foreground);
-    }
-</style>

@@ -13,11 +13,20 @@ const GRAY = '#b3b3b3' // oklch(75% 0 0)
 const FONT_SERIF = 'IBM Plex Serif'
 const FONT_MONO = 'IBM Plex Mono'
 
+// Default site OG card
+const DEFAULT_TITLE = 'Adithya Nair'
+const DEFAULT_BYLINE = 'Student, Programmer & Writer'
+
 export const getStaticPaths: GetStaticPaths = async () => {
-    const posts = await getCollection('blog')
-    return posts.map((post) => ({
-        params: { slug: `${post.id}.png` },
-    }))
+    const [posts, garden] = await Promise.all([
+        getCollection('blog'),
+        getCollection('garden'),
+    ])
+    return [
+        ...posts.map((post) => ({ params: { slug: `${post.id}.png` } })),
+        ...garden.map((entry) => ({ params: { slug: `${entry.id}.png` } })),
+        { params: { slug: 'default.png' } },
+    ]
 }
 
 export const GET: APIRoute = async ({ params }) => {
@@ -25,17 +34,34 @@ export const GET: APIRoute = async ({ params }) => {
 
     if (!slug) return new Response('Slug is required', { status: 400 })
 
-    const postSlug = slug.replace(/\.png$/, '')
-    const post = await getEntry('blog', postSlug)
+    const id = slug.replace(/\.png$/, '')
 
-    if (!post) return new Response('Not found', { status: 404 })
+    let title: string
+    let byline: string
+
+    if (id === 'default') {
+        title = DEFAULT_TITLE
+        byline = DEFAULT_BYLINE
+    } else {
+        const post = await getEntry('blog', id)
+        if (post) {
+            title = post.data.title
+        } else {
+            const gardenEntry = await getEntry('garden', id)
+            if (gardenEntry) {
+                title = gardenEntry.data.title
+            } else {
+                return new Response('Not found', { status: 404 })
+            }
+        }
+        byline = 'Adithya Nair'
+    }
 
     const [serifFont, monoFont] = await Promise.all([
         fs.readFile('./public/fonts/IBMPlexSerif-Regular.ttf'),
         fs.readFile('./public/fonts/IBMPlexMono-Regular.ttf'),
     ])
 
-    const title = post.data.title
     const isLongTitle = title.length > 60
     const titleSize = isLongTitle ? '48px' : '60px'
 
@@ -95,7 +121,7 @@ export const GET: APIRoute = async ({ params }) => {
                     {
                         type: 'div',
                         props: {
-                            children: 'Adithya Nair',
+                            children: byline,
                             style: {
                                 fontFamily: FONT_MONO,
                                 fontSize: '22px',
