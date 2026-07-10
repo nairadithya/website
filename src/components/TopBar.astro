@@ -126,4 +126,45 @@ const isCurrent = (href: string) =>
         width: 96px;
         height: auto;
     }
+
+    @media (max-width: 880px) {
+        .topbar {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+        }
+
+        .topbar > .metadata {
+            display: none;
+        }
+
+        .topbar > * {
+            padding: 0.4rem 0.6rem;
+        }
+
+        .topbar > .site-title {
+            font-size: var(--size-2xl);
+        }
+
+        .home-icon {
+            flex-direction: row;
+            gap: 0.5em;
+        }
+
+        .home-icon svg {
+            width: 28px;
+        }
+
+        .home-icon span {
+            font-family: var(--font-mono);
+            font-size: var(--size-base);
+            font-weight: 700;
+        }
+
+        nav ul {
+            padding: 0.4em 0;
+            gap: 0.8em;
+            font-size: var(--size-base);
+            flex-wrap: wrap;
+        }
+    }
 </style>

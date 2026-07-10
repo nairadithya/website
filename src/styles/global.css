@@ -39,6 +39,37 @@ body {
     flex-direction: column;
 }
 
+/* ── Mobile: stack panes into a single scrolling column ── */
+
+@media (max-width: 880px) {
+    html,
+    body {
+        height: auto;
+        overflow-y: auto;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+    }
+
+    /* Reorder: content first, then sidebars, then bottom bar */
+    .content { order: 1; }
+    aside { order: 2; }
+    .bottom-bar { order: 3; }
+
+    main > * {
+        border-top: 1px solid var(--accent);
+    }
+
+    .content {
+        border-left: 0;
+        border-right: 0;
+        overflow-y: visible;
+    }
+}
+
 main > * {
     border: 1px solid var(--accent);
     border-top: 0;
@@ -219,4 +250,30 @@ a:hover {
 
 .content time {
     color: var(--gray);
+}
+
+/* ── Mobile typography: shrink the large serif sizes ── */
+
+@media (max-width: 880px) {
+    .content p,
+    .content ul,
+    .content ol {
+        font-size: var(--size-base);
+    }
+
+    .content h1 { font-size: var(--size-3xl); }
+    .content h2 { font-size: var(--size-2xl); }
+    .content h3 { font-size: var(--size-xl); }
+    .content h4 { font-size: var(--size-xl); }
+
+    .content-inner {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .card {
+        font-size: var(--size-base);
+        padding: 0.8rem;
+        margin: 0.5rem;
+    }
 }
