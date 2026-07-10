@@ -54,9 +54,10 @@ body {
         overflow: visible;
     }
 
-    /* Reorder: content first, then sidebars, then bottom bar */
+    /* Reorder: content first, then widgets, then quote */
     .content { order: 1; }
-    aside { order: 2; }
+    aside,
+    .right-sidebar { order: 2; }
     .bottom-bar { order: 3; }
 
     main > * {
