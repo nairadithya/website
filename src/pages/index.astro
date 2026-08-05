@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro'
 import BlogCard from '@/components/BlogCard.astro'
-import RecentlyUpdated from '@/components/Widgets/RecentlyUpdated.astro'
+
 
 import { getCollection } from 'astro:content'
 
@@ -30,6 +30,4 @@ const mostRecentPosts = blogPosts
         ))
     }
 
-    <h2>Recently Updated</h2>
-    <RecentlyUpdated />
 </BaseLayout>
