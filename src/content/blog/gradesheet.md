@@ -1,5 +1,5 @@
 ---
-title: So You Lost Your Amrita Gradesheet
+title: So, You Lost Your Amrita Gradesheet
 description: A guide for the absent-minded.
 date: 2026-08-05
 ---
