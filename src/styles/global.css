@@ -69,6 +69,11 @@ body {
         border-right: 0;
         overflow-y: visible;
     }
+
+    aside,
+    .right-sidebar {
+        overflow-y: visible;
+    }
 }
 
 main > * {
@@ -100,6 +105,15 @@ a:hover {
     font-family: var(--font-serif);
     scrollbar-color: var(--accent) transparent;
     scrollbar-width: auto;
+}
+
+/* Sidebars scroll internally on the fixed-height desktop grid,
+   so short viewports don't clip widgets behind the bottom bar. */
+aside,
+.right-sidebar {
+    overflow-y: auto;
+    scrollbar-color: var(--accent) transparent;
+    scrollbar-width: thin;
 }
 
 .content-inner {
