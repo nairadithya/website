@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content'
+import BlogCard from '@/components/BlogCard.astro'
+import Layout from '@/layouts/BaseLayout.astro'
+const reviews = (await getCollection('reviews')).sort(
+    (a, b) => b.data.date.getTime() - a.data.date.getTime()
+)
+
+const formatType = (type: string) =>
+    type.charAt(0).toUpperCase() + type.slice(1)
+---
+
+<Layout title="Reviews" description="This page is where I house my reviews.">
+    <div>
+        {
+            reviews.map((review) => (
+                <BlogCard
+                    title={review.data.title}
+                    link={`/reviews/${review.id}`}
+                    description={`${formatType(review.data.type)} · ${review.data.year}`}
+                    date={review.data.date}
+                />
+            ))
+        }
+    </div>
+</Layout>
