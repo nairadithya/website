@@ -2,7 +2,6 @@
 import BaseLayout from '@/layouts/BaseLayout.astro'
 import BlogCard from '@/components/BlogCard.astro'
 
-
 import { getCollection } from 'astro:content'
 
 const blogPosts = (await getCollection('blog')).sort(
@@ -29,5 +28,4 @@ const mostRecentPosts = blogPosts
             />
         ))
     }
-
 </BaseLayout>

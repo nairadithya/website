@@ -19,7 +19,7 @@ We just had fun going through each film and loosely following the plot and makin
 
 Over time, the movies simply became the context with which our hangout existed in.
 
-The most surprising part about all this is that  Minions and monsters is honestly a really solid movie. A weird kind of theme park ride filled with homages for cinephiles. 
+The most surprising part about all this is that Minions and monsters is honestly a really solid movie. A weird kind of theme park ride filled with homages for cinephiles.
 
 # Butter Chicken In Hong Kong
 
@@ -35,7 +35,7 @@ I went on a trip to Hong Kong last week, and this is a picture of the best meal 
 
 I cheated, these are two images. But during my trip to Hong Kong, I also visited Macau, which was a very casino ridden place. One of the bigger casinos I went to was The Venetian. Inside the Venetian, there's this "canal", with a bunch of canoes that you could ride in. A bunch of big brands on either side. I couldn't help but feel this overwhelming sense of disgust about the whole affair. This simulation of a real place, built completely out of a vice.
 
-The very next day, we visited Disneyland, which is filled with these fake buildings and simulations of cities... yet I didn't feel that way. 
+The very next day, we visited Disneyland, which is filled with these fake buildings and simulations of cities... yet I didn't feel that way.
 
 I think the core of it is the intent somehow. I see The Venetian and I see a lot of greed and consumption. I go to Disneyland and I see a lot of kids laughing and their eyes sparkling with wonder.
 
@@ -52,7 +52,6 @@ Soon this keycap will die out. Perhaps I just have to force myself to not make m
 ![spoder](spider-man-sniper.jpg)
 
 I found this wonderful thing at an exhibition. I leave this without comment as I find the photo delightful on its own.
-
 
 # Closing Notes
 

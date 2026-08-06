@@ -55,10 +55,16 @@ body {
     }
 
     /* Reorder: content first, then widgets, then quote */
-    .content { order: 1; }
+    .content {
+        order: 1;
+    }
     aside,
-    .right-sidebar { order: 2; }
-    .bottom-bar { order: 3; }
+    .right-sidebar {
+        order: 2;
+    }
+    .bottom-bar {
+        order: 3;
+    }
 
     main > * {
         border-top: 1px solid var(--accent);
@@ -276,10 +282,18 @@ aside,
         font-size: var(--size-base);
     }
 
-    .content h1 { font-size: var(--size-3xl); }
-    .content h2 { font-size: var(--size-2xl); }
-    .content h3 { font-size: var(--size-xl); }
-    .content h4 { font-size: var(--size-xl); }
+    .content h1 {
+        font-size: var(--size-3xl);
+    }
+    .content h2 {
+        font-size: var(--size-2xl);
+    }
+    .content h3 {
+        font-size: var(--size-xl);
+    }
+    .content h4 {
+        font-size: var(--size-xl);
+    }
 
     .content-inner {
         padding: 1rem;

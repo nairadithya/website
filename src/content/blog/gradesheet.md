@@ -15,6 +15,7 @@ It's easier to do it online, so go to [this link](https://kspapp.ksp.gov.in/ksp/
 If you're feeling adventurous, you can of course go to the nearest police station and file the FIR directly there but you and I are on very different wavelengths on what we both consider fun.
 
 **Note**: There is a format to your e-Lost Report:
+
 1. Document Type: Educational Certificate
 2. Name Of Article: \<UNIVERSITY NAME\> SEMESTER \<SEMESTER NO.\> GRADESHEET
 3. Ensure that you file each semester gradesheet as separate lost items in your report.
@@ -27,7 +28,7 @@ You must now go to your faculty advisor with a printout of this e-Lost Report or
 
 The contents of the letter don't really matter, just apologize for losing it and request a duplicate.
 
-This letter gets forwarded to the HoD and then the principal. After this, at some undefined point in time it will reach the exam cell. 
+This letter gets forwarded to the HoD and then the principal. After this, at some undefined point in time it will reach the exam cell.
 Due to the uncertainty at which it will reach the exam cell, you need to be making daily visits just to check in on the exam cell. They will admonish you for coming late so to avoid that it's best to just be regular about checking on the exam cell and asking about your letter.
 
 # Step 3 - Form
@@ -36,23 +37,18 @@ After the letter has arrived, you must fill out an Amrita-specific lost article 
 
 # Step 4 - Notarized Affidavit
 
-All these must be copied out, the lost reports, the Amrita form you just filled out, the signed letter from the principal into one bundle of papers. Proceed to an E-Stamp Center or any legal place that offers notarization services. You need a notarized affidavit for the lost articles 
+All these must be copied out, the lost reports, the Amrita form you just filled out, the signed letter from the principal into one bundle of papers. Proceed to an E-Stamp Center or any legal place that offers notarization services. You need a notarized affidavit for the lost articles
 
-Here's a place near college you can check out that offers these services. 
+Here's a place near college you can check out that offers these services.
 
 [E - Stamp Center- Kasavanahalli( M/s Sundar & Murthy Associates)](https://maps.app.goo.gl/PxEeaejfTpJo7sxRA)
 
 When you go to the notary, specifically ask for non-judicial 100 rupees bond paper and that you're requesting this for a lost artifact.
 
-
 # Final Step - File For Duplicates
 
 With all these pieces together, walk to the exam cell and hand in the affidavit along with everything else. Pay the amount, it's 500 for each gradesheet... you will receive it in about 5-7 working days but check in with exam cell every day regardless.
 
-
 # Conclusion
 
 Don't lose your gradesheets.
-
-
-

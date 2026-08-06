@@ -29,7 +29,20 @@ const gardenCollection = defineCollection({
     }),
 })
 
+const reviewCollection = defineCollection({
+    loader: glob({
+        pattern: ['**/*.{md,mdx}', '*.{md,mdx}'],
+        base: 'src/content/reviews/',
+    }),
+    schema: z.object({
+        title: z.string(),
+        type: z.enum(['movie', 'book', 'show', 'game']),
+        date: z.date(),
+    }),
+})
+
 export const collections = {
     blog: postCollection,
     garden: gardenCollection,
+    reviews: reviewCollection,
 }

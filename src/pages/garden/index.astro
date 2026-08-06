@@ -79,7 +79,8 @@ const albums = [
 </BaseLayout>
 
 <style>
-    .garden-list, .album-grid {
+    .garden-list,
+    .album-grid {
         max-width: 80ch;
         margin: 0 auto;
         padding: 0 0.8rem;
@@ -108,14 +109,19 @@ const albums = [
         text-decoration: underline;
     }
 
-    .gl-name, .gl-desc {
+    .gl-name,
+    .gl-desc {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
 
-    .gl-name { color: var(--accent); }
-    .gl-desc { color: var(--gray); }
+    .gl-name {
+        color: var(--accent);
+    }
+    .gl-desc {
+        color: var(--gray);
+    }
 
     .album-grid {
         display: grid;
@@ -124,7 +130,10 @@ const albums = [
     }
 
     @media (max-width: 600px) {
-        .garden-list, .album-grid { padding: 0 0.5rem; }
+        .garden-list,
+        .album-grid {
+            padding: 0 0.5rem;
+        }
 
         .garden-link {
             grid-template-columns: 1fr;
@@ -132,8 +141,12 @@ const albums = [
             padding: 0.4rem 0.3rem;
         }
 
-        .gl-name { font-weight: 600; }
-        .gl-desc { font-size: 0.85rem; }
+        .gl-name {
+            font-weight: 600;
+        }
+        .gl-desc {
+            font-size: 0.85rem;
+        }
 
         .album-grid {
             grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
