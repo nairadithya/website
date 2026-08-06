@@ -37,7 +37,8 @@ const reviewCollection = defineCollection({
     schema: z.object({
         title: z.string(),
         type: z.enum(['movie', 'book', 'show', 'game']),
-        date: z.date(),
+      date: z.date(),
+      year: z.number().gte(1000).lte(9999)
     }),
 })
 
