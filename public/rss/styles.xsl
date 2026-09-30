@@ -23,35 +23,119 @@
                 <meta name="referrer" content="none" />
                 <style type="text/css">
                     :root {
-                        --hue: 0deg;
-                        font-family: 'Roboto Serif', 'sans-serif';
-                        background-color: oklch(97% 0.04 var(--hue));
-                        color: oklch(30% 0.06 var(--hue));
+                        color-scheme: light dark;
+                        --background: light-dark(
+                            oklch(0.9557 0.003 286.35),
+                            oklch(0.18 0.006 258)
+                        );
+                        --foreground: light-dark(
+                            oklch(0.2511 0.006 258.36),
+                            oklch(0.9187 0.003 264.54)
+                        );
+                        --accent: light-dark(
+                            oklch(0.4736 0.185 259.89),
+                            oklch(0.8017 0.091 258.88)
+                        );
+                        --secondary: light-dark(
+                            oklch(0.5883 0.158 145.05),
+                            oklch(0.8877 0.096 147.71)
+                        );
+                        --gray: light-dark(
+                            oklch(0.5682 0.004 247.89),
+                            oklch(0.7503 0.002 247.85)
+                        );
+                        --rule: color-mix(
+                            in oklch,
+                            var(--foreground) 16%,
+                            var(--background)
+                        );
+                        --accent-hover: light-dark(
+                            oklch(0.4348 0.17 260.2),
+                            oklch(0.8966 0.046 260.67)
+                        );
+                    }
+                    html,
+                    body {
+                        min-height: 100%;
+                        margin: 0;
+                    }
+                    body {
+                        background: var(--background);
+                        color: var(--foreground);
+                        font-family: 'IBM Plex Mono', ui-monospace, monospace;
+                        line-height: 1.6;
                     }
                     .container {
-                        align-item: center;
                         display: flex;
                         justify-content: center;
-                    }
-                    h1 {
-                        font-size: 2.25rem;
-                    }
-                    h2 {
-                        font-size: 1.875rem;
+                        padding: 2rem 1rem;
                     }
                     .item {
-                        max-width: 80%;
+                        width: 100%;
+                        max-width: 76ch;
+                    }
+                    header {
+                        padding-bottom: 1.5rem;
+                        border-bottom: 2px solid var(--secondary);
+                    }
+                    header::before {
+                        content: '';
+                        display: block;
+                        width: min(100%, 16.25rem);
+                        height: 2px;
+                        margin-bottom: 2px;
+                        background: var(--accent);
+                    }
+                    h1,
+                    h2,
+                    h3 {
+                        font-family: 'IBM Plex Serif', Georgia, serif;
+                        line-height: 1.3;
+                    }
+                    h1 {
+                        margin: 0 0 0.5rem;
+                        font-size: clamp(2rem, 6vw, 3rem);
+                    }
+                    h2 {
+                        margin: 1rem 0 0.5rem;
+                        font-size: clamp(1.5rem, 4vw, 1.875rem);
+                    }
+                    header h2 {
+                        margin-top: 0;
+                    }
+                    header p {
+                        color: var(--gray);
                     }
                     a {
-                        color: oklch(38% 0.12 var(--hue));
+                        color: var(--accent);
                         text-decoration: underline;
+                        text-decoration-thickness: 1px;
+                        text-underline-offset: 0.18em;
                     }
-                    footer {
-                        color: var(--color-fg);
+                    a:hover,
+                    a:focus-visible {
+                        color: var(--accent-hover);
+                    }
+                    article {
+                        padding: 1rem 0 1.25rem;
+                        border-bottom: 1px solid var(--rule);
+                    }
+                    article h3 {
+                        margin: 0;
+                        font-size: 1.25rem;
+                    }
+                    article footer {
+                        margin-top: 0.25rem;
+                        color: var(--secondary);
+                        font-size: 0.85rem;
+                    }
+                    article p {
+                        margin: 0.5rem 0 0;
+                        color: var(--gray);
                     }
                     @media (min-width: 30em) {
-                        .item {
-                            max-width: 50%;
+                        .container {
+                            padding: 3rem 2rem;
                         }
                     }
                 </style>
@@ -114,31 +198,6 @@
                     </div>
                 </div>
 
-                <script>
-                    function seededRandom(daySeed) {
-                        const x = Math.sin(daySeed) * 10000
-                        return x - Math.floor(x)
-                    }
-
-                    function getDailyHueSeeded() {
-                        const now = new Date()
-                        const startOfYear = new Date(now.getFullYear(), 0, 1)
-
-                        const dayOfYear = Math.floor(
-                            (now.getTime() - startOfYear.getTime()) /
-                                (24 * 60 * 60 * 1000)
-                        )
-                        const randomValue = seededRandom(dayOfYear)
-
-                        return Math.floor(randomValue * 360)
-                    }
-
-                    const hueSeeded = getDailyHueSeeded()
-                    document.documentElement.style.setProperty(
-                        '--hue',
-                        `${hueSeeded}deg`
-                    )
-                </script>
             </body>
         </html>
     </xsl:template>
