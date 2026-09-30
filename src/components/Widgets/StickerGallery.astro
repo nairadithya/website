@@ -2,12 +2,12 @@
 const badges = [
     {
         src: '/badges/at.gif',
-        label: 'Amrita.town',
+        alt: 'Amrita.town',
         href: 'https://amrita.town',
     },
     {
         src: '/badges/atlasbutton.png',
-        alt: 'ATLAS ASEB',
+        alt: 'Atlas Dev Club',
         href: 'https://atlasdev.club',
     },
     {
@@ -17,17 +17,17 @@ const badges = [
     },
     {
         src: '/badges/dark-mode.gif',
-        alt: 'Dark Mode',
+        alt: 'Made for Dark Mode',
         href: 'https://www.youtube.com/watch?v=bOwsLtwa2Ts',
     },
     {
         src: '/badges/hl.gif',
-        alt: 'Half Life',
+        alt: 'Half-Life',
         href: 'https://youtu.be/2Whsld94IHQ',
     },
     {
         src: '/badges/emacsemacsemacs.gif',
-        alt: 'Emacs',
+        alt: 'GNU Emacs',
         href: 'https://youtu.be/urcL86UpqZc',
     },
 ]
@@ -41,7 +41,7 @@ const badges = [
                 <a href={badge.href}>
                     <img
                         src={badge.src}
-                        alt={badge.label}
+                        alt={badge.alt}
                         loading="lazy"
                         width="88"
                         height="31"
@@ -58,19 +58,23 @@ const badges = [
     }
 
     .sticker-gallery {
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(88px, 100%), 1fr));
         gap: 0.5em;
+        justify-items: center;
+        width: 100%;
     }
 
     .sticker-gallery a {
         display: flex;
         justify-content: center;
+        min-width: 0;
     }
 
     .sticker-gallery img {
-        image-rendering: pixelated;
         display: block;
+        width: 88px;
+        max-width: 100%;
+        height: auto;
     }
 </style>
