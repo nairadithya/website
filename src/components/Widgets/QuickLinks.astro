@@ -12,17 +12,23 @@ import ArrowRight from '@/icons/arrow-right.svg'
 
 <div class="quicklinks card">
     <h2>Find Me Elsewhere</h2>
-    {
-        links.map((link) => (
-            <div class="link">
-                <ArrowRight aria-hidden="true" />
-                <a href={link.url}>{link.icon}</a>
-            </div>
-        ))
-    }
+    <div class="quicklinks-list">
+        {
+            links.map((link) => (
+                <div class="link">
+                    <ArrowRight aria-hidden="true" />
+                    <a href={link.url}>{link.icon}</a>
+                </div>
+            ))
+        }
+    </div>
 </div>
 
 <style>
+    .quicklinks-list {
+        margin-top: 0.5em;
+    }
+
     .link {
         display: flex;
         align-items: center;
