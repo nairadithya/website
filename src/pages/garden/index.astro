@@ -79,14 +79,13 @@ const albums = [
 </BaseLayout>
 
 <style>
-    .garden-list,
-    .album-grid {
+    .garden-list {
         max-width: 80ch;
         margin: 0 auto;
     }
 
     .album-grid {
-        padding: 0 0.8rem;
+        width: 100%;
     }
 
     .garden-list {
@@ -119,15 +118,11 @@ const albums = [
 
     .album-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr));
         gap: 0.8rem;
     }
 
     @media (max-width: 600px) {
-        .album-grid {
-            padding: 0 0.5rem;
-        }
-
         .garden-link {
             grid-template-columns: 1fr;
             gap: 0.1rem;
@@ -142,7 +137,10 @@ const albums = [
         }
 
         .album-grid {
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(min(120px, 100%), 1fr)
+            );
             gap: 0.5rem;
         }
     }
