@@ -4,11 +4,12 @@ import sharp from 'sharp'
 import { getCollection, getEntry } from 'astro:content'
 import type { APIRoute, GetStaticPaths } from 'astro'
 
-// Dark theme colors (matching oklch values from global.css)
-const BG = '#0a0404' // oklch(12% 0.015 20)
-const FG = '#eeedea' // oklch(93% 0 0)
-const ACCENT = '#bc44cc' // oklch(55% 0.13 300)
-const GRAY = '#b3b3b3' // oklch(75% 0 0)
+// Dark theme colors converted from the matching tokens in global.css.
+const BG = '#101214' // --background: oklch(0.18 0.006 258)
+const FG = '#e3e4e6' // --foreground: oklch(0.9187 0.003 264.54)
+const OCEAN = '#9bc0f9' // --accent: oklch(0.8017 0.091 258.88)
+const JADE = '#afecb6' // --secondary: oklch(0.8877 0.096 147.71)
+const GRAY = '#adaeaf' // --gray: oklch(0.7503 0.002 247.85)
 
 const FONT_SERIF = 'IBM Plex Serif'
 const FONT_MONO = 'IBM Plex Mono'
@@ -102,7 +103,7 @@ export const GET: APIRoute = async ({ params }) => {
                                         style: {
                                             height: '2px',
                                             width: '260px',
-                                            background: ACCENT,
+                                            background: OCEAN,
                                         },
                                     },
                                 },
@@ -112,7 +113,7 @@ export const GET: APIRoute = async ({ params }) => {
                                         style: {
                                             height: '2px',
                                             width: '260px',
-                                            background: ACCENT,
+                                            background: JADE,
                                         },
                                     },
                                 },
