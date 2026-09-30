@@ -7,7 +7,7 @@ let links = [
     { url: 'https://discord.com/app', icon: 'Discord (@nairadithya)' },
 ]
 
-import ArrowForward from '@/icons/arrow-forward.svg'
+import ArrowRight from '@/icons/arrow-right.svg'
 ---
 
 <div class="quicklinks card">
@@ -15,7 +15,7 @@ import ArrowForward from '@/icons/arrow-forward.svg'
     {
         links.map((link) => (
             <div class="link">
-                <ArrowForward aria-hidden="true" />
+                <ArrowRight aria-hidden="true" />
                 <a href={link.url}>{link.icon}</a>
             </div>
         ))
