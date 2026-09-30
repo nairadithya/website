@@ -59,7 +59,7 @@ body {
 
 /* ── Mobile: stack panes into a single scrolling column ── */
 
-@media (max-width: 880px) {
+@media (max-width: 960px) {
     html,
     body {
         height: auto;
@@ -311,7 +311,7 @@ aside,
 
 /* ── Mobile typography: shrink the large serif sizes ── */
 
-@media (max-width: 880px) {
+@media (max-width: 960px) {
     .content p,
     .content ul,
     .content ol {
