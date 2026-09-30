@@ -83,6 +83,9 @@ const albums = [
     .album-grid {
         max-width: 80ch;
         margin: 0 auto;
+    }
+
+    .album-grid {
         padding: 0 0.8rem;
     }
 
@@ -96,7 +99,7 @@ const albums = [
         display: grid;
         grid-template-columns: 16ch 1fr;
         gap: 2ch;
-        padding: 0.15rem 0.3rem;
+        padding: 0.15rem 0;
         border-radius: 2px;
     }
 
@@ -121,7 +124,6 @@ const albums = [
     }
 
     @media (max-width: 600px) {
-        .garden-list,
         .album-grid {
             padding: 0 0.5rem;
         }
@@ -129,7 +131,7 @@ const albums = [
         .garden-link {
             grid-template-columns: 1fr;
             gap: 0.1rem;
-            padding: 0.4rem 0.3rem;
+            padding: 0.4rem 0;
         }
 
         .gl-name {
