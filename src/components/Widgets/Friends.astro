@@ -1,0 +1,38 @@
+---
+interface Friend {
+    name: string
+    href: string
+}
+
+const friends: Friend[] = [
+    { name: 'Heftymouse', href: 'https://heftymouse.me/' },
+    { name: 'Nithitsuki', href: 'https://nithitsuki.com/' },
+    { name: 'Polarhive', href: 'https://polarhive.net/' },
+]
+---
+
+{
+    friends.length > 0 && (
+        <div class="card">
+            <h2>IndieWeb Friends</h2>
+            <ul class="friend-links">
+                {friends.map((friend) => (
+                    <li>
+                        <a href={friend.href}>{friend.name}</a>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    )
+}
+
+<style>
+    .friend-links {
+        list-style: none;
+        margin: 0.5em 0 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.35em;
+    }
+</style>

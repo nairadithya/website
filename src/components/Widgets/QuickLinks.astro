@@ -15,7 +15,7 @@ import ArrowForward from '@/icons/arrow-forward.svg'
     {
         links.map((link) => (
             <div class="link">
-                <ArrowForward />
+                <ArrowForward aria-hidden="true" />
                 <a href={link.url}>{link.icon}</a>
             </div>
         ))

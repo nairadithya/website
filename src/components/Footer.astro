@@ -1,6 +1,6 @@
 ---
 import ArrowBack from '@/icons/arrow-back.svg'
-import Dice from '@/icons/dice.svg'
+import Shuffle from '@/icons/shuffle.svg'
 import ArrowForward from '@/icons/arrow-forward.svg'
 ---
 
@@ -8,13 +8,38 @@ import ArrowForward from '@/icons/arrow-forward.svg'
     <h2>Webrings I'm Part Of</h2>
     <div class="link-footer">
         <a href="https://amrita.town">amrita.town</a>
-        <a href="https://amrita.town/prev">←</a>
-        <a href="https://amrita.town/random">⚄</a>
-        <a href="https://amrita.town/next"> →</a>
+        <a
+            href="https://amrita.town/prev"
+            aria-label="Previous site in amrita.town"
+        >
+            <ArrowBack aria-hidden="true" />
+        </a>
+        <a
+            href="https://amrita.town/random"
+            aria-label="Random site in amrita.town"
+        >
+            <Shuffle aria-hidden="true" />
+        </a>
+        <a
+            href="https://amrita.town/next"
+            aria-label="Next site in amrita.town"
+        >
+            <ArrowForward aria-hidden="true" />
+        </a>
     </div>
     <div class="link-footer">
-        <a href="https://amrita.town/prev">←</a>
+        <a
+            href="https://amrita.town/prev"
+            aria-label="Previous site in amrita.town"
+        >
+            <ArrowBack aria-hidden="true" />
+        </a>
         <a href="https:/blr.indiewebclub.org"> IndieWebClub Bangalore </a>
-        <a href="https://amrita.town/next">→</a>
+        <a
+            href="https://amrita.town/next"
+            aria-label="Next site in IndieWebClub Bangalore"
+        >
+            <ArrowForward aria-hidden="true" />
+        </a>
     </div>
 </footer>

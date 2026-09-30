@@ -8,7 +8,7 @@ import Film from '@/icons/film.svg'
     <div>
         <h2>Latest Review</h2>
         <a href={data.link}><span>{data.film}</span></a><br />
-        <span>{data.stars}</span>
+        <span class="rating">{data.stars}</span>
     </div>
     <Film />
 </div>
@@ -22,5 +22,9 @@ import Film from '@/icons/film.svg'
 
     .card svg {
         width: 4em;
+    }
+
+    .rating {
+        color: var(--secondary);
     }
 </style>

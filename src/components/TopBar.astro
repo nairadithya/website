@@ -34,7 +34,7 @@ const isCurrent = (href: string) =>
                                 }
                                 href={link.href}
                             >
-                                {link.label}
+                                <span>{link.label}</span>
                             </a>
                         </li>
                     ))
@@ -62,7 +62,7 @@ const isCurrent = (href: string) =>
     }
 
     .topbar > .site-title {
-        font-size: var(--size-5xl);
+        font-size: var(--size-4xl);
         font-weight: bold;
         flex-direction: column;
         justify-content: flex-start;
@@ -72,18 +72,18 @@ const isCurrent = (href: string) =>
     .site-title > p {
         margin: 0;
         align-self: stretch;
-        padding: 0.5em 0px 0.5em 0px;
+        padding: 0.2em 0 0.3em;
         font-family: var(--font-mono);
-        border-bottom: 4px double var(--accent);
+        border-bottom: 4px double var(--rule);
     }
 
     nav ul {
         margin: 0;
         list-style: none;
-        padding: 0.8em 0;
+        padding: 0.55em 0 0.35em;
         display: flex;
-        gap: 1em;
-        font-size: var(--size-2xl);
+        gap: 0.8em;
+        font-size: var(--size-xl);
     }
 
     nav ul a::before {
@@ -94,8 +94,13 @@ const isCurrent = (href: string) =>
         content: ']';
     }
 
+    nav ul a {
+        display: inline-flex;
+        align-items: baseline;
+    }
+
     nav ul a[aria-current='page'] {
-        color: var(--accent-active);
+        color: var(--accent);
     }
 
     .topbar > .metadata {
@@ -103,12 +108,14 @@ const isCurrent = (href: string) =>
         align-items: flex-start;
         justify-items: left;
         flex-direction: column;
-        gap: 1.2em;
+        gap: 0.65em;
+        font-size: var(--size-xs);
+        color: var(--gray);
     }
 
     .topbar > * {
-        border: 1px solid var(--accent);
-        padding: 0.5rem 1rem;
+        border: 1px solid var(--rule);
+        padding: 0.45rem 0.8rem;
         margin: 0;
         display: flex;
         align-items: center;
@@ -123,7 +130,7 @@ const isCurrent = (href: string) =>
     }
 
     .home-icon svg {
-        width: 96px;
+        width: 64px;
         height: auto;
     }
 
