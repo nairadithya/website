@@ -21,5 +21,9 @@ Events I've attended:
     1. [Building Indic dictionaries: From Go to Rust](https://fossunited.org/c/mangalore/mangalorefoss/cfp/ebu0v5qd24)
     2. Building a Multi-Architecture Kernel Development Lab at Home - Dipankar Sharma
 - [IRC 2026](https://roverchallenge.org/irc/)
-    1. I worked as the Automation Lead for [Team Odyssey](https://teamodyssey.space).
+     built automation infra for [Team Odyssey](https://teamodyssey.space)'s rover.
 - [Bangerlore v5](https://partiful.com/e/qQ5j2mNkpfIittsNo34X?) - Met some wonderful people here.
+- [Bits, Bots & Bio](https://blr.popvax.com/)
+- Launch event for [Eyecandy Robotics](https://eyecandyrobotics.com/)
+- [IndiaFOSS 2026](https://fossunited.org/indiafoss/2026) - Check out my [blog post](/blog/indiafoss-2026)
+- [Screening of The Apartment, Billy Wilder, Cinema Next Door](https://www.cinemanextdoor.com/note/72-the-apartment#curator-notes)
