@@ -18,17 +18,17 @@ description: A page hosting all the things I use.
 11. PDF Reader - [emacs](https://www.gnu.org/software/emacs/) ([Sioyek](https://sioyek.info/) for larger documents)
 12. Browser - [Zen Browser](https://zen-browser.app/)
 13. Bookmarking - [Raindrop](https://raindrop.io/)
+14. Agent - [Pi](https://pi.dev/) usually, (ChatGPT Desktop when the discussion gets math heavy)
 
 # Browser Extensions
 
 1. [uBlock Origin](https://github.com/gorhill/uBlock)
-2. [Return YouTube Dislike](https://returnyoutubedislike.com/)
-3. [Shorts Deflector](https://evenevan.github.io/shorts-deflector/)
-4. [Obscura](https://github.com/nairadithya/obscura) (I made this!)
-5. [Sponsorblock](https://sponsor.ajay.app/)
-6. [Student Attendance Dashboard](https://github.com/nithitsuki/attendance-grabber) (Made by a friend, [@nithitsuki](https://nithitsuki.com/))
+2. [Shorts Deflector](https://evenevan.github.io/shorts-deflector/)
+4. [Sponsorblock](https://sponsor.ajay.app/)
 
 # Phone
+
+Currently rocking a Moto G85 5G
 
 1. Launcher - [Niagara Launcher](https://niagaralauncher.com/)
 2. Browser - [DuckDuckGo](https://duckduckgo.com/app/unsupported?origin=funnel_marketing_website)
