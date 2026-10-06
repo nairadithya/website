@@ -1,8 +1,7 @@
 import { defineConfig, fontProviders } from 'astro/config'
+import { unified } from '@astrojs/markdown-remark'
 import remarkToc from 'remark-toc'
-import remarkGFM from 'remark-gfm'
 import remarkMath from 'remark-math'
-import remarkSmartyPants from 'remark-smartypants'
 import rehypeKatex from 'rehype-katex'
 import mdx from '@astrojs/mdx'
 
@@ -15,16 +14,16 @@ export default defineConfig({
         prefetchAll: true,
     },
     markdown: {
-        remarkPlugins: [
-            [
-                remarkToc,
-                { heading: 'Table Of Contents', maxDepth: 2, ordered: true },
+        processor: unified({
+            remarkPlugins: [
+                [
+                    remarkToc,
+                    { heading: 'Table Of Contents', maxDepth: 2, ordered: true },
+                ],
+                remarkMath,
             ],
-            remarkMath,
-            remarkGFM,
-            remarkSmartyPants,
-        ],
-        rehypePlugins: [rehypeKatex],
+            rehypePlugins: [rehypeKatex],
+        }),
         syntaxHighlight: 'shiki',
     },
     fonts: [

@@ -1,14 +1,23 @@
 ---
 import { GET } from '@/pages/api/latest-review.json.ts'
-let data = await (await GET()).json()
+const response = await GET()
+const data = response.ok ? await response.json() : null
 import Film from '@/icons/film.svg'
 ---
 
 <div class="card">
     <div>
         <h2>Latest Review</h2>
-        <a href={data.link}><span>{data.film}</span></a><br />
-        <span class="rating">{data.stars}</span>
+        {
+            data ? (
+                <>
+                    <a href={data.link}><span>{data.film}</span></a><br />
+                    <span class="rating">{data.stars}</span>
+                </>
+            ) : (
+                <span>No data available</span>
+            )
+        }
     </div>
     <Film />
 </div>

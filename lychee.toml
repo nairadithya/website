@@ -10,11 +10,11 @@ exclude = ['^https?://ring\.seggs\.lol(?:[/?#]|$)']
 
 # Bound network checks and retry transient failures.
 timeout = 20
+accept_timeouts = true
 max_retries = 2
 max_concurrency = 8
 host_concurrency = 2
 
-# Tolerate automated-client blocking (403, LinkedIn's 999) and rate limits
-# (429). These responses cannot establish whether the page exists, but should
-# not cause false 404 alarms. Missing pages (404/410) and network errors fail.
-accept = ["200..=299", "403", "429", "999"]
+# Only HTTP 404 responses indicate links we want to investigate.
+# Accept other HTTP responses, including blocking, rate limits, and server errors.
+accept = ["100..=403", "405..=599", "999"]
