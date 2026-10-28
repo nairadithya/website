@@ -17,6 +17,11 @@ const {
 import { ClientRouter } from 'astro:transitions'
 
 const origin = Astro.site!.origin
+const pathname = Astro.url.pathname
+const canonicalPath = pathname.endsWith('/') || /\.[^/]+$/.test(pathname)
+    ? pathname
+    : `${pathname}/`
+const canonicalUrl = new URL(canonicalPath, Astro.site).href
 
 const ogImage = slug
     ? `${origin}/api/social-images/${slug}.png`
@@ -28,6 +33,7 @@ const ogImage = slug
     <meta name="description" content={description} />
     <meta name="author" content="Adithya Nair" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="canonical" href={canonicalUrl} />
     <link
         rel="alternate"
         type="application/rss+xml"
@@ -41,11 +47,11 @@ const ogImage = slug
     <Font cssVariable="--font-mono" />
     <meta property="og:image" content={ogImage} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={origin} />
+    <meta property="og:url" content={canonicalUrl} />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content={origin} />
-    <meta property="twitter:url" content={origin} />
+    <meta property="twitter:url" content={canonicalUrl} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />

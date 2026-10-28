@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 const badges = [
     {
         src: '/badges/at.gif',
@@ -39,10 +40,10 @@ const badges = [
         {
             badges.map((badge) => (
                 <a href={badge.href}>
-                    <img
+                    <Image
                         src={badge.src}
                         alt={badge.alt}
-                        loading="lazy"
+                        loading="eager"
                         width="88"
                         height="31"
                     />

@@ -20,7 +20,7 @@ const DEFAULT_BYLINE = 'Student, Programmer & Writer'
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const [posts, garden] = await Promise.all([
-        getCollection('blog'),
+        getCollection('blog', ({ data }) => !data.isDraft),
         getCollection('garden'),
     ])
     return [
